@@ -3,7 +3,7 @@
   id="case-studies"
 >
   <h1>CASE STUDIES</h1>
-  <p>Please select a tile below to learn about some of our recent projects.</p>
+  <p>Please select a tile below to learn about some of our recent projects, read reviews of our work, and visit some of our creations.</p>
   <div
     fxLayout="row"
     fxLayout.lt-xs="column"
@@ -11,11 +11,12 @@
     fxLayoutAlign="space-between"
   >
     <div *ngFor="let study of caseStudies">
-      <mat-card
+      <mat-card [@activate]="study === caseStudy ? 'active' : 'inactive'"
         class="intro"
         (click)="setStudyView(study)"
       >
-        <img src="{{ study.featureLink }}">
+        <img
+             src="{{ study.featureLink }}">
       </mat-card>
     </div>
   </div>
@@ -24,7 +25,7 @@
     class="study"
     id="study"
   >
-    <div fxLayout="row"
+    <div
          fxLayout.lt-sm="column"
          fxLayoutGap="2%"
          fxLayoutAlign="space-between stretch"

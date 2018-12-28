@@ -99,6 +99,9 @@ $sartography-theme: mat-light-theme($sartography-primary, $sartography-accent, $
 @include angular-material-theme($sartography-theme);
 // Define a mixin that accepts a theme and outputs the color styles for the component.
 @mixin sartography-theme($theme) {
+
+  [hidden] { display: none !important;}
+
   // Extract whichever individual palettes you need from the theme.
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
