@@ -6,8 +6,8 @@
     "organizationName": "University of Virginia",
     "websiteLink": "https://mindtrails.virginia.edu/",
     "gitHubLink": "https://github.com/TeachmanLab",
-    "imageLink": "../../assets/images/case-studies/mindtrails.png",
-    "featureLink": "../../assets/images/case-studies/mindtrails_feature.png",
+    "imageLink": "assets/images/case-studies/mindtrails.png",
+    "featureLink": "assets/images/case-studies/mindtrails_feature.png",
     "testimonials": [
       {
         "name": "Bethany Teachman PhD",
@@ -23,8 +23,8 @@
     "organizationName": "University of Virginia",
     "websiteLink": "https://education.cadre.virginia.edu/",
     "gitHubLink": "https://github.com/uvasomrc/ed-platform",
-    "imageLink": "../../assets/images/case-studies/cadre.png",
-    "featureLink": "../../assets/images/case-studies/cadre_feature.png",
+    "imageLink": "assets/images/case-studies/cadre.png",
+    "featureLink": "assets/images/case-studies/cadre_feature.png",
     "testimonials": [
       {
         "name": "Byoung-Do (BD) Kim",
@@ -40,8 +40,8 @@
     "organizationName": "University of Virginia",
     "websiteLink": "https://portal.ithriv.org/",
     "gitHubLink": "https://github.com/uvasomrc/ithriv",
-    "imageLink": "../../assets/images/case-studies/ithriv.png",
-    "featureLink": "../../assets/images/case-studies/ithriv_feature.png",
+    "imageLink": "assets/images/case-studies/ithriv.png",
+    "featureLink": "assets/images/case-studies/ithriv_feature.png",
     "testimonials": [
       {
         "name": "Johanna Loomba, BS, CCRC",
@@ -57,8 +57,8 @@
     "organizationName": "Jim Rutt",
     "websiteLink": "",
     "gitHubLink": "",
-    "imageLink": "../../assets/images/case-studies/reddit.png",
-    "featureLink": "../../assets/images/case-studies/elastic.png",
+    "imageLink": "assets/images/case-studies/reddit.png",
+    "featureLink": "assets/images/case-studies/elastic.png",
     "testimonials": [
       {
         "name": "Jim Rutt",
@@ -73,8 +73,8 @@
     "description": "Full Genomes provides unusually detailed DNA sequencing to their clients. After some troubles with a previous consulting company they engaged us to get their development back on track. Our efforts included updating the e-commerce section of their website, integrating their backend processing, and updating the interface to a more modern look and feel that is mobile friendly.",
     "organizationName": "Full Genomes",
     "websiteLink": "https://www.fullgenomes.com/",
-    "imageLink": "../../assets/images/case-studies/full_genomes.png",
-    "featureLink": "../../assets/images/case-studies/full_genomes_feature.png",
+    "imageLink": "assets/images/case-studies/full_genomes.png",
+    "featureLink": "assets/images/case-studies/full_genomes_feature.png",
     "testimonials": []
   }
 ]
