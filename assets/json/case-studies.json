@@ -1,0 +1,80 @@
+[
+  {
+    "projectName": "MindTrails",
+    "tagLine": "Facilitating Research",
+    "description": "Since 2014, Sartography has provided the technical leadership for the MindTrails project, an iterative series of psychology studies.  Working closely with Professor Bethany Teachman and her lab, we continue to enhance and refine our approval to behavioral modification with scientific rigor.  Working with the University of Virginia’s information security group, Sartography designed processes to safely collect sensitive medical information. We continue to evolve our approach to gaining and retaining participants as we build more and more engaging experiences that reduce attrition and inspire real change in people's lives.",
+    "organizationName": "University of Virginia",
+    "websiteLink": "https://mindtrails.virginia.edu/",
+    "gitHubLink": "https://github.com/TeachmanLab",
+    "imageLink": "../../assets/images/case-studies/mindtrails.png",
+    "featureLink": "../../assets/images/case-studies/mindtrails_feature.png",
+    "testimonials": [
+      {
+        "name": "Bethany Teachman PhD",
+        "title": "Professor, Department of Psychology",
+        "quote": "Sartography is deeply committed to helping clients realize their vision. The team is incredibly responsive to feedback and always willing to meet to answer questions. They routinely go ‘above and beyond’ to make the product the best it can be, and they are creative and excellent problem solvers."
+      }
+    ]
+  },
+  {
+    "projectName": "Cadre Academy",
+    "tagLine": "Engaging the Community",
+    "description": "Working with the Research Computing department of the School of Medicine at UVA we created a platform where students, community members, and faculty could sign up for free workshops offered across the campus.  Integrating with UVA’s two factor authentication system, we created a streamlined signup process.  To help users find the right classes we provide tools for organizing workshops into tracks - taking users from introductory materials to advanced specializations.",
+    "organizationName": "University of Virginia",
+    "websiteLink": "https://education.cadre.virginia.edu/",
+    "gitHubLink": "https://github.com/uvasomrc/ed-platform",
+    "imageLink": "../../assets/images/case-studies/cadre.png",
+    "featureLink": "../../assets/images/case-studies/cadre_feature.png",
+    "testimonials": [
+      {
+        "name": "Byoung-Do (BD) Kim",
+        "title": "Director of Research Computing",
+        "quote": "The Sartography team did excellent work for the development of CADRE Academy. Hundreds of UVA students are now taking advantage of the online platform for their search on workshop contents and upcoming classes. It was a great pleasure working with Dan."
+      }
+    ]
+  },
+  {
+    "projectName": "iThriv",
+    "tagLine": "Managing Complexity",
+    "description": "The number of biomedical resources available to Researchers, Clinicians and the general public is exploding. An emerging discipline of Translational Medicine hopes to expedite the discovery of new tools and treatments in this multidisciplinary world. As a first step we helped create the iTrhiv Portal, a multi-institutional collaboration of Virginia universities and private organizations that helps everyone learn about and access information critical to their work and health.",
+    "organizationName": "University of Virginia",
+    "websiteLink": "https://portal.ithriv.org/",
+    "gitHubLink": "https://github.com/uvasomrc/ithriv",
+    "imageLink": "../../assets/images/case-studies/ithriv.png",
+    "featureLink": "../../assets/images/case-studies/ithriv_feature.png",
+    "testimonials": [
+      {
+        "name": "Johanna Loomba, BS, CCRC",
+        "title": "Research Concierge Services Manager",
+        "quote": "The Sartography team was creative, flexible, and efficient in their approaches to both requirements definition and system design.  Their commitment to quality and customer satisfaction was unflagging throughout the entire project period."
+      }
+    ]
+  },
+  {
+    "projectName": "Reddit Analyzer",
+    "tagLine": "Natural Language Processing",
+    "description": "Reddit is a news aggregation and discussion forum that provides access to millions of comments, discussions, and news postings. Jim Rutt was working with a natural language processor to test a number of theories, and was looking for ways to speed up and automate his existing prototype.  To help, we decided to use ElasticSearch, a search engine with a number of powerful processing features.  Elastic Search is blazing fast, and provides a suite of tools that helped make the desired analysis efficient and maintainable even when running constantly for months, and managing millions of records",
+    "organizationName": "Jim Rutt",
+    "websiteLink": "",
+    "gitHubLink": "",
+    "imageLink": "../../assets/images/case-studies/reddit.png",
+    "featureLink": "../../assets/images/case-studies/elastic.png",
+    "testimonials": [
+      {
+        "name": "Jim Rutt",
+        "title": "Businessman and entrepreneur",
+        "quote": "I used Sartography for R&D programming in the domain of textual analysis.  Great skills.   Excellent turnaround. I was well pleased."
+      }
+    ]
+  },
+  {
+    "projectName": "Full Genomes",
+    "tagLine": "Invigorating Business Software",
+    "description": "Full Genomes provides unusually detailed DNA sequencing to their clients. After some troubles with a previous consulting company they engaged us to get their development back on track. Our efforts included updating the e-commerce section of their website, integrating their backend processing, and updating the interface to a more modern look and feel that is mobile friendly.",
+    "organizationName": "Full Genomes",
+    "websiteLink": "https://www.fullgenomes.com/",
+    "imageLink": "../../assets/images/case-studies/full_genomes.png",
+    "featureLink": "../../assets/images/case-studies/full_genomes_feature.png",
+    "testimonials": []
+  }
+]
