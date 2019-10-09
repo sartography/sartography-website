@@ -1,107 +1,130 @@
-@import '../node_modules/@angular/material/theming';
-@include mat-core();
+@import "../node_modules/@angular/material/theming";
+$custom-typography: mat-typography-config(
+  $font-family: "Montserrat, sans-serif",
+  $display-4: mat-typography-level(64px, 1.2, 300),
+  $display-3: mat-typography-level(48px, 1.2, 300),
+  $display-2: mat-typography-level(40px, 1.2, 300),
+  $display-1: mat-typography-level(32px, 1.2, 300),
+  $headline: mat-typography-level(28px, 1.2, 900),
+  $title: mat-typography-level(24px, 1.2, 900),
+  $subheading-2: mat-typography-level(20px, 1.2, 700),
+  $subheading-1: mat-typography-level(18px, 1.2, 700),
+  $body-1: mat-typography-level(16px, 1.2, 500),
+  $body-2: mat-typography-level(12px, 1.2, 500),
+  $caption: mat-typography-level(12px, 1.2, 500),
+  $button: mat-typography-level(16px, 1.2, 500),
+  $input: mat-typography-level(16px, 1.2, 500)
+);
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($custom-typography);
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
 $sartography-teal: (
-  50 : #BEE4E1,
-  100 : #BEE4E1,
-  200 : #8CD1C8,
-  300 : #8CD1C8,
-  400 : #36BBA4,
-  500 : #36BBA4,
-  600 : #247A6B,
-  700 : #247A6B,
-  800 : #133A32,
-  900 : #133A32,
+  50: #bee4e1,
+  100: #bee4e1,
+  200: #8cd1c8,
+  300: #8cd1c8,
+  400: #36bba4,
+  500: #36bba4,
+  600: #247a6b,
+  700: #247a6b,
+  800: #133a32,
+  900: #133a32,
   contrast: (
-    50 : #000000,
-    100 : #000000,
-    200 : #000000,
-    300 : #000000,
-    400 : #000000,
-    500 : #000000,
-    600 : #ffffff,
-    700 : #ffffff,
-    800 : #ffffff,
-    900 : #ffffff,
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff
   )
 );
 $sartography-purple-grey: (
-  50 : #E5E2F1,
-  100 : #E5E2F1,
-  200 : #9D98CB,
-  300 : #9D98CB,
-  400 : #554DA0,
-  500 : #554DA0,
-  600 : #302E5E,
-  700 : #302E5E,
-  800 : #12131F,
-  900 : #12131F,
-  A100 : #F2EDED,
-  A200 : #CCC8C8,
-  A400 : #999696,
-  A700 : #727071,
-  A900 : #4C4B4C,
+  50: #e5e2f1,
+  100: #e5e2f1,
+  200: #9d98cb,
+  300: #9d98cb,
+  400: #554da0,
+  500: #554da0,
+  600: #302e5e,
+  700: #302e5e,
+  800: #12131f,
+  900: #12131f,
+  A100: #f2eded,
+  A200: #ccc8c8,
+  A400: #999696,
+  A700: #727071,
+  A900: #4c4b4c,
   contrast: (
-    50 : #000000,
-    100 : #000000,
-    200 : #000000,
-    300 : #000000,
-    400 : #ffffff,
-    500 : #ffffff,
-    600 : #ffffff,
-    700 : #ffffff,
-    800 : #ffffff,
-    900 : #ffffff,
-    A100 : #000000,
-    A200 : #000000,
-    A400 : #000000,
-    A700 : #ffffff,
-    A900 : #ffffff,
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff,
+    A900: #ffffff
   )
 );
 $sartography-raspberry-yellow: (
-  50 : #F9BFCC,
-  100 : #F9BFCC,
-  200 : #F597A5,
-  300 : #F597A5,
-  400 : #D41D55,
-  500 : #D41D55,
-  600 : #931A43,
-  700 : #931A43,
-  800 : #521227,
-  900 : #521227,
-  A100 : #FFECBD,
-  A200 : #FFD671,
-  A400 : #C7A02F,
-  A700 : #876A29,
-  A900 : #473917,
+  50: #f9bfcc,
+  100: #f9bfcc,
+  200: #f597a5,
+  300: #f597a5,
+  400: #d41d55,
+  500: #d41d55,
+  600: #931a43,
+  700: #931a43,
+  800: #521227,
+  900: #521227,
+  A100: #ffecbd,
+  A200: #ffd671,
+  A400: #c7a02f,
+  A700: #876a29,
+  A900: #473917,
   contrast: (
-    50 : #000000,
-    100 : #000000,
-    200 : #000000,
-    300 : #000000,
-    400 : #ffffff,
-    500 : #ffffff,
-    600 : #ffffff,
-    700 : #ffffff,
-    800 : #ffffff,
-    900 : #ffffff,
-    A100 : #000000,
-    A200 : #000000,
-    A400 : #000000,
-    A700 : #ffffff,
-    A900 : #ffffff,
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff,
+    A900: #ffffff
   )
 );
 $sartography-primary: mat-palette($sartography-teal);
 $sartography-accent: mat-palette($sartography-purple-grey);
 $sartography-warn: mat-palette($sartography-raspberry-yellow);
-$sartography-theme: mat-light-theme($sartography-primary, $sartography-accent, $sartography-warn);
+$sartography-theme: mat-light-theme(
+  $sartography-primary,
+  $sartography-accent,
+  $sartography-warn
+);
 @include angular-material-theme($sartography-theme);
 // Define a mixin that accepts a theme and outputs the color styles for the component.
 @mixin sartography-theme($theme) {
-
-  [hidden] { display: none !important;}
-
+  [hidden] {
+    display: none !important;
+  }
   // Extract whichever individual palettes you need from the theme.
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
@@ -109,7 +132,7 @@ $sartography-theme: mat-light-theme($sartography-primary, $sartography-accent, $
   body {
     background-color: mat-color($primary, 50);
     margin: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   p {
     color: mat-color($sartography-accent, A900);
@@ -117,7 +140,8 @@ $sartography-theme: mat-light-theme($sartography-primary, $sartography-accent, $
     line-height: 20pt;
     font-weight: 400;
   }
-  h1, h2 {
+  h1,
+  h2 {
     padding: 10px 10px;
     margin: 0 0 10px 0;
     text-transform: uppercase;
