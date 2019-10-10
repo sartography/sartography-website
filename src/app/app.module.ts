@@ -19,6 +19,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
+import { TeamComponent } from './team/team.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { InlineSVGModule } from 'ng-inline-svg';
 
 @NgModule({
   declarations: [
@@ -28,13 +31,16 @@ import { MenuComponent } from './menu/menu.component';
     ContactUsComponent,
     FooterComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    TeamComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     HttpClientModule,
+    InlineSVGModule,
     MatCardModule,
     MatIconModule,
     MatMenuModule,

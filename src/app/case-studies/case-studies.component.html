@@ -48,18 +48,22 @@
             <p>- {{ t.name}}<br/><i>&nbsp; {{t.title}}</i></p>
           </div>
         </div>
-        <button
+        <a
           *ngIf="caseStudy.websiteLink"
-          (click)="goWebsite(caseStudy.websiteLink)"
+          mat-flat-button
+          [href]="caseStudy.websiteLink"
+          target="_blank"
         >
           Visit Website
-        </button>
-        <button
+        </a>
+        <a
           *ngIf="caseStudy.gitHubLink"
-          (click)="goWebsite(caseStudy.gitHubLink)"
+          mat-flat-button
+          [href]="caseStudy.gitHubLink"
+          target="_blank"
         >
           View on GitHub
-        </button>
+        </a>
       </div>
       <div fxFlex="60%">
         <h3>{{ caseStudy.tagLine }}</h3>

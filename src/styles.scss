@@ -4,3 +4,25 @@
 @import 'sartography_material';
 // Load the UVA Theme
 @include sartography-theme($sartography-theme);
+
+.full-screen {
+    background-color: #ffffff;
+    padding: 5%;
+    display: grid;
+    height: 100%;
+    min-height: 100vh;
+
+    img.half-height {
+        max-height: 50vh;
+        margin: auto;
+    }
+
+    img.full-height {
+        max-height: 100vh;
+        margin: auto;
+    }
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

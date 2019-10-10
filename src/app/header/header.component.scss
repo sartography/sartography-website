@@ -1,11 +1,10 @@
-.welcome {
-  background-color: #ffffff;
-  padding: 5%;
-  display: grid;
-  height: 100%;
-  min-height: 100vh;
-  img {
-    max-height: 60vh;
-    margin: auto;
+::ng-deep .chevron-down svg {
+  width: 128;
+  height: 64px;
+
+  path {
+    stroke-width: 4px;
+    stroke: #C8C7C7;
+    fill: transparent;
   }
 }

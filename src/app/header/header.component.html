@@ -1,6 +1,11 @@
 <div
-  class="welcome"
+  class="full-screen"
+  fxLayout="column"
   fxLayoutAlign="center center"
 >
-    <img @fadeInOut src="assets/logo/Sartography-Logo-Vertical-Color.png"/>
+  <img class="half-height" @fadeInOut src="assets/logo/Sartography-Logo-Vertical-Color.png"/>
+  <div (click)="scrollDown()" fxLayout="column" fxLayoutAlign="center center" class="text-uppercase">
+    Explore
+    <div [inlineSVG]="'/assets/icons/chevron_down.svg'" class="chevron-down"></div>
+  </div>
 </div>

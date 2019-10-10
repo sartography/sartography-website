@@ -51,8 +51,4 @@ export class CaseStudiesComponent implements OnInit {
     this.caseStudy = study;
   }
 
-  goWebsite(link: string) {
-    window.open(link, '_blank');
-  }
-
 }

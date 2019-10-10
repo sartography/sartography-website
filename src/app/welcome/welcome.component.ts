@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: 'app-welcome',
+  templateUrl: './welcome.component.html',
+  styleUrls: ['./welcome.component.scss'],
   animations: [
     trigger('fadeInOut', [
       state('void', style({
@@ -17,19 +17,11 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     ])
   ]
 })
-export class HeaderComponent implements OnInit {
+export class WelcomeComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  scrollDown() {
-    const h = window.innerHeight;
-    window.scroll({
-      top: h,
-      behavior: 'smooth'
-    });
   }
 
 }

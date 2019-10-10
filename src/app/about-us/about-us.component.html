@@ -73,44 +73,6 @@
         </div>
       </mat-tab>
     </mat-tab-group>
-    <h1>The Team</h1>
-    <div
-      fxLayout="row"
-      fxLayout.lt-md="column"
-      fxLayoutGap="2%"
-      fxLayoutAlign="space-between stretch"
-    >
-      <div
-        *ngFor="let t of teamMembers"
-        fxFlex="30%"
-      >
-        <mat-card>
-          <div class="top">
-            <div class="circle-img">
-              <img src="{{ t.imageLink }}">
-            </div>
-            <h2>{{ t.firstName }}</h2>
-            <h2>{{ t.lastName }}</h2>
-            <h3>{{ t.title }}</h3>
-          </div>
-          <div *ngFor="let d of t.description">
-            <p>{{ d }}</p>
-          </div>
-          <button
-            *ngIf="t.gitHubLink"
-            (click)="goWebsite(t.gitHubLink)"
-          >
-            GitHub
-          </button>
-          <button
-            *ngIf="t.linkedInLink"
-            (click)="goWebsite(t.linkedInLink)"
-          >
-            LinkedIn
-          </button>
-        </mat-card>
-      </div>
-    </div>
   </div>
   <div fxLayoutAlign="center center">
     <img src="assets/logo/Sartography-Logo-Horizontal-Color.png">
