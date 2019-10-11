@@ -1,0 +1,62 @@
+// SCSS MATH
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+
+// Z-INDEX
+.z-back {
+  z-index: -1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+@for $i from 0 to 4 {
+  $amt: #{pow(10, $i)};
+  .z-#{$amt} {
+    z-index: #{$amt};
+  }
+}
+
+// WHITESPACE
+$sides: (top, bottom, left, right);
+@for $i from 0 to 10 {
+  .margin-#{$i} {
+    margin: #{$i}em;
+  }
+
+  .pad-#{$i} {
+    padding: #{$i}em;
+  }
+
+  @each $side in $sides {
+    .margin-#{$side}-#{$i} {
+      margin-#{$side}: #{$i}em;
+    }
+
+    .pad-#{$side}-#{$i} {
+      padding-#{$side}: #{$i}em;
+    }
+  }
+}
+
+// ALIGNMENT
+$alignments: (left, right, center, justify);
+@each $alignment in $alignments {
+  .text-align-#{$alignment} {
+    text-align: #{$alignment};
+  }
+}
+
+// TEXT
+$cases: (none, capitalize, uppercase, lowercase, full-width);
+@each $case in $cases {
+  .text-#{$case} {
+    text-transform: #{$case};
+  }
+}

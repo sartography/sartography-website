@@ -1,28 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
 
 // Import your custom theme
-@import 'sartography_material';
+@import "sartography_material";
 // Load the UVA Theme
 @include sartography-theme($sartography-theme);
 
+@import "./helpers";
+
 .full-screen {
-    background-color: #ffffff;
-    padding: 5%;
-    display: grid;
-    height: 100%;
-    min-height: 100vh;
+  background-color: #ffffff;
+  padding: 80px;
+  display: grid;
+  height: 100%;
+  min-height: 100vh;
 
-    img.half-height {
-        max-height: 50vh;
-        margin: auto;
-    }
+  img.half-height {
+    max-height: 50vh;
+    margin: auto;
+  }
 
-    img.full-height {
-        max-height: 100vh;
-        margin: auto;
-    }
+  img.full-height {
+    max-height: 100vh;
+    margin: auto;
+  }
 }
 
-.text-uppercase {
-    text-transform: uppercase;
+.container {
+  max-width: calc(100% - 80px);
 }
+
+
+// COLORS
+.bg-primary             { background-color: $brand-primary; }
+.bg-primary-light-1    { background-color: $brand-primary-light-1; }
+.bg-primary-light-2    { background-color: $brand-primary-light-2; }
+.bg-primary-light-3    { background-color: $brand-primary-light-3; }
+.bg-primary-light-4    { background-color: $brand-primary-light-4; }
+.bg-primary-dark-4     { background-color: $brand-primary-dark-4; }
+.bg-primary-dark-3     { background-color: $brand-primary-dark-3; }
+.bg-primary-dark-2     { background-color: $brand-primary-dark-2; }
+.bg-primary-dark-1     { background-color: $brand-primary-dark-1; }
+.bg-accent              { background-color: $brand-accent; }
+.bg-accent-light-1     { background-color: $brand-accent-light-1; }
+.bg-accent-light-2     { background-color: $brand-accent-light-2; }
+.bg-accent-light-3     { background-color: $brand-accent-light-3; }
+.bg-accent-light-4     { background-color: $brand-accent-light-4; }
+.bg-accent-dark-4      { background-color: $brand-accent-dark-4; }
+.bg-accent-dark-3      { background-color: $brand-accent-dark-3; }
+.bg-accent-dark-2      { background-color: $brand-accent-dark-2; }
+.bg-accent-dark-1      { background-color: $brand-accent-dark-1; }
+.bg-warning             { background-color: $brand-warning; }
+.bg-warning-light-1    { background-color: $brand-warning-light-1; }
+.bg-warning-light-2    { background-color: $brand-warning-light-2; }
+.bg-warning-light-3    { background-color: $brand-warning-light-3; }
+.bg-warning-light-4    { background-color: $brand-warning-light-4; }
+.bg-warning-dark-4     { background-color: $brand-warning-dark-4; }
+.bg-warning-dark-3     { background-color: $brand-warning-dark-3; }
+.bg-warning-dark-2     { background-color: $brand-warning-dark-2; }
+.bg-warning-dark-1     { background-color: $brand-warning-dark-1; }
+.bg-gray                { background-color: $brand-gray; }
+.bg-gray-light-1       { background-color: $brand-gray-light-1; }
+.bg-gray-light-2       { background-color: $brand-gray-light-2; }
+.bg-gray-light-3       { background-color: $brand-gray-light-3; }
+.bg-gray-light-4       { background-color: $brand-gray-light-4; }
+.bg-gray-dark-4        { background-color: $brand-gray-dark-4; }
+.bg-gray-dark-3        { background-color: $brand-gray-dark-3; }
+.bg-gray-dark-2        { background-color: $brand-gray-dark-2; }
+.bg-gray-dark-1        { background-color: $brand-gray-dark-1; }

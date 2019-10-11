@@ -1,24 +1,28 @@
-@import "../node_modules/@angular/material/theming";
+@import "./config";
+@import '~@angular/material/theming';
 $custom-typography: mat-typography-config(
   $font-family: "Montserrat, sans-serif",
-  $display-4: mat-typography-level(64px, 1.2, 300),
-  $display-3: mat-typography-level(48px, 1.2, 300),
-  $display-2: mat-typography-level(40px, 1.2, 300),
+  $display-4: mat-typography-level(92px, 1.2, 300),
+  $display-3: mat-typography-level(72px, 1.2, 300),
+  $display-2: mat-typography-level(48px, 1.2, 300),
   $display-1: mat-typography-level(32px, 1.2, 300),
-  $headline: mat-typography-level(28px, 1.2, 900),
-  $title: mat-typography-level(24px, 1.2, 900),
-  $subheading-2: mat-typography-level(20px, 1.2, 700),
-  $subheading-1: mat-typography-level(18px, 1.2, 700),
-  $body-1: mat-typography-level(16px, 1.2, 500),
-  $body-2: mat-typography-level(12px, 1.2, 500),
-  $caption: mat-typography-level(12px, 1.2, 500),
-  $button: mat-typography-level(16px, 1.2, 500),
-  $input: mat-typography-level(16px, 1.2, 500)
+  $headline: mat-typography-level(72px, 1.2, 300),
+  $title: mat-typography-level(32px, 1.2, 500),
+  $subheading-2: mat-typography-level(24px, 1.2, 300),
+  $subheading-1: mat-typography-level(18px, 1.2, 500),
+  $body-1: mat-typography-level(24px, 1.2, 500),
+  $body-2: mat-typography-level(18px, 1.2, 500),
+  $caption: mat-typography-level(16px, 1.2, 500),
+  $button: mat-typography-level(24px, 1.2, 300),
+  $input: mat-typography-level(18px, 1.2, 500)
 );
+
 // Override typography for all Angular Material, including mat-base-typography and all components.
 @include angular-material-typography($custom-typography);
+
 // Override the typography in the core CSS.
 @include mat-core($custom-typography);
+
 $sartography-teal: (
   50: #bee4e1,
   100: #bee4e1,
@@ -36,7 +40,7 @@ $sartography-teal: (
     200: #000000,
     300: #000000,
     400: #000000,
-    500: #000000,
+    500: #ffffff,
     600: #ffffff,
     700: #ffffff,
     800: #ffffff,
@@ -120,46 +124,46 @@ $sartography-theme: mat-light-theme(
   $sartography-warn
 );
 @include angular-material-theme($sartography-theme);
-// Define a mixin that accepts a theme and outputs the color styles for the component.
+
 @mixin sartography-theme($theme) {
   [hidden] {
     display: none !important;
   }
-  // Extract whichever individual palettes you need from the theme.
+
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
-  // Use mat-color to extract individual colors from a palette as necessary.
-  body {
-    background-color: mat-color($primary, 50);
-    margin: 0px;
-    font-family: "Montserrat", sans-serif;
-  }
-  p {
-    color: mat-color($sartography-accent, A900);
-    font-size: 14pt;
-    line-height: 20pt;
-    font-weight: 400;
-  }
-  h1,
-  h2 {
-    padding: 10px 10px;
-    margin: 0 0 10px 0;
-    text-transform: uppercase;
-  }
-  h1 {
-    font-size: 24pt;
-    font-weight: 400;
-    text-align: center;
-  }
-  h2 {
-    font-size: 40px;
-    font-weight: 700;
-  }
-  h3 {
-    font-size: 20px;
-    font-weight: 700;
-  }
+
   .spacer {
     flex: 1 1 auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .mat-display-1,
+  .mat-display-2,
+  .mat-display-3,
+  .mat-display-4,
+  .mat-button,
+  .mat-flat-button,
+  button {
+    text-transform: uppercase;
+  }
+
+  h3,
+  .mat-display-3 {
+    font-style: italic;
+  }
+
+  .mat-display-4 {
+    color: $brand-primary;
+  }
+
+  a.mat-flat-button, button.mat-flat-button {
+    border-radius: 32px;
+    padding: 0.5em 1em 0.5em 1em;
   }
 }
