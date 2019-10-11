@@ -47,13 +47,9 @@ export class WelcomeComponent implements OnInit {
 
   @HostListener("window:scroll", ["$event"])
   checkScroll() {
+    const hOffset = window.innerHeight / 2;
     const componentPosition = this.el.nativeElement.offsetTop;
-    const scrollPosition = window.pageYOffset;
-
-    if (scrollPosition >= componentPosition) {
-      this.state = "show";
-    } else {
-      this.state = "hide";
-    }
+    const scrollPosition = window.pageYOffset + hOffset;
+    this.state = (scrollPosition >= componentPosition) ? "show" : "hide";
   }
 }

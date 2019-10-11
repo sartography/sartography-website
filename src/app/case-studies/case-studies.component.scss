@@ -1,9 +1,4 @@
-// Import theming functions
-@import '~@angular/material/theming';
-// Import your custom theme
-@import '../../sartography_material';
-// Load the Sartography Theme
-@include sartography-theme($sartography-theme);
+@import "../../config";
 
 .case-studies {
   padding: 5%;
@@ -20,24 +15,17 @@
     object-fit: cover;
   }
 
-  button {
-    background-color: mat-color($sartography-warn, 500);
-    color: mat-contrast($sartography-warn, 500);
-    padding: 3%;
-    cursor: pointer;
-  }
-
   .intro {
-    background-color: mat-color($sartography-accent, A100);
+    background-color: $brand-primary-light-4;
     padding: 3%;
     cursor: pointer;
 
     &:hover {
-      background-color: mat-color($sartography-primary, 100, 1);
+      background-color: $brand-primary-light-3;
     }
 
     &:active {
-      background-color: mat-color($sartography-primary, 200, 1);
+      background-color: $brand-primary-light-2;
     }
 
   }
@@ -55,11 +43,11 @@
 
   .testimonial {
     margin-top: 5%;
-    background-color: mat-color($sartography-accent, 700);
+    background-color: $brand-accent;
 
     p{
       padding: 8%;
-      color: mat-contrast($sartography-accent, 700);
+      color: white;
     }
   }
 }

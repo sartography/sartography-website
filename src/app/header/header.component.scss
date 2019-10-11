@@ -1,10 +1,19 @@
+@import "../../config";
+
+a.explore {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  padding-top: 40px;
+}
+
 ::ng-deep .chevron-down svg {
-  width: 128;
-  height: 64px;
+  width: 168px;
+  height: 84px;
 
   path {
     stroke-width: 4px;
-    stroke: #C8C7C7;
+    stroke: $brand-gray-light-4;
     fill: transparent;
   }
 }
