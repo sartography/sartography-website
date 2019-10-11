@@ -3,7 +3,8 @@ import {
   MatIconModule,
   MatMenuModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatButtonModule
 } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -41,6 +42,7 @@ import { InlineSVGModule } from 'ng-inline-svg';
     FlexLayoutModule,
     HttpClientModule,
     InlineSVGModule,
+    MatButtonModule,
     MatCardModule,
     MatIconModule,
     MatMenuModule,
