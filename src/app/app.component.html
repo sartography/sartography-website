@@ -1,12 +1,29 @@
-<div class="main mat-typography">
-  <app-menu id="menu"></app-menu>
-  <app-header id="header"></app-header>
-  <app-welcome id="welcome"></app-welcome>
-  <app-about-us id="about_us"></app-about-us>
-  <app-logo-values id="logo_values"></app-logo-values>
-  <app-team id="team"></app-team>
-  <app-case-studies id="case_studies"></app-case-studies>
-  <app-contact-us id="contact_us"></app-contact-us>
+<div
+  class="main mat-typography"
+  scrollSpy (sectionChange)="onSectionChange($event)"
+>
+  <div
+    id="menu"
+    fxLayout="column"
+    fxLayoutGap="20px"
+    fxLayoutAlign="center end"
+  >
+    <a
+      *ngFor="let link of menuLinks"
+      mat-button
+      pageScroll
+      href="#{{ link.id }}"
+      (click)="onMenuClick(link.id)"
+      [ngClass]="{'active': currentSection === link.id}"
+      id="{{link.id}}_menu_link"
+      >{{ link.label }}</a
+    >
+    <div id="selected_indicator" [ngStyle]="{'top.px': activeLinkTop, 'opacity': showIndicator ? 1 : 0}"></div>
+  </div>
+
+  <div *ngFor="let link of menuLinks" class="scroll-spy-section" id="{{link.id}}">
+    <ng-container *ngComponentOutlet="link.component"></ng-container>
+  </div>
+
   <app-footer id="footer"></app-footer>
 </div>
-
