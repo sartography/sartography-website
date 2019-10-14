@@ -1,0 +1,32 @@
+[
+  {
+    "icon_url": "/assets/icons/software_development.svg",
+    "title": "Software Development",
+    "description": "We create engaging web applications using modern web development tools."
+  },
+  {
+    "icon_url": "/assets/icons/information_design.svg",
+    "title": "Information Design",
+    "description": "We create beautiful interfaces that help people navigate complex information to find critical knowledge. Through thoughtful design, architecture, and animations we find novel approaches that make information come alive."
+  },
+  {
+    "icon_url": "/assets/icons/responsive_design.svg",
+    "title": "Responsive & Adaptive Design",
+    "description": "Even our most complex applications work well on phones and tablets, as well as desktops using the Angular Framework."
+  },
+  {
+    "icon_url": "/assets/icons/security.svg",
+    "title": "Security",
+    "description": "We build applications that allow scientists to safely collect, monitor and study medical information."
+  },
+  {
+    "icon_url": "/assets/icons/research.svg",
+    "title": "Research",
+    "description": "As a small, tightly-focused team, we can dig very deeply into complex domains where larger organizations would fail to adapt. And as Python becomes the predominant programming language of science, we build applications that our clients can understand and extend."
+  },
+  {
+    "icon_url": "/assets/icons/data_management.svg",
+    "title": "Data Management",
+    "description": "We know how to manage exceedingly large data sets with tools such as Cassandra, and Elastic Search. Most importantly, we know when not to use these tools, and we strive to keep our systems as simple, clean, and extensible as possible."
+  }
+]
