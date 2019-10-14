@@ -1,45 +1,30 @@
-<div
-  class="about-us"
-  fxLayout="column"
-  fxLayoutGap="2%"
->
-  <div>
-    <h1>Meet Sartography</h1>
-    <mat-tab-group mat-stretch-tabs>
-      <mat-tab label="Who We Are">
-        <div class="tab-content">
-          <h3>We are Software Developers.</h3>
-          <p>We create engaging web applications using modern web development tools. </p>
-          <p>Here are a few areas where we are particularly effective:</p>
-          <ul class="aboutList">
-            <li><b>Beautiful Information:</b> We create beautiful interfaces that help people navigate complex information to find critical knowledge.  Through thoughtful design, architecture, and animations we find novel approaches that make information come alive. </li>
-            <li><b>Mobile Friendly:</b> Even our most complex applications work well on phones and tablets, as well as desktops using the Angular Framework.</li>
-            <li><b>Secure and Discrete:</b>  We build applications that allow scientists to safely collect, monitor and study medical information.</li>
-            <li><b>Scientific:</b> As a small tightly focused team, we can dig very deeply into complex domains where larger organizations would fail to adapt.  And as Python becomes the predominant programming language of science, we build applications that our clients can understand and extend.</li>
-            <li><b>Big Data:</b>  We know how to manage exceedingly large data sets with tools such as Cassandra, and Elastic Search.  Most importantly, we know when not to use these tools, and we strive to keep our systems as simple, clean, and extensible as possible.</li>
-          </ul>
-          <p>Be sure and look at our Case Studies to see these skills in action.</p>
-
-          <h3>We are Makers.</h3>
-          <p> We are also some of the founders and leaders of the <a href="http://stauntonmakerspace.com" target="new">Staunton Makerspace</a>,
-            Where we spend some of our spare time teaching others to delight in technology, learn new tools, and build great things. We live to inspire, teach, and above all to learn.</p>
-        </div>
-      </mat-tab>
-      <mat-tab label="Mission and Vision">
-        <div class="tab-content">
-          <h3>Our Mission:</h3>
-          <p>To partner with scientists and innovators to create engaging software that improves the health and well
-            being of our communities through constant rigor, deep commitment to cause, and abiding resepect to our
-          shared goal for a better world.</p>
-
-          <h3>Our Vision:</h3>
-          <p>To build a world changing application that make a meaningful, scientifically proven impact in the mental
-            health of our community.</p>
-        </div>
-      </mat-tab>
-    </mat-tab-group>
+<div class="about-us" fxLayout="row" [@scrollAnimation]="state" fxLayoutAlign="center start">
+  <div fxFlex="33.33%" class="title">
+    <h1 class="mat-display-1">About Us</h1>
+    <h2 class="mat-display-3">What We Do</h2>
   </div>
-  <div fxLayoutAlign="center center">
-    <img src="assets/logo/Sartography-Logo-Horizontal-Color.png">
+
+  <div fxFlex="67.67%" fxLayout="column" class="capabilities">
+    <div
+      *ngFor="let c of capabilities; let i = index"
+      [fxLayout]="i % 2 === 0 ? 'row' : 'row-reverse'"
+      [ngClass]="i % 2 === 0 ? 'even' : 'odd'"
+      fxLayoutAlign="start start"
+    >
+      <div class="details" fxFlex="37.5%">
+        <h3>{{c.title}}</h3>
+        <p>{{c.description}}</p>
+      </div>
+
+      <div class="icon" fxFlex="12.5%">
+        <span
+          [inlineSVG]="c.icon_url"
+          class="capability-icon"
+        ></span>
+      </div>
+      <div class="icon-spacer" fxFlex="12.5%"></div>
+      <div class="details-spacer" fxFlex="37.5%"></div>
+    </div>
   </div>
 </div>
+

@@ -1,63 +1,72 @@
-// Import theming functions
-@import '~@angular/material/theming';
-// Import your custom theme
-@import '../../sartography_material';
-// Load the Sartography Theme
-@include sartography-theme($sartography-theme);
+@import "../../config";
 
 .about-us {
-  padding: 5%;
-  background-color: mat-color($sartography-primary, 50);
-  color: mat-contrast($sartography-primary, 50);
+  position: relative;
+  background-color: $dark-gray;
+  background-image: url("/assets/images/about-us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  min-height: 1600px;
 
-  .tab-content {
-    max-width: 800px;
-    margin: auto;
-  }
+  .title {
+    margin-top: 80px;
+    margin-left: 80px;
 
-  h1{
-    text-align: center;
-    padding: 2%;
-  }
-
-  button {
-    margin: 2%;
-    padding: 7px;
-    background-color: mat-color($sartography-warn, 500);
-    color: mat-contrast($sartography-warn, 500);
-    cursor: pointer;
-  }
-
-  mat-card {
-    padding: 5%;
-
-    .top {
-      text-align: center;
-    }
-
-
-    h2 {
-      padding: 0;
-      margin: 0;
-    }
-
-    img {
-      border-radius: 200px;
-      height: 200px;
-      width: 200px;
+    h1 {
+      color: $brand-primary;
+      margin-bottom: 0;
     }
   }
-  mat-tab-group {
-    background-color: #ffffff;
-    min-height: 400px;
-    padding: 2%;
+
+  .capabilities {
+    margin-top: 300px;
+    margin-right: 80px;
+
+    ::ng-deep .capability-icon svg {
+      margin-top: -52px;
+      width: 128px;
+      height: 128px;
+    }
   }
-  img {
-    max-width: 90%;
-    padding: 2%;
+
+  .even {
+    text-align: right;
+
+    .details {
+      background-color: transparent;
+      h3 { color: $brand-primary-dark-1; }
+    }
+    .icon {
+      background-color: transparent;
+      ::ng-deep .capability-icon svg path { fill: $brand-primary; }
+    }
+    .icon-spacer {
+      background-color: $brand-gray;
+
+      &::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: $brand-gray-light-4;
+      }
+    }
+    .details-spacer { background-color: $brand-gray; }
   }
-  ul.aboutList {
-    font-size: 14pt;
-    line-height: 20pt;
+
+  .odd {
+    text-align: left;
+
+    .details-spacer { background-color: transparent; }
+    .icon-spacer { background-color: transparent; }
+    .icon {
+      background-color: $brand-gray;
+      ::ng-deep .capability-icon svg path { fill: $brand-primary-light-1; }
+    }
+    .details {
+      background-color: $brand-gray;
+      color: white;
+      h3 { color: $brand-primary-light-2; }
+    }
   }
 }
