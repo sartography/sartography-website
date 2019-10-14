@@ -7,7 +7,8 @@
     fxLayout="column"
     fxLayoutGap="20px"
     fxLayoutAlign="center end"
-  >
+    [ngClass]="{'scrolling': isScrolling}"
+ >
     <a
       *ngFor="let link of menuLinks"
       mat-button
@@ -16,8 +17,7 @@
       (click)="onMenuClick(link.id)"
       [ngClass]="{'active': currentSection === link.id}"
       id="{{link.id}}_menu_link"
-      >{{ link.label }}</a
-    >
+    >{{ link.label }}</a>
     <div id="selected_indicator" [ngStyle]="{'top.px': activeLinkTop, 'opacity': showIndicator ? 1 : 0}"></div>
   </div>
 

@@ -3,12 +3,17 @@
 #menu {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -300px;
   z-index: 100;
   height: 100vh;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 80px;
+  transition: all 1s ease-in-out;
+
+  &.scrolling {
+    right: 0px;
+  }
 
   a {
     transition: all 1s ease-in-out 0.5s;

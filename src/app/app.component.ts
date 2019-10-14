@@ -1,4 +1,4 @@
-import {AfterViewInit, ChangeDetectionStrategy, Component, QueryList, ViewChildren} from '@angular/core';
+import {AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, HostListener, QueryList, ViewChildren} from '@angular/core';
 import {HeaderComponent} from './header/header.component';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {AboutUsComponent} from './about-us/about-us.component';
@@ -35,8 +35,10 @@ export class AppComponent implements AfterViewInit {
   currentSection = 'header';
   activeLinkTop: number;
   showIndicator = false;
+  isScrolling = false;
+  scrollTimer = -1;
 
-  constructor() {
+  constructor(private changeDetector: ChangeDetectorRef) {
   }
 
   ngAfterViewInit() {
@@ -56,10 +58,25 @@ export class AppComponent implements AfterViewInit {
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
     this.moveSelectedIndicator(this.currentSection);
-    console.log('section change to:', sectionId);
   }
 
   scrollTo(section) {
     document.querySelector('#' + section).scrollIntoView();
   }
+
+  @HostListener('window:scroll')
+  onScroll() {
+    this.isScrolling = true;
+    if (this.scrollTimer !== -1) {
+      clearTimeout(this.scrollTimer);
+    }
+
+    this.scrollTimer = setTimeout(() => {
+      this.showIndicator = true;
+      this.isScrolling = false;
+      this.scrollTimer = -1;
+      this.changeDetector.detectChanges();
+    }, 2000);
+  }
+
 }
