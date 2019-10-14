@@ -79,4 +79,8 @@ export class AppComponent implements AfterViewInit {
     }, 2000);
   }
 
+  toggleMenu() {
+    this.isScrolling = !this.isScrolling;
+  }
+
 }

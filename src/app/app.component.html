@@ -9,6 +9,10 @@
     fxLayoutAlign="center end"
     [ngClass]="{'scrolling': isScrolling}"
  >
+    <button mat-fab (click)="toggleMenu()" class="toggle-menu" color="primary">
+      <mat-icon *ngIf="!isScrolling">menu</mat-icon>
+      <mat-icon *ngIf="isScrolling">close</mat-icon>
+    </button>
     <a
       *ngFor="let link of menuLinks"
       mat-button

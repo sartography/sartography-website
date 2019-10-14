@@ -15,6 +15,12 @@
     right: 0px;
   }
 
+  button.toggle-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
   a {
     transition: all 1s ease-in-out 0.5s;
 
