@@ -36,7 +36,8 @@ export class AppComponent implements AfterViewInit {
   activeLinkTop: number;
   showIndicator = false;
 
-  constructor() {}
+  constructor() {
+  }
 
   ngAfterViewInit() {
   }
@@ -59,7 +60,6 @@ export class AppComponent implements AfterViewInit {
   }
 
   scrollTo(section) {
-    document.querySelector('#' + section)
-    .scrollIntoView();
+    document.querySelector('#' + section).scrollIntoView();
   }
 }
