@@ -21,6 +21,7 @@
 
   .capabilities {
     margin-top: 300px;
+    margin-left: 80px;
     margin-right: 80px;
 
     ::ng-deep .capability-icon svg {
@@ -28,45 +29,81 @@
       width: 128px;
       height: 128px;
     }
+
+    .icon-left,
+    .icon-right {
+      position: relative;
+      background-color: transparent;
+
+      &:after {
+        position: absolute;
+        left: 50%;
+        content: '';
+        width: 2px;
+      }
+    }
   }
 
   .even {
     text-align: right;
 
-    .details {
+    .details-left {
       background-color: transparent;
       h3 { color: $brand-primary-dark-1; }
     }
-    .icon {
-      background-color: transparent;
+    .icon-left {
       ::ng-deep .capability-icon svg path { fill: $brand-primary; }
-    }
-    .icon-spacer {
-      background-color: $brand-gray;
 
-      &::after {
-        content: '';
-        width: 1px;
-        height: 100%;
-        background-color: $brand-gray-light-4;
+      &:after {
+        bottom: 0;
+        height: calc(100% - 64px);
+        background-color: $brand-gray-light-3;
       }
     }
-    .details-spacer { background-color: $brand-gray; }
+    .icon-right {
+      &:after {
+        top: 0;
+        height: calc(100% - 40px);
+        background-color: $brand-gray-light-1;
+      }
+    }
+    .details-right { background-color: transparent; }
+
+    &:first-of-type .icon-right:after { background-color: transparent; }
+
+    &:last-of-type,
+    &:nth-last-of-type(2) {
+       .icon-left:after { background-color: transparent; }
+    }
   }
 
   .odd {
     text-align: left;
 
-    .details-spacer { background-color: transparent; }
-    .icon-spacer { background-color: transparent; }
-    .icon {
-      background-color: $brand-gray;
-      ::ng-deep .capability-icon svg path { fill: $brand-primary-light-1; }
+    .details-left { background-color: transparent; }
+    .icon-left {
+      &:after {
+        top: 0;
+        height: calc(100% - 40px);
+        background-color: $brand-gray-light-3;
+      }
     }
-    .details {
-      background-color: $brand-gray;
+    .icon-right {
+      ::ng-deep .capability-icon svg path { fill: $brand-primary-light-1; }
+
+      &:after {
+        bottom: 0;
+        height: calc(100% - 64px);
+        background-color: $brand-gray-light-1;
+      }
+    }
+    .details-right {
+      background-color: transparent;
       color: white;
       h3 { color: $brand-primary-light-2; }
     }
+
+    &:last-of-type .icon-right:after { background-color: transparent; }
+    &:last-of-type .icon-left:after { background-color: transparent; }
   }
 }

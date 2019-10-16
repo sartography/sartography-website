@@ -51,4 +51,13 @@ export class AboutUsComponent implements OnInit {
     const scrollPosition = window.pageYOffset + hOffset;
     this.state = scrollPosition >= componentPosition ? 'show' : 'hide';
   }
+
+  isEven(i: number, ifTrue?: string, ifFalse?: string): string | boolean {
+    const test = i % 2 === 0;
+    if (ifTrue && ifFalse) {
+      return test ? ifTrue : ifFalse;
+    } else {
+      return test;
+    }
+  }
 }

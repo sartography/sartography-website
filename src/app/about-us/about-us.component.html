@@ -1,29 +1,42 @@
-<div class="about-us" fxLayout="row" [@scrollAnimation]="state" fxLayoutAlign="center start">
-  <div fxFlex="33.33%" class="title">
+<div class="about-us" gdColumns="1fr 2fr" [@scrollAnimation]="state" gdAlignRows="start stretch" gdAlignColumns="start stretch">
+  <div class="title">
     <h1 class="mat-display-1">About Us</h1>
     <h2 class="mat-display-3">What We Do</h2>
   </div>
 
-  <div fxFlex="67.67%" fxLayout="column" class="capabilities">
+  <div class="capabilities">
     <div
       *ngFor="let c of capabilities; let i = index"
-      [fxLayout]="i % 2 === 0 ? 'row' : 'row-reverse'"
-      [ngClass]="i % 2 === 0 ? 'even' : 'odd'"
-      fxLayoutAlign="start start"
+      gdColumns="3fr 1fr 1fr 3fr"
+      [ngClass]="isEven(i, 'even', 'odd')"
     >
-      <div class="details" fxFlex="37.5%">
-        <h3>{{c.title}}</h3>
-        <p>{{c.description}}</p>
+      <div class="details-left">
+        <ng-container *ngIf="isEven(i)">
+          <h3>{{c.title}}</h3>
+          <p>{{c.description}}</p>
+        </ng-container>
       </div>
 
-      <div class="icon" fxFlex="12.5%">
+      <div class="icon-left">
         <span
+          *ngIf="isEven(i)"
           [inlineSVG]="c.icon_url"
           class="capability-icon"
         ></span>
       </div>
-      <div class="icon-spacer" fxFlex="12.5%"></div>
-      <div class="details-spacer" fxFlex="37.5%"></div>
+      <div class="icon-right">
+        <span
+          *ngIf="!isEven(i)"
+          [inlineSVG]="c.icon_url"
+          class="capability-icon"
+        ></span>
+      </div>
+      <div class="details-right">
+        <ng-container *ngIf="!isEven(i)">
+          <h3>{{c.title}}</h3>
+          <p>{{c.description}}</p>
+        </ng-container>
+      </div>
     </div>
   </div>
 </div>
