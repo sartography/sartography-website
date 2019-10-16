@@ -33,3 +33,10 @@ export interface Capability {
   description: string;
   icon_url: string;
 }
+
+export interface BrandValue {
+  id: string;
+  title: string;
+  description: string;
+  icon_url: string;
+}

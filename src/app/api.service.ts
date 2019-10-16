@@ -2,13 +2,18 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import {Capability, CaseStudy, TeamMember} from './interfaces';
+import {BrandValue, Capability, CaseStudy, TeamMember} from './interfaces';
 
 @Injectable()
 export class ApiService {
   // Right now we're just using this for grabbing data from json files here, but maybe we'll expand to having a real back end one day
 
   constructor(private httpClient: HttpClient) {
+  }
+
+  public getBrandValues(): Observable<BrandValue[]> {
+    return this.httpClient.get<BrandValue[]>('./assets/json/values.json')
+      .pipe((catchError(this.handleError)));
   }
 
   public getCapabilities(): Observable<Capability[]> {
