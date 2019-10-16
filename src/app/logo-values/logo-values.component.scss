@@ -1,0 +1,24 @@
+.logo-values {
+  padding: 80px;
+}
+
+.logo-animated {
+  ::ng-deep svg {
+    max-height: 100vh;
+    max-width: 30vw;
+
+    #the_ribbon,
+    #the_equals_sign,
+    #the_compass,
+    #the_heart,
+    #the_thread,
+    #the_circle {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+
+      &.highlight {
+        opacity: 1;
+      }
+    }
+  }
+}
