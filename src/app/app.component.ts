@@ -71,7 +71,7 @@ export class AppComponent implements AfterViewInit {
       clearTimeout(this.scrollTimer);
     }
 
-    this.scrollTimer = setTimeout(() => {
+    this.scrollTimer = window.setTimeout(() => {
       this.showIndicator = true;
       this.isScrolling = false;
       this.scrollTimer = -1;
@@ -81,6 +81,11 @@ export class AppComponent implements AfterViewInit {
 
   toggleMenu() {
     this.isScrolling = !this.isScrolling;
+  }
+
+  keepMenuOpen() {
+    this.isScrolling = true;
+    clearTimeout(this.scrollTimer);
   }
 
 }

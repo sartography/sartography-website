@@ -8,6 +8,8 @@
     fxLayoutGap="20px"
     fxLayoutAlign="center end"
     [ngClass]="{'scrolling': isScrolling}"
+    (mouseover)="keepMenuOpen()"
+    (mouseout)="isScrolling = false"
  >
     <button mat-fab (click)="toggleMenu()" class="toggle-menu" color="primary">
       <mat-icon *ngIf="!isScrolling">menu</mat-icon>
