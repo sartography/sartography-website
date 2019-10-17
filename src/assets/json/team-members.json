@@ -2,10 +2,10 @@
   {
     "firstName": "Dan",
     "lastName": "Funk",
-    "title": "Owner, Lead Developer",
+    "title": "Founder, Technical Architect, & Lead Developer",
     "description": [
       "Dan leads all development efforts at Sartography, working together with clients and his team to create innovative applications.   He has provided technical consluting since 2011,  during which time he has created custom search systems for the US Patent Office, developed a new e-commerce system for UnderArmour, and led development efforts on research projects out of the University of Virginia. In a previous life Dan was a software development manager for RosettaStone, leading at various points their e-commerce team, API team, and web development team.  He also servered as a Principle Research Scientist for Battelle, and as a Lead Architect for the University of Virginia Library.",
-      "A native of Staunton, Va, Dan is the proud father of his 12 year old son Jonah. When they aren't building robots at the local Makerspace, they can be found riding their bikes on some of Virginia's excellent rails-to-trails bike paths."
+      "A native of Staunton, VA, Dan is the proud father of his 12 year old son Jonah. When they aren't building robots at the local Makerspace, they can be found riding their bikes on some of Virginia's excellent rails-to-trails bike paths."
     ],
     "imageLink": "assets/images/team/Dan.jpg",
     "gitHubLink": "https://github.com/danfunk",
@@ -14,7 +14,7 @@
   {
     "firstName": "Aaron",
     "lastName": "Louie",
-    "title": "Senior Developer",
+    "title": "Senior Developer & User Experience Architect",
     "description": [
       "Aaron is a serial entrepreneur and freelance Creative Director who draws from over 16 years of experience in web design, UX, information architecture, interaction design, user research, usability, and content strategy consulting. In addition to his work with Sartography, Aaron is involved with multiple entrepreneurial community initiatives aimed at nurturing a vibrant startup ecosystem in the Shenandoah Valley.  Aaron can step effortlessly from design to implementation with diverse skills and an endless desire to learn, delve, test, illicit incite, and define new futures.",
       "Aaron and his wife Kristen enjoy spending time exploring the abundant nature of the Shenandoah valley and sharing their love of art, music, and nature with their beautiful young daughter.  You can find Aaron leaping effortlessly from oil painting to fashioning beautifully tuned musical instruments.  He is a craftsman of the highest order, with boundless energy for invention."
@@ -26,7 +26,7 @@
   {
     "firstName": "Eleanor",
     "lastName": "Graham",
-    "title": "Developer",
+    "title": "Full-Stack Developer",
     "description": [
       "Eleanor brings a rich background in music, community development, and finance to her work as a software developer.  Like many great developers before her, Eleanor is a self made programmer who has taught herself coding from base principles, and applies them with the skill that only comes to the truly gifted.  Eleanor is a professional cellist who plays regularly with the Roanoke Symphony Orchestra.  She previously served as Interim Executive Director of the Staunton Creative Community Fund, helping to establish entrepreneurs in the local area through thoughtful guidance, inspiration and sound financial advice.",
       "Eleanor may be classically trained in music, married to a tenured professor of Philosophy, and as culturally refined as our humble community can sustain, but she is raising her daughter to be the wild drummer in a rock band you will someday be warning your impressionable young son about."
@@ -40,7 +40,7 @@
     "lastName": "Herron",
     "title": "Technical Project Manager",
     "description": [
-      "Alex is an incredibly deft manager of people, projects, and software who dives deep into technical complexity, communicates complexity in a way that is easy for everyone to understand, and streamlines decision making and project dependency management. He's the man behind the scenes making everything work out more smoothly, is able to persuade both business stakeholders and software engineers to make sensible tradeoffs and choices no matter the situation. Meetings go better and people work more effectively with each other when Alex is in the room."
+      "Alex has worn many hats during his continual endeavor to understand and help optimize the Software Development Life Cycle.  Having graduated with a BS in Mechanical Engineering at the same time the personal computer was making its mark, Alex embraced this new technology and taught himself to program.  This led to a career change as one of the founding partners of Prime Meridian Software, a Charlottesville, VA based company providing process management software to Hospital Residency Programs, where he led the development efforts to help programs optimize recruitment.  During this time Alex realized that his true passion was working with clients to define their requirements and development teams to optimize delivery.  Alex was able to further refine these skills at Rosetta Stone where he held the roles of Business Analyst, Product Manager, Scrum Master and SAFe implementer.  He also had the opportunity to work closely with Dan for several years there and when offered the chance to join the Sartography team, Alex was elated with the challenging and rewarding work available and new opportunity to continue his endeavor."
     ],
     "imageLink": "assets/images/team/Alex.jpg",
     "gitHubLink": "https://github.com/calexh-sar",
