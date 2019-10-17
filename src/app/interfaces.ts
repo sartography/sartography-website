@@ -9,6 +9,7 @@ export interface TeamMember {
 }
 
 export interface CaseStudy {
+  id: string;
   projectName: string;
   tagLine: string;
   description: string;

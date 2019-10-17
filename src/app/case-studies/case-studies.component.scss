@@ -1,12 +1,14 @@
 @import "../../config";
 
 .case-studies {
-  padding: 5%;
-  background-color: #ffffff;
-  text-align: center;
+  position: relative;
 
-  h1{
-    padding: 20px auto;
+  h1 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    color: white;
+    z-index: 10;
   }
 
   img {
@@ -42,12 +44,64 @@
   }
 
   .testimonial {
-    margin-top: 5%;
-    background-color: $brand-accent;
+    background-color: $brand-accent-dark-2;
 
-    p{
-      padding: 8%;
+    p {
+      padding: 20px;
       color: white;
+    }
+  }
+}
+
+.case-study {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+
+  & > h2 {
+    color: white;
+    z-index: 10;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+    transition: all 0.5s ease-in-out;
+    margin: 0px;
+    padding: 0px;
+    width: 100vh;
+    opacity: 1;
+  }
+
+  .case-study-details {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    margin-top: 14em;
+    padding: 2em;
+
+    h2, h3, h4, p {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: white;
+    }
+
+    h2 { margin-bottom: 2em; }
+  }
+
+  &.selected {
+    & > h2 {
+      opacity: 0;
+    }
+
+    .case-study-details {
+      opacity: 1;
+
+      .thumbnail {
+        max-width: 160px;
+        max-height: 160px;
+      }
     }
   }
 }

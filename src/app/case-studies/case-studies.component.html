@@ -1,46 +1,36 @@
 <div
   class="case-studies"
 >
-  <h1>CASE STUDIES</h1>
-  <p>Please select a tile below to learn about some of our recent projects, read reviews of our work, and visit some of our creations.</p>
-  <div
-    fxLayout="row"
-    fxLayout.lt-xs="column"
-    fxLayoutGap="2%"
-    fxLayoutAlign="space-between"
-  >
-    <div *ngFor="let study of caseStudies">
-      <mat-card [@activate]="study === caseStudy ? 'active' : 'inactive'"
-        class="intro"
-        (click)="setStudyView(study)"
-      >
-        <img
-             src="{{ study.featureLink }}">
-      </mat-card>
-    </div>
-  </div>
-  <div
-    *ngIf="caseStudy"
-    class="study"
-    id="study"
-  >
+  <h1>Projects</h1>
+  <div fxLayout="row">
     <div
-         fxLayout.lt-sm="column"
-         fxLayoutGap="2%"
-         fxLayoutAlign="space-between stretch"
+      *ngFor="let study of caseStudies"
+      [ngStyle]="{'background-image': 'linear-gradient(to bottom right, rgba(0,0,0,0.75), rgba(0,0,0,0.25)), url('+ study.featureLink + ')'}"
+      [ngClass]="{
+        'case-study': true,
+        'selected': isExpanded && (selectedStudyId === study.id)
+      }"
+      fxFlex="{{isExpanded ? (selectedStudyId === study.id ? 60 : (40 / (caseStudies.length - 1))) : (100 / caseStudies.length)}}"
+      (click)="toggleExpanded(study.id)"
     >
-      <div
-        fxFlex="30%"
-        fxLayout="column"
-        fxLayoutGap="2%"
-      >
-        <h2>{{ caseStudy.projectName }}</h2>
-        <h3>{{ caseStudy.organizationName }}</h3>
+      <h2>
+        <span class="mat-h3">{{study.organizationName}}</span><br>
+        <span class="mat-h2">{{ study.projectName }}</span>
+      </h2>
+
+      <div class="case-study-details">
+        <h3>{{ study.organizationName }}</h3>
+        <h2>{{ study.projectName }}</h2>
+
+        <h4>{{ study.tagLine }}</h4>
+        <p>{{ study.description }}</p>
+        <img class="thumbnail" src="{{ study.imageLink }}">
+
         <div
-          *ngIf="caseStudy.testimonials"
+          *ngIf="study.testimonials"
         >
           <div
-            *ngFor="let t of caseStudy.testimonials"
+            *ngFor="let t of study.testimonials"
             class="testimonial"
           >
             <p>"{{ t.quote}}"</p>
@@ -48,28 +38,23 @@
           </div>
         </div>
         <a
-          *ngIf="caseStudy.websiteLink"
+          *ngIf="study.websiteLink"
           mat-flat-button
-          [href]="caseStudy.websiteLink"
+          [href]="study.websiteLink"
           target="_blank"
         >
           Visit Website
         </a>
         <a
-          *ngIf="caseStudy.gitHubLink"
+          *ngIf="study.gitHubLink"
           mat-flat-button
-          [href]="caseStudy.gitHubLink"
+          [href]="study.gitHubLink"
           target="_blank"
         >
           View on GitHub
         </a>
-      </div>
-      <div fxFlex="60%">
-        <h3>{{ caseStudy.tagLine }}</h3>
-        <p>{{ caseStudy.description }}</p>
-        <img src="{{ caseStudy.imageLink }}">
+
       </div>
     </div>
-
   </div>
 </div>

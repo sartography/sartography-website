@@ -34,6 +34,8 @@ export class CaseStudiesComponent implements OnInit {
   caseStudies: CaseStudy[];
   caseStudy: CaseStudy;
   showCase = false;
+  selectedStudyId: string;
+  isExpanded = false;
 
   constructor(
     private api: ApiService
@@ -51,4 +53,12 @@ export class CaseStudiesComponent implements OnInit {
     this.caseStudy = study;
   }
 
+  toggleExpanded(studyId: string) {
+    if (this.selectedStudyId !== studyId) {
+      this.selectedStudyId = studyId;
+      this.isExpanded = true;
+    } else {
+      this.isExpanded = !this.isExpanded;
+    }
+  }
 }
