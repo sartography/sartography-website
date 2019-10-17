@@ -17,6 +17,7 @@
       *ngFor="let link of menuLinks"
       mat-button
       pageScroll
+      [pageScrollAdjustHash]="true"
       href="#{{ link.id }}"
       (click)="onMenuClick(link.id)"
       [ngClass]="{'active': currentSection === link.id}"
