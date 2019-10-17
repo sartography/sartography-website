@@ -70,3 +70,22 @@
 .bg-gray-dark-3        { background-color: $brand-gray-dark-3; }
 .bg-gray-dark-2        { background-color: $brand-gray-dark-2; }
 .bg-gray-dark-1        { background-color: $brand-gray-dark-1; }
+
+// BACKGROUND EFFECTS
+.gradient-overlay-section {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    z-index: 9;
+  }
+}
