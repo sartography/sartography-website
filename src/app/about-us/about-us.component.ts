@@ -3,6 +3,7 @@ import {ApiService} from '../api.service';
 import {Capability} from '../interfaces';
 import {animate, state, style, transition, trigger, useAnimation} from '@angular/animations';
 import {fadeIn, fadeOut} from '../animation';
+import {isEven} from '../util';
 
 @Component({
   selector: 'app-about-us',
@@ -36,6 +37,7 @@ import {fadeIn, fadeOut} from '../animation';
 export class AboutUsComponent implements OnInit {
   capabilities: Capability[];
   state = 'hide';
+  isEven = isEven;
 
   constructor(private api: ApiService, public el: ElementRef) {
     this.api.getCapabilities().subscribe(c => this.capabilities = c);
@@ -50,14 +52,5 @@ export class AboutUsComponent implements OnInit {
     const componentPosition = this.el.nativeElement.offsetTop;
     const scrollPosition = window.pageYOffset + hOffset;
     this.state = scrollPosition >= componentPosition ? 'show' : 'hide';
-  }
-
-  isEven(i: number, ifTrue?: string, ifFalse?: string): string | boolean {
-    const test = i % 2 === 0;
-    if (ifTrue && ifFalse) {
-      return test ? ifTrue : ifFalse;
-    } else {
-      return test;
-    }
   }
 }
