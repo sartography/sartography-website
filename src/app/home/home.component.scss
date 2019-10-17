@@ -1,0 +1,46 @@
+@import "../../config";
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 100;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 80px;
+  transition: all 1s ease-in-out;
+
+  &.scrolling {
+    right: 0px;
+  }
+
+  button.toggle-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  a {
+    transition: all 1s ease-in-out 0.5s;
+
+    &.active {
+      font-weight: 500;
+      border-right: 2px solid $brand-primary;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+
+#selected_indicator {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  width: 2px;
+  height: 36px;
+  background-color: $brand-primary;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}

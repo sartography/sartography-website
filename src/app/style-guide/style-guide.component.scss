@@ -1,0 +1,30 @@
+@import "../../config";
+
+.swatch {
+  width: 160px;
+  height: 160px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.text-white { color: white; }
+.text-black { color: $brand-gray; }
+.full-width-heading {
+  width: 100%;
+  color: white;
+  position: relative;
+  height: 4em;
+  text-indent: 2em;
+  padding-top: 2em;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+    border-bottom: 8px solid white;
+    width: 4em;
+    height: 4px;
+  }
+}

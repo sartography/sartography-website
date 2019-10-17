@@ -28,12 +28,18 @@ import {easingFn} from './animation';
 import {LogoValuesComponent} from './logo-values/logo-values.component';
 import {ScrollSpyDirective} from './scroll-spy.directive';
 import {RouterModule, Routes} from '@angular/router';
+import {StyleGuideComponent} from './style-guide/style-guide.component';
+import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: AppComponent
+    path: 'styleguide',
+    component: StyleGuideComponent
   },
+  {
+    path: '',
+    component: HomeComponent
+  }
 ];
 
 @NgModule({
@@ -48,6 +54,8 @@ const routes: Routes = [
     ScrollSpyDirective,
     TeamComponent,
     WelcomeComponent,
+    StyleGuideComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserAnimationsModule,
