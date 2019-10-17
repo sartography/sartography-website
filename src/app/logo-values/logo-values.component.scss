@@ -1,5 +1,12 @@
 .logo-values {
   padding: 80px;
+
+  .logo-element {
+    ::ng-deep svg {
+      width: 64px;
+      height: 64px;
+    }
+  }
 }
 
 .logo-animated {
@@ -17,7 +24,9 @@
       transition: all 1s ease-in-out;
 
       &.highlight {
+        stroke-width: 6px;
         opacity: 1;
+
       }
     }
   }

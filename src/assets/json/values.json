@@ -6,21 +6,21 @@
     "icon_url": "/assets/icons/the_ribbon.svg"
   },
   {
-    "id":  "the_equals_sign",
-    "title": "Respect",
-    "description": "We treat each other as equals. Respect must begin within ourselves. We take time to respect and care for ourselves and our families first, and this care and compassion will lead to better care of and respect for our clients. We come to work with the power to make things happen and the balance of perspective that comes from being healthy and happy in the rest of our lives. We then have the most to give others.",
-    "icon_url": "/assets/icons/the_equals_sign.svg"
-  },
-  {
     "id":  "the_compass",
     "title": "Rigor",
     "description": "The compass symbol in our logo represents exactitude and truth. We do not aim to make things beautiful first, but to make things exact, and in doing so, bring forth beauty. We have long worked with scientists. We know every piece of data matters. It must make sense and must be easy to access, manipulate, and share. We spend a lot of time thinking about the importance of information, because, if done correctly, good data can change the way we all see the world.",
     "icon_url": "/assets/icons/the_compass.svg"
   },
   {
+    "id":  "the_equals_sign",
+    "title": "Respect",
+    "description": "We treat each other as equals. Respect must begin within ourselves. We take time to respect and care for ourselves and our families first, and this care and compassion will lead to better care of and respect for our clients. We come to work with the power to make things happen and the balance of perspective that comes from being healthy and happy in the rest of our lives. We then have the most to give others.",
+    "icon_url": "/assets/icons/the_equals_sign.svg"
+  },
+  {
     "id":  "the_heart",
     "title": "Passion",
-    "description": "We take on work and play that ignites our passion for learning, building, and creating a better world. At the Makerspace, in our code, with our kids, our passion enlivens our minds and brings us joy. Joy begets works of delight, delight brings engagement, engagement brings insight. Insight brings us greater wisdom.",
+    "description": "We take on work and play that ignites our passion for learning, building, and creating a better world. At the Makerspace, in our code, with our kids, our passion enlivens our minds and brings us joy. Joy begets works of delight, delight brings engagement, engagement brings insight. Insight brings us greater wisdom. Wisdom teaches us to play and follow our passion.",
     "icon_url": "/assets/icons/the_heart.svg"
   },
   {
