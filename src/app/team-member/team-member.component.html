@@ -1,0 +1,30 @@
+<div class="team-member" gdColumns="1fr 4fr 1fr" gdGap="80px 20px" [@scrollAnimation]="state">
+  <div class="team-avatar" *ngIf="isEven(index)">
+    <img src="{{ teamMember.imageLink }}">
+  </div>
+  <div class="team-details" gdColumn="span 2">
+    <h2>{{ teamMember.firstName }} {{ teamMember.lastName }}</h2>
+    <h3>{{ teamMember.title }}</h3>
+    <p *ngFor="let d of teamMember.description">{{ d }}</p>
+    <a
+      *ngIf="teamMember.gitHubLink"
+      [href]="teamMember.gitHubLink"
+      mat-flat-button
+      target="_blank"
+      class="btn-github"
+      matTooltip="{{teamMember.firstName}}'s GitHub Profile"
+    ><span inlineSVG="/assets/icons/github.svg"></span></a>
+    <a
+      *ngIf="teamMember.linkedInLink"
+      [href]="teamMember.linkedInLink"
+      mat-flat-button
+      target="_blank"
+      class="btn-linkedin"
+      matTooltip="{{teamMember.firstName}}'s LinkedIn Profile"
+    ><span inlineSVG="/assets/icons/linkedin.svg"></span></a>
+  </div>
+  <div class="team-avatar" *ngIf="!isEven(index)">
+    <img src="{{ teamMember.imageLink }}">
+  </div>
+</div>
+

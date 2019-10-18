@@ -1,36 +1,6 @@
+<h1>Our Team</h1>
 <div
-  class="container"
+  class="team container"
 >
-  <h1>Our Team</h1>
-  <div gdColumns="1fr 4fr 1fr" gdGap="80px 20px">
-    <ng-container *ngFor="let t of teamMembers; let i = index">
-      <div class="team-avatar" *ngIf="isEven(i)">
-        <img src="{{ t.imageLink }}">
-      </div>
-      <div class="team-details" gdColumn="span 2">
-        <h2>{{ t.firstName }} {{ t.lastName }}</h2>
-        <h3>{{ t.title }}</h3>
-        <p *ngFor="let d of t.description">{{ d }}</p>
-        <a
-          *ngIf="t.gitHubLink"
-          [href]="t.gitHubLink"
-          mat-flat-button
-          target="_blank"
-          class="btn-github"
-          matTooltip="{{t.firstName}}'s GitHub Profile"
-        ><span inlineSVG="/assets/icons/github.svg"></span></a>
-        <a
-          *ngIf="t.linkedInLink"
-          [href]="t.linkedInLink"
-          mat-flat-button
-          target="_blank"
-          class="btn-linkedin"
-          matTooltip="{{t.firstName}}'s LinkedIn Profile"
-        ><span inlineSVG="/assets/icons/linkedin.svg"></span></a>
-      </div>
-      <div class="team-avatar" *ngIf="!isEven(i)">
-        <img src="{{ t.imageLink }}">
-      </div>
-    </ng-container>
-  </div>
+  <app-team-member *ngFor="let t of teamMembers; let i = index" [teamMember]="t" [index]="i"></app-team-member>
 </div>
