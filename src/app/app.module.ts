@@ -1,10 +1,12 @@
 import {HttpClientModule} from '@angular/common/http';
-import {NgModule} from '@angular/core';
+import {Injectable, NgModule} from '@angular/core';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {
   MatButtonModule,
   MatCardModule,
+  MatFormFieldModule,
   MatIconModule,
+  MatInputModule,
   MatMenuModule,
   MatTabsModule,
   MatToolbarModule,
@@ -30,6 +32,12 @@ import {ScrollSpyDirective} from './scroll-spy.directive';
 import {RouterModule, Routes} from '@angular/router';
 import {StyleGuideComponent} from './style-guide/style-guide.component';
 import {HomeComponent} from './home/home.component';
+import {FormlyModule} from '@ngx-formly/core';
+import {FormlyMaterialModule} from '@ngx-formly/material';
+import {EmailValidator, EmailValidatorMessage,} from './formly.validator';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {TeamMemberComponent} from './team-member/team-member.component';
+import { CaseStudyComponent } from './case-study/case-study.component';
 
 const routes: Routes = [
   {
@@ -41,6 +49,20 @@ const routes: Routes = [
     component: HomeComponent
   }
 ];
+
+@Injectable()
+export class FormlyConfig {
+  public static config = {
+    validators: [
+      {name: 'email', validation: EmailValidator},
+    ],
+    validationMessages: [
+      {name: 'email', message: EmailValidatorMessage},
+      {name: 'required', message: 'This field is required.'},
+    ],
+  };
+}
+
 
 @NgModule({
   declarations: [
@@ -56,11 +78,16 @@ const routes: Routes = [
     WelcomeComponent,
     StyleGuideComponent,
     HomeComponent,
+    TeamMemberComponent,
+    CaseStudyComponent,
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
     FlexLayoutModule,
+    FormsModule,
+    FormlyMaterialModule,
+    FormlyModule.forRoot(FormlyConfig.config),
     HttpClientModule,
     InlineSVGModule,
     MatButtonModule,
@@ -72,7 +99,10 @@ const routes: Routes = [
     NgxPageScrollModule,
     NgxPageScrollCoreModule.forRoot({easingLogic: easingFn}),
     RouterModule.forRoot(routes),
-    MatTooltipModule
+    MatTooltipModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent],
