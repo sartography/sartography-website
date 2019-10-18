@@ -1,11 +1,16 @@
-footer {
-  background-color: #000;
-  padding: 5%;
+@import "../../config";
 
-  img {
+footer {
+  background-color: $brand-gray;
+
+  ::ng-deep .footer-logo svg {
     max-width: 100%;
+    max-height: 400px;
   }
-  p {
-    text-align: center;
+
+  address {
+    color: white;
+    font-style: normal;
+    a { color: white; }
   }
 }

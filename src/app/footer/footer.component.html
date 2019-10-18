@@ -1,8 +1,23 @@
 <footer
   class="footer"
-  fxLayout="column"
-  fxLayoutAlign="center center"
+  gdColumns="3fr 1fr"
+  gdAlignColumns="center center"
 >
-  <img src="assets/logo/Sartography-Logo-Horizontal-White.png">
-  <p>Copyrights © {{today | date:'yyyy'}} & All Rights Reserved by Sartography LLC.</p>
+  <div [@scrollAnimation]="state">
+    <span class="footer-logo" inlineSVG="/assets/logo/Sartography-Logo-Horizontal-White.svg"></span>
+  </div>
+
+  <div fxFlex="50%" [@scrollAnimation]="state">
+    <address class="mat-body-1">
+      Sartography<br>
+      c/o Staunton Makerspace<br>
+      20 S. Jefferson Street<br>
+      Staunton VA 24401<br>
+      <a href="mailto://support@sartography.com">support@sartography.com</a><br>
+      <a href="tel:+15404570024">540.457.0024</a>
+    </address>
+  </div>
+
+
+  <p>Copyright &copy; {{today | date:'yyyy'}} Sartography LLC. All Rights Reserved.</p>
 </footer>
