@@ -1,8 +1,8 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-import {BrandValue, Capability, CaseStudy, EmailContent, TeamMember} from './interfaces';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {Observable, throwError} from 'rxjs';
+import {catchError} from 'rxjs/operators';
+import {BrandValue, Capability, CaseStudy, TeamMember} from './interfaces';
 
 @Injectable()
 export class ApiService {
