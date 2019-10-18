@@ -1,3 +1,5 @@
+import {ElementRef} from '@angular/core';
+
 export const isEven = (i: number, ifTrue?: string, ifFalse?: string): string | boolean => {
   const test = i % 2 === 0;
   if (ifTrue && ifFalse) {
@@ -6,3 +8,10 @@ export const isEven = (i: number, ifTrue?: string, ifFalse?: string): string | b
     return test;
   }
 };
+
+export const getScrollState = (el: ElementRef): string => {
+  const hOffset = window.innerHeight * 0.75;
+  const componentPosition = el.nativeElement.offsetTop;
+  const scrollPosition = window.pageYOffset + hOffset;
+  return scrollPosition >= componentPosition ? 'show' : 'hide';
+}

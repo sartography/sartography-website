@@ -6,7 +6,7 @@ import {
   transition,
   animate,
   style,
-  query
+  query, useAnimation, state
 } from '@angular/animations';
 import { EasingLogic } from 'ngx-page-scroll-core';
 
@@ -38,3 +38,28 @@ export const easingFn: EasingLogic = (
     return (-c / 2) * ((t -= 2) * t * t * t - 2) + b;
   }
 };
+
+export const animations = [
+  trigger('fadeInOut', [
+    transition('void <=> *', useAnimation(fadeIn)),
+    transition('* <=> void', useAnimation(fadeOut))
+  ]),
+  trigger('scrollAnimation', [
+    state(
+      'show',
+      style({
+        opacity: 1,
+        zIndex: 0
+      })
+    ),
+    state(
+      'hide',
+      style({
+        opacity: 0,
+        zIndex: 0
+      })
+    ),
+    transition('show => hide', animate('700ms ease-out')),
+    transition('hide => show', animate('700ms ease-in'))
+  ])
+];

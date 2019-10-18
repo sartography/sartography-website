@@ -1,21 +1,7 @@
-// Import theming functions
-@import '~@angular/material/theming';
-// Import your custom theme
-@import '../../sartography_material';
-// Load the Sartography Theme
-@include sartography-theme($sartography-theme);
+@import "../../config";
 
 .contact-us {
-  padding: 5%;
-  background-color: mat-color($sartography-primary, 50);
-  color: mat-contrast($sartography-primary, 50);
-
-  a {
-    color: mat-color($sartography-accent, 700);
-  }
-
-  .map img {
-    max-height: 100%;
-    max-width: 100%;
-  }
+  padding: 80px;
+  background-color: $brand-gray-light-4;
 }
+
