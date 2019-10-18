@@ -1,107 +1,81 @@
 @import "../../config";
 
+h1 {
+  margin: 80px;
+}
+
 .case-studies {
-  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
 
-  h1 {
-    position: absolute;
-    top: 80px;
-    left: 80px;
+.selected-case-study {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $brand-gray;
+  z-index: 1000;
+  overflow: auto;
+  transition: all 1s ease-in-out;
+
+  @media screen and (max-width: 599px) { padding: 2em; }
+  @media screen and (min-width: 600px) and (max-width: 959px) { padding: 4em; }
+  @media screen and (min-width: 960px) and (max-width: 1279px) { padding: 8em; }
+  @media screen and (min-width: 1280px) and (max-width: 1919px) { padding: 8em; }
+  @media screen and (min-width: 1920px) and (max-width: 5000px) { padding: 8em; }
+
+  #back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
     color: white;
-    z-index: 10;
   }
 
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+  h2, h3, h4, p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
   }
 
-  .intro {
-    background-color: $brand-primary-light-4;
-    padding: 3%;
-    cursor: pointer;
+  h2 { margin-bottom: 2em; }
 
-    &:hover {
-      background-color: $brand-primary-light-3;
-    }
-
-    &:active {
-      background-color: $brand-primary-light-2;
-    }
-
-  }
-
-  .study {
-    margin-top: 5%;
-    padding: 2%;
-    text-align: start;
-
-    h2, h3, p, img {
-      padding: 2%;
-      margin: 1%;
-    }
-  }
-
-  .testimonial {
-    background-color: $brand-accent-dark-2;
-
-    p {
-      padding: 20px;
-      color: white;
-    }
+  img.full-size {
+    max-width: 80vw;
+    max-height: 50vh;
   }
 }
 
-.case-study {
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 0.5s ease-in-out;
+blockquote {
   position: relative;
+  font-size: 24px;
+  font-style: italic;
+  color: white;
 
-  & > h2 {
-    color: white;
-    z-index: 10;
-    transform-origin: top left;
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 40px;
-    bottom: 0px;
-    transition: all 0.5s ease-in-out;
-    margin: 0px;
-    padding: 0px;
-    width: 100vh;
-    opacity: 1;
+  &:before {
+      content: '\201C';
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      color: $brand-gray-light-1;
+      font-size: 6em;
+      z-index: -1;
   }
 
-  .case-study-details {
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    margin-top: 14em;
-    padding: 2em;
+  footer {
+    margin-left: 1em;
+    margin-top: 1em;
+    font-size: 16px;
+    position: relative;
 
-    h2, h3, h4, p {
-      margin-top: 0;
-      margin-bottom: 0;
-      color: white;
-    }
-
-    h2 { margin-bottom: 2em; }
-  }
-
-  &.selected {
-    & > h2 {
-      opacity: 0;
-    }
-
-    .case-study-details {
-      opacity: 1;
-
-      .thumbnail {
-        max-width: 160px;
-        max-height: 160px;
-      }
+    &:before {
+      content: '-';
+      position: absolute;
+      top: 0px;
+      left: -10px;
     }
   }
 }

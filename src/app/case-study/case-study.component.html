@@ -1,0 +1,16 @@
+<div
+  class="case-study"
+  fxFlexAlign="{{isEven(index) ? 'start' : 'end'}}"
+  fxLayout="row"
+  fxLayoutAlign="{{isEven(index) ? 'start' : 'end'}} center"
+  fxLayoutGap="20px"
+  [@scrollAnimation]="state"
+>
+  <img *ngIf="isEven(index)" class="thumbnail" src="{{ caseStudy.featureLink }}">
+  <div>
+    <h3>{{caseStudy.organizationName}}</h3>
+    <h2>{{ caseStudy.projectName }}</h2>
+    <h4>{{ caseStudy.tagLine }}</h4>
+  </div>
+  <img *ngIf="!isEven(index)" class="thumbnail" src="{{ caseStudy.featureLink }}">
+</div>
