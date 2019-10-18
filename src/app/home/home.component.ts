@@ -76,7 +76,7 @@ export class HomeComponent implements AfterViewInit {
       this.isScrolling = false;
       this.scrollTimer = -1;
       this.changeDetector.detectChanges();
-    }, 2000);
+    }, 1000);
   }
 
   toggleMenu() {
