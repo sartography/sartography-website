@@ -2,19 +2,19 @@
   class="main"
   scrollSpy (sectionChange)="onSectionChange($event)"
 >
+  <button mat-fab (click)="toggleMenu()" class="toggle-menu" color="primary">
+    <mat-icon *ngIf="!isExpanded">menu</mat-icon>
+    <mat-icon *ngIf="isExpanded">close</mat-icon>
+  </button>
   <div
     id="menu"
     fxLayout="column"
     fxLayoutGap="20px"
     fxLayoutAlign="center end"
-    [ngClass]="{'scrolling': isScrolling}"
+    [ngClass]="{'expanded': isExpanded}"
     (mouseover)="keepMenuOpen()"
-    (mouseout)="isScrolling = false"
+    (mouseout)="isExpanded = false"
  >
-    <button mat-fab (click)="toggleMenu()" class="toggle-menu" color="primary">
-      <mat-icon *ngIf="!isScrolling">menu</mat-icon>
-      <mat-icon *ngIf="isScrolling">close</mat-icon>
-    </button>
     <a
       *ngFor="let link of menuLinks"
       mat-button

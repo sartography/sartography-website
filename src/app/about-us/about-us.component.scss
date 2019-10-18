@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-position: bottom left;
   min-height: 1600px;
+  min-width: 100vw;
 
   .title {
     margin-top: 80px;
@@ -55,16 +56,20 @@
       ::ng-deep .capability-icon svg path { fill: $brand-primary; }
 
       &:after {
-        bottom: 0;
-        height: calc(100% - 64px);
-        background-color: $brand-gray-light-3;
+        @media screen and (min-width: 96px) {
+          bottom: 0;
+          height: calc(100% - 64px);
+          background-color: $brand-gray-light-3;
+        }
       }
     }
     .icon-right {
       &:after {
-        top: 0;
-        height: calc(100% - 40px);
-        background-color: $brand-gray-light-1;
+        @media screen and (min-width: 96px) {
+          top: 0;
+          height: calc(100% - 40px);
+          background-color: $brand-gray-light-1;
+        }
       }
     }
     .details-right { background-color: transparent; }
@@ -83,18 +88,22 @@
     .details-left { background-color: transparent; }
     .icon-left {
       &:after {
-        top: 0;
-        height: calc(100% - 40px);
-        background-color: $brand-gray-light-3;
+        @media screen and (min-width: 96px) {
+          top: 0;
+          height: calc(100% - 40px);
+          background-color: $brand-gray-light-3;
+        }
       }
     }
     .icon-right {
       ::ng-deep .capability-icon svg path { fill: $brand-primary-light-1; }
 
       &:after {
-        bottom: 0;
-        height: calc(100% - 64px);
-        background-color: $brand-gray-light-1;
+        @media screen and (min-width: 96px) {
+          bottom: 0;
+          height: calc(100% - 64px);
+          background-color: $brand-gray-light-1;
+        }
       }
     }
     .details-right {

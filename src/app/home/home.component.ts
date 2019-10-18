@@ -35,7 +35,7 @@ export class HomeComponent implements AfterViewInit {
   currentSection = 'header';
   activeLinkTop: number;
   showIndicator = false;
-  isScrolling = false;
+  isExpanded = false;
   scrollTimer = -1;
 
   constructor(private changeDetector: ChangeDetectorRef) {
@@ -64,27 +64,12 @@ export class HomeComponent implements AfterViewInit {
     document.querySelector('#' + section).scrollIntoView();
   }
 
-  @HostListener('window:scroll')
-  onScroll() {
-    this.isScrolling = true;
-    if (this.scrollTimer !== -1) {
-      clearTimeout(this.scrollTimer);
-    }
-
-    this.scrollTimer = window.setTimeout(() => {
-      this.showIndicator = true;
-      this.isScrolling = false;
-      this.scrollTimer = -1;
-      this.changeDetector.detectChanges();
-    }, 1000);
-  }
-
   toggleMenu() {
-    this.isScrolling = !this.isScrolling;
+    this.isExpanded = !this.isExpanded;
   }
 
   keepMenuOpen() {
-    this.isScrolling = true;
+    this.isExpanded = true;
     clearTimeout(this.scrollTimer);
   }
 

@@ -1,7 +1,15 @@
-<div class="logo-values">
+<div class="logo-values" [@scrollAnimation]="state">
   <h1>Our Values</h1>
-  <div gdAreas="left logo right" gdColumns="1fr 1fr 1fr" gdAlignColumns="stretch stretch" gdGap="80px">
-    <div gdArea="left" gdRows="auto">
+  <div
+    fxLayout="column"
+    fxLayout.gt-md="row"
+    fxLayoutAlign="start start"
+    fxLayoutGap="80px"
+  >
+    <div fxShow fxHide.gt-md>
+      <span inlineSVG="/assets/logo/Sartography-Logo-Elements.svg" class="logo-animated"></span>
+    </div>
+    <div fxFlex="33%" gdRows="auto">
       <div
         *ngFor="let v of brandValuesLeft"
         (mouseover)="highlight(v.id, true)"
@@ -9,16 +17,17 @@
         gdRows="auto auto auto"
         gdGridAlign="center center"
         gdAlignRows="center center"
+        class="value"
       >
         <span inlineSVG="{{v.icon_url}}" class="logo-element"></span>
         <h3>{{v.title}}</h3>
         <p class="mat-caption">{{v.description}}</p>
       </div>
     </div>
-    <div gdArea="logo">
+    <div fxFlex="33%" fxHide fxShow.gt-md>
       <span inlineSVG="/assets/logo/Sartography-Logo-Elements.svg" class="logo-animated"></span>
     </div>
-    <div gdArea="right" gdRows="auto" gdGridAlign="end stretch">
+    <div fxFlex="33%" gdRows="auto" gdGridAlign="end stretch">
       <div
         *ngFor="let v of brandValuesRight"
         (mouseover)="highlight(v.id, true)"
@@ -26,6 +35,7 @@
         gdRows="auto auto auto"
         gdGridAlign="center center"
         gdAlignRows="center center"
+        class="value"
       >
         <span inlineSVG="{{v.icon_url}}" class="logo-element"></span>
         <h3>{{v.title}}</h3>

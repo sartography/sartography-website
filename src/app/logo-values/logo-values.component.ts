@@ -1,18 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 import {BrandValue} from '../interfaces';
 import {ApiService} from '../api.service';
-import {element} from 'protractor';
+import {animations} from '../animation';
+import {getScrollState} from '../util';
 
 @Component({
   selector: 'app-logo-values',
   templateUrl: './logo-values.component.html',
-  styleUrls: ['./logo-values.component.scss']
+  styleUrls: ['./logo-values.component.scss'],
+  animations: animations
 })
 export class LogoValuesComponent implements OnInit {
   brandValuesLeft: BrandValue[];
   brandValuesRight: BrandValue[];
+  state = 'hide';
 
-  constructor(private api: ApiService) {
+  constructor(
+    public el: ElementRef,
+    private api: ApiService
+  ) {
     this.api.getBrandValues().subscribe(brandValues => {
       const midIndex = Math.floor(brandValues.length / 2);
       this.brandValuesLeft = brandValues.slice(0, midIndex);
@@ -28,5 +34,10 @@ export class LogoValuesComponent implements OnInit {
     } else {
       document.getElementById(elementId).classList.remove('highlight');
     }
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    this.state = getScrollState(this.el);
   }
 }

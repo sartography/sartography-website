@@ -1,5 +1,13 @@
 @import "../../config";
 
+button.toggle-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 101;
+}
+
+
 #menu {
   position: fixed;
   top: 0;
@@ -11,14 +19,8 @@
   padding: 80px;
   transition: all 1s ease-in-out;
 
-  &.scrolling {
+  &.expanded {
     right: 0px;
-  }
-
-  button.toggle-menu {
-    position: fixed;
-    top: 20px;
-    right: 20px;
   }
 
   a {
