@@ -1,5 +1,6 @@
 [
   {
+    "id": "uva_psych_mindtrails",
     "projectName": "MindTrails",
     "tagLine": "Facilitating Research",
     "description": "Since 2014, Sartography has provided the technical leadership for the MindTrails project, an iterative series of psychology studies.  Working closely with Professor Bethany Teachman and her lab, we continue to enhance and refine our approval to behavioral modification with scientific rigor.  Working with the University of Virginia’s information security group, Sartography designed processes to safely collect sensitive medical information. We continue to evolve our approach to gaining and retaining participants as we build more and more engaging experiences that reduce attrition and inspire real change in people's lives.",
@@ -17,6 +18,7 @@
     ]
   },
   {
+    "id": "uva_som_cadre_academy",
     "projectName": "Cadre Academy",
     "tagLine": "Engaging the Community",
     "description": "Working with the Research Computing department of the School of Medicine at UVA we created a platform where students, community members, and faculty could sign up for free workshops offered across the campus.  Integrating with UVA’s two factor authentication system, we created a streamlined signup process.  To help users find the right classes we provide tools for organizing workshops into tracks - taking users from introductory materials to advanced specializations.",
@@ -34,6 +36,7 @@
     ]
   },
   {
+    "id": "uva_som_ithriv",
     "projectName": "iThriv",
     "tagLine": "Managing Complexity",
     "description": "The number of biomedical resources available to Researchers, Clinicians and the general public is exploding. An emerging discipline of Translational Medicine hopes to expedite the discovery of new tools and treatments in this multidisciplinary world. As a first step we helped create the iTrhiv Portal, a multi-institutional collaboration of Virginia universities and private organizations that helps everyone learn about and access information critical to their work and health.",
@@ -51,10 +54,11 @@
     ]
   },
   {
+    "id": "jim_rutt_reddit_analyzer",
     "projectName": "Reddit Analyzer",
     "tagLine": "Natural Language Processing",
-    "description": "Reddit is a news aggregation and discussion forum that provides access to millions of comments, discussions, and news postings. Jim Rutt was working with a natural language processor to test a number of theories, and was looking for ways to speed up and automate his existing prototype.  To help, we decided to use ElasticSearch, a search engine with a number of powerful processing features.  Elastic Search is blazing fast, and provides a suite of tools that helped make the desired analysis efficient and maintainable even when running constantly for months, and managing millions of records",
-    "organizationName": "Jim Rutt",
+    "description": "Reddit is a news aggregation and discussion forum that provides access to millions of comments, discussions, and news postings. Jim Rutt's Staunton Research project was working with a natural language processor to test a number of theories, and was looking for ways to speed up and automate his existing prototype.  To help, we decided to use ElasticSearch, a search engine with a number of powerful processing features.  Elastic Search is blazing fast, and provides a suite of tools that helped make the desired analysis efficient and maintainable even when running constantly for months, and managing millions of records",
+    "organizationName": "Staunton Research",
     "websiteLink": "",
     "gitHubLink": "",
     "imageLink": "assets/images/case-studies/reddit.png",
@@ -68,7 +72,8 @@
     ]
   },
   {
-    "projectName": "Full Genomes",
+    "id": "full_genomes",
+    "projectName": "Cleanup & Refactor",
     "tagLine": "Invigorating Business Software",
     "description": "Full Genomes provides unusually detailed DNA sequencing to their clients. After some troubles with a previous consulting company they engaged us to get their development back on track. Our efforts included updating the e-commerce section of their website, integrating their backend processing, and updating the interface to a more modern look and feel that is mobile friendly.",
     "organizationName": "Full Genomes",
