@@ -26,18 +26,14 @@ export const fadeIn = animation(
   { params: { time: '1000ms', start: 1, end: 0, zIndex: 0 } }
 );
 
-export const easingFn: EasingLogic = (
-  t: number,
-  b: number,
-  c: number,
-  d: number
-): number => {
+
+export function easingFn(  t: number, b: number, c: number, d: number): number {
   if ((t /= d / 2) < 1) {
     return (c / 2) * t * t * t * t + b;
   } else {
     return (-c / 2) * ((t -= 2) * t * t * t - 2) + b;
   }
-};
+}
 
 export const animations = [
   trigger('fadeInOut', [
