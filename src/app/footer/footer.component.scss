@@ -2,6 +2,7 @@
 
 footer {
   background-color: $brand-gray;
+  color: white;
 
   ::ng-deep .footer-logo svg {
     max-width: 100%;
@@ -9,8 +10,12 @@ footer {
   }
 
   address {
-    color: white;
     font-style: normal;
     a { color: white; }
+  }
+
+  .copyright {
+    text-align: center;
+    color: $brand-gray-light-1;
   }
 }

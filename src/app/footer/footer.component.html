@@ -7,7 +7,7 @@
     <span class="footer-logo" inlineSVG="/assets/logo/Sartography-Logo-Horizontal-White.svg"></span>
   </div>
 
-  <div fxFlex="50%" [@scrollAnimation]="state">
+  <div [@scrollAnimation]="state">
     <address class="mat-body-1">
       Sartography<br>
       c/o Staunton Makerspace<br>
@@ -19,5 +19,5 @@
   </div>
 
 
-  <p>Copyright &copy; {{today | date:'yyyy'}} Sartography LLC. All Rights Reserved.</p>
+  <p gdColumn="span 2" class="copyright">Copyright &copy; {{today | date:'yyyy'}} Sartography LLC. All Rights Reserved.</p>
 </footer>
