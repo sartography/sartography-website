@@ -15,10 +15,10 @@
 
   <div
     *ngIf="isExpanded && selectedStudyId && selectedStudy"
-    @fadeInOut
     class="selected-case-study"
     fxLayout="column"
     fxLayoutGap="20px"
+    [@scrollAnimation]="expandedState"
   >
     <button mat-fab color="primary" (click)="toggleExpanded(selectedStudy.id)" id="back">
       <mat-icon>arrow_back</mat-icon>
