@@ -4,40 +4,16 @@
     fxLayout="column"
     fxLayout.gt-md="row"
     fxLayoutAlign="start start"
-    fxLayoutGap="80px"
+    fxLayoutGap.gt-md="80px"
   >
     <div fxFlex="33%" gdRows="auto">
-      <div
-        *ngFor="let v of brandValuesLeft"
-        (mouseover)="highlight(v.id, true)"
-        (mouseout)="highlight(v.id, false)"
-        gdRows="auto auto auto"
-        gdGridAlign="center center"
-        gdAlignRows="center center"
-        class="value"
-      >
-        <span inlineSVG="{{v.icon_url}}" class="logo-element"></span>
-        <h3>{{v.title}}</h3>
-        <p class="mat-caption">{{v.description}}</p>
-      </div>
+      <app-brand-value *ngFor="let v of brandValuesLeft" [brandValue]="v"></app-brand-value>
     </div>
     <div fxFlex="33%" fxHide fxShow.gt-md>
       <span inlineSVG="/assets/logo/Sartography-Logo-Elements.svg" class="logo-animated"></span>
     </div>
     <div fxFlex="33%" gdRows="auto" gdGridAlign="end stretch">
-      <div
-        *ngFor="let v of brandValuesRight"
-        (mouseover)="highlight(v.id, true)"
-        (mouseout)="highlight(v.id, false)"
-        gdRows="auto auto auto"
-        gdGridAlign="center center"
-        gdAlignRows="center center"
-        class="value"
-      >
-        <span inlineSVG="{{v.icon_url}}" class="logo-element"></span>
-        <h3>{{v.title}}</h3>
-        <p class="mat-caption">{{v.description}}</p>
-      </div>
+      <app-brand-value *ngFor="let v of brandValuesRight" [brandValue]="v"></app-brand-value>
     </div>
   </div>
 </div>
