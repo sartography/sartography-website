@@ -2,7 +2,7 @@ import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 import {ApiService} from '../api.service';
 import {Capability} from '../interfaces';
 import {animations} from '../animation';
-import {getScrollState, isEven} from '../util';
+import {getScrollState} from '../util';
 
 @Component({
   selector: 'app-about-us',
@@ -13,7 +13,6 @@ import {getScrollState, isEven} from '../util';
 export class AboutUsComponent implements OnInit {
   capabilities: Capability[];
   state = 'hide';
-  isEven = isEven;
 
   constructor(private api: ApiService, public el: ElementRef) {
     this.api.getCapabilities().subscribe(c => this.capabilities = c);
