@@ -57,11 +57,11 @@
     "id": "jim_rutt_reddit_analyzer",
     "projectName": "Reddit Analyzer",
     "tagLine": "Natural Language Processing",
-    "description": "Reddit is a news aggregation and discussion forum that provides access to millions of comments, discussions, and news postings. Jim Rutt's Staunton Research project was working with a natural language processor to test a number of theories, and was looking for ways to speed up and automate his existing prototype.  To help, we decided to use ElasticSearch, a search engine with a number of powerful processing features.  Elastic Search is blazing fast, and provides a suite of tools that helped make the desired analysis efficient and maintainable even when running constantly for months, and managing millions of records",
+    "description": "Reddit is a news aggregation and discussion forum that provides access to millions of comments, discussions, and news postings. Jim Rutt's Staunton Research project was working with a natural language processor to test a number of theories, and was looking for ways to speed up and automate his existing prototype.  To help, we decided to use ElasticSearch, a search engine with a number of powerful processing features.  ElasticSearch is blazing fast, and provides a suite of tools that helped make the desired analysis efficient and maintainable even when running constantly for months, and managing millions of records",
     "organizationName": "Staunton Research",
     "websiteLink": "",
     "gitHubLink": "",
-    "imageLink": "assets/images/case-studies/reddit.png",
+    "imageLink": "assets/images/case-studies/reddit-analyzer.png",
     "featureLink": "assets/images/case-studies/elastic.png",
     "testimonials": [
       {
