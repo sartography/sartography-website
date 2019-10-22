@@ -1,0 +1,33 @@
+.logo-values {
+  padding: 80px;
+  @media screen and (max-width: 599px) { padding-left: 20px; padding-right: 20px; }
+  @media screen and (min-width: 600px) and (max-width: 959px) { padding-left: 10%; padding-right: 10%; }
+  @media screen and (min-width: 960px) and (max-width: 1279px) { padding-left: 20%; padding-right: 20%; }
+}
+
+.logo-animated {
+  ::ng-deep svg {
+
+    @media screen and (max-width: 599px) { max-height: 75vh; max-width: 75vw; }
+    @media screen and (min-width: 600px) and (max-width: 959px) { max-height: 75vh; max-width: 75vw; }
+    @media screen and (min-width: 960px) and (max-width: 1279px) { max-height: 75vh; max-width: 75vw; }
+    @media screen and (min-width: 1280px) and (max-width: 1919px) { max-height: 100vh; max-width: 30vw; }
+    @media screen and (min-width: 1920px) and (max-width: 5000px) { max-height: 100vh; max-width: 30vw; }
+
+    #the_ribbon,
+    #the_equals_sign,
+    #the_compass,
+    #the_heart,
+    #the_thread,
+    #the_circle {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+
+      &.highlight {
+        stroke-width: 6px;
+        opacity: 1;
+
+      }
+    }
+  }
+}

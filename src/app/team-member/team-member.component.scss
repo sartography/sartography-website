@@ -1,0 +1,16 @@
+.team-member { margin-bottom: 80px; }
+
+.btn-github, .btn-linkedin {
+  ::ng-deep svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+::ng-deep .btn-github svg { fill: white; }
+::ng-deep .btn-linkedin svg { fill: white; }
+
+.team-avatar img {
+  border-radius: 100%;
+  max-width: 100%;
+}

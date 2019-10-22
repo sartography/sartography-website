@@ -1,118 +1,18 @@
-<div
-  class="about-us"
-  id="about-us"
-  fxLayout="column"
-  fxLayoutGap="2%"
->
-  <div>
-    <h1>Meet Sartography</h1>
-    <mat-tab-group mat-stretch-tabs>
-      <mat-tab label="Who We Are">
-        <div class="tab-content">
-          <h3>We are Software Developers.</h3>
-          <p>We create engaging web applications using modern web development tools. </p>
-          <p>Here are a few areas where we are particularly effective:</p>
-          <ul class="aboutList">
-            <li><b>Beautiful Information:</b> We create beautiful interfaces that help people navigate complex information to find critical knowledge.  Through thoughtful design, architecture, and animations we find novel approaches that make information come alive. </li>
-            <li><b>Mobile Friendly:</b> Even our most complex applications work well on phones and tablets, as well as desktops using the Angular Framework.</li>
-            <li><b>Secure and Discrete:</b>  We build applications that allow scientists to safely collect, monitor and study medical information.</li>
-            <li><b>Scientific:</b> As a small tightly focused team, we can dig very deeply into complex domains where larger organizations would fail to adapt.  And as Python becomes the predominant programming language of science, we build applications that our clients can understand and extend.</li>
-            <li><b>Big Data:</b>  We know how to manage exceedingly large data sets with tools such as Cassandra, and Elastic Search.  Most importantly, we know when not to use these tools, and we strive to keep our systems as simple, clean, and extensible as possible.</li>
-          </ul>
-          <p>Be sure and look at our Case Studies to see these skills in action.</p>
-
-          <h3>We are Makers.</h3>
-          <p> We are also some of the founders and leaders of the <a href="http://stauntonmakerspace.com" target="new">Staunton Makerspace</a>,
-            Where we spend some of our spare time teaching others to delight in technology, learn new tools, and build great things. We live to inspire, teach, and above all to learn.</p>
-        </div>
-      </mat-tab>
-      <mat-tab label="Mission and Vision">
-        <div class="tab-content">
-          <h3>Our Mission:</h3>
-          <p>To partner with scientists and innovators to create engaging software that improves the health and well
-            being of our communities through constant rigor, deep commitment to cause, and abiding resepect to our
-          shared goal for a better world.</p>
-
-          <h3>Our Vision:</h3>
-          <p>To build a world changing application that make a meaningful, scientifically proven impact in the mental
-            health of our community.</p>
-        </div>
-      </mat-tab>
-      <mat-tab label="Our Logo">
-        <div class="tab-content">
-          <h3>The Meaning Behind our Logo Design</h3>
-          <p><b>The Compass:</b> It stands for the exact representation of information.  We do not aim to make things beautiful first,
-            but to make things exact, and in doing so, bring forth beauty.</p>
-          <p><b>The Heart:</b> We take on work that insights our passion for learning, building, and creating a better world.</p>
-          <p><b>The Thread:</b> We are woven together, our endeavors are collaborative, each effort binds us together as a
-            team, in a collective endeavor, made of many skills and countless contributions.  A grand tapestry we make.</p>
-          <p><b>Bespoke:</b> This word evolved from the verb "to speak for something".  We wish to speak for something good.
-            In present use as an adjuctive, it should evoke a sense of the tailor made, something crafted to specification.</p>
-        </div>
-      </mat-tab>
-      <mat-tab label="Our Values">
-        <div class="tab-content">
-          <h3>Conversation</h3>
-          <p>First we listen, then we find empathy, then we accept responsibility.</p>
-          <p>We work daily with scientists and experts who live and breathe their passions. Our work with
-            excellent minds allows us to build true innovations through tight collaboration.</p>
-          <h3>Respect</h3>
-          <p>Respect must begin within yourself. We will take time to respect and care for ourselves, then our families,
-            and then our clients. We will come to work with the power to make things happen and the balance of
-            perspective that comes from being healthy and happy in the rest of our lives. We then have the most to give
-            others.</p>
-          <h3>Rigor</h3>
-          <p>We have long worked with scientists.  We know every piece of data matters.  It must make sense, it must be easy
-            to access, manipulate, and share.   We spend a lot of time thinking about the importance of
-            information, because if done correctly, good data can change the way we all see the world.
-          </p>
-          <h3>Play</h3>
-          <p>We must play. At the Makerspace, in our code, with our kids. It is the act of play that enlivens our minds
-            and brings us joy. Joy begets works of delight, delight brings engagement, engagement brings insight.
-            Insight brings us greater wisdom. Wisdom teaches us how to play.</p>
-        </div>
-      </mat-tab>
-    </mat-tab-group>
-    <h1>The Team</h1>
-    <div
-      fxLayout="row"
-      fxLayout.lt-md="column"
-      fxLayoutGap="2%"
-      fxLayoutAlign="space-between stretch"
-    >
-      <div
-        *ngFor="let t of teamMembers"
-        fxFlex="30%"
-      >
-        <mat-card>
-          <div class="top">
-            <div class="circle-img">
-              <img src="{{ t.imageLink }}">
-            </div>
-            <h2>{{ t.firstName }}</h2>
-            <h2>{{ t.lastName }}</h2>
-            <h3>{{ t.title }}</h3>
-          </div>
-          <div *ngFor="let d of t.description">
-            <p>{{ d }}</p>
-          </div>
-          <button
-            *ngIf="t.gitHubLink"
-            (click)="goWebsite(t.gitHubLink)"
-          >
-            GitHub
-          </button>
-          <button
-            *ngIf="t.linkedInLink"
-            (click)="goWebsite(t.linkedInLink)"
-          >
-            LinkedIn
-          </button>
-        </mat-card>
-      </div>
+<div class="about-us" fxLayout="column" fxLayoutAlign="start start">
+  <div class="title">
+    <h1 class="mat-display-1">About Us</h1>
+    <h2 class="mat-display-3">What We Do</h2>
+  </div>
+  <div fxLayout="column" fxLayout.gt-lg="row">
+    <div fxHide fxShow.gt-lg fxFlex.xl="33.333%"></div>
+    <div class="capabilities" fxFlex.xl="66.667%" fxLayout="column">
+      <app-capability-details
+        *ngFor="let c of capabilities; let i = index"
+        [capability]="c"
+        [index]="i"
+        [numTotal]="capabilities.length"
+      ></app-capability-details>
     </div>
   </div>
-  <div fxLayoutAlign="center center">
-    <img src="assets/logo/Sartography-Logo-Horizontal-Color.png">
-  </div>
 </div>
+<div class="bg-about-us" fxShow fxHide.gt-md></div>

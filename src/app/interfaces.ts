@@ -9,6 +9,7 @@ export interface TeamMember {
 }
 
 export interface CaseStudy {
+  id: string;
   projectName: string;
   tagLine: string;
   description: string;
@@ -28,4 +29,15 @@ export interface Testimonial {
   caseStudy?: CaseStudy;
 }
 
+export interface Capability {
+  title: string;
+  description: string;
+  icon_url: string;
+}
 
+export interface BrandValue {
+  id: string;
+  title: string;
+  description: string;
+  icon_url: string;
+}

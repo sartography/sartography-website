@@ -1,0 +1,13 @@
+<div
+  (mouseover)="highlight(brandValue.id, true)"
+  (mouseout)="highlight(brandValue.id, false)"
+  gdRows="auto auto auto"
+  gdGridAlign="center center"
+  gdAlignRows="center center"
+  class="value"
+  [@scrollAnimation]="state"
+>
+  <span inlineSVG="{{brandValue.icon_url}}" class="logo-element"></span>
+  <h3>{{brandValue.title}}</h3>
+  <p class="mat-caption">{{brandValue.description}}</p>
+</div>

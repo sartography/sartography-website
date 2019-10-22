@@ -1,0 +1,97 @@
+$dark-gray: #231f20;
+$deep-teal: #247a6b;
+$sea-foam: #60c3ab;
+$purple: #564da0;
+$magenta: #D54256;
+$gold: #FFD671;
+
+$lightness-increment: 20%;
+$light-4: ($lightness-increment * 4);
+$light-3: ($lightness-increment * 3);
+$light-2: ($lightness-increment * 2);
+$light-1: ($lightness-increment * 1);
+$dark-1:  ($lightness-increment * -1);
+$dark-2:  ($lightness-increment * -2);
+$dark-3:  ($lightness-increment * -3);
+$dark-4:  ($lightness-increment * -4);
+
+$brand-primary:         $deep-teal;
+$brand-primary-light-4: scale-color($brand-primary, $lightness: $light-4);
+$brand-primary-light-3: scale-color($brand-primary, $lightness: $light-3);
+$brand-primary-light-2: scale-color($brand-primary, $lightness: $light-2);
+$brand-primary-light-1: scale-color($brand-primary, $lightness: $light-1);
+$brand-primary-dark-1:  scale-color($brand-primary, $lightness: $dark-1);
+$brand-primary-dark-2:  scale-color($brand-primary, $lightness: $dark-2);
+$brand-primary-dark-3:  scale-color($brand-primary, $lightness: $dark-3);
+$brand-primary-dark-4:  scale-color($brand-primary, $lightness: $dark-4);
+
+$brand-accent:          $purple;
+$brand-accent-light-4:  scale-color($brand-accent,  $lightness: $light-4);
+$brand-accent-light-3:  scale-color($brand-accent,  $lightness: $light-3);
+$brand-accent-light-2:  scale-color($brand-accent,  $lightness: $light-2);
+$brand-accent-light-1:  scale-color($brand-accent,  $lightness: $light-1);
+$brand-accent-dark-1:   scale-color($brand-accent,  $lightness: $dark-1);
+$brand-accent-dark-2:   scale-color($brand-accent,  $lightness: $dark-2);
+$brand-accent-dark-3:   scale-color($brand-accent,  $lightness: $dark-3);
+$brand-accent-dark-4:   scale-color($brand-accent,  $lightness: $dark-4);
+
+$brand-warning:         $magenta;
+$brand-warning-light-4: scale-color($brand-warning, $lightness: $light-4);
+$brand-warning-light-3: scale-color($brand-warning, $lightness: $light-3);
+$brand-warning-light-2: scale-color($brand-warning, $lightness: $light-2);
+$brand-warning-light-1: scale-color($brand-warning, $lightness: $light-1);
+$brand-warning-dark-1:  scale-color($brand-warning, $lightness: $dark-1);
+$brand-warning-dark-2:  scale-color($brand-warning, $lightness: $dark-2);
+$brand-warning-dark-3:  scale-color($brand-warning, $lightness: $dark-3);
+$brand-warning-dark-4:  scale-color($brand-warning, $lightness: $dark-4);
+
+$brand-gray:            $dark-gray;
+$brand-gray-light-4:    scale-color($brand-gray,    $lightness: $light-4);
+$brand-gray-light-3:    scale-color($brand-gray,    $lightness: $light-3);
+$brand-gray-light-2:    scale-color($brand-gray,    $lightness: $light-2);
+$brand-gray-light-1:    scale-color($brand-gray,    $lightness: $light-1);
+$brand-gray-dark-1:     scale-color($brand-gray,    $lightness: $dark-1);
+$brand-gray-dark-2:     scale-color($brand-gray,    $lightness: $dark-2);
+$brand-gray-dark-3:     scale-color($brand-gray,    $lightness: $dark-3);
+$brand-gray-dark-4:     scale-color($brand-gray,    $lightness: $dark-4);
+
+$color_palette: (
+  "black":            $brand-gray-dark-4,
+  "white":            white,
+  "primary":          $brand-primary,
+  "primary-light-4":  $brand-primary-light-4,
+  "primary-light-3":  $brand-primary-light-3,
+  "primary-light-2":  $brand-primary-light-2,
+  "primary-light-1":  $brand-primary-light-1,
+  "primary-dark-1":   $brand-primary-dark-1,
+  "primary-dark-2":   $brand-primary-dark-2,
+  "primary-dark-3":   $brand-primary-dark-3,
+  "primary-dark-4":   $brand-primary-dark-4,
+  "accent":           $brand-accent,
+  "accent-light-4":   $brand-accent-light-4,
+  "accent-light-3":   $brand-accent-light-3,
+  "accent-light-2":   $brand-accent-light-2,
+  "accent-light-1":   $brand-accent-light-1,
+  "accent-dark-1":    $brand-accent-dark-1,
+  "accent-dark-2":    $brand-accent-dark-2,
+  "accent-dark-3":    $brand-accent-dark-3,
+  "accent-dark-4":    $brand-accent-dark-4,
+  "warning":          $brand-warning,
+  "warning-light-4":  $brand-warning-light-4,
+  "warning-light-3":  $brand-warning-light-3,
+  "warning-light-2":  $brand-warning-light-2,
+  "warning-light-1":  $brand-warning-light-1,
+  "warning-dark-1":   $brand-warning-dark-1,
+  "warning-dark-2":   $brand-warning-dark-2,
+  "warning-dark-3":   $brand-warning-dark-3,
+  "warning-dark-4":   $brand-warning-dark-4,
+  "gray":             $brand-gray,
+  "gray-light-4":     $brand-gray-light-4,
+  "gray-light-3":     $brand-gray-light-3,
+  "gray-light-2":     $brand-gray-light-2,
+  "gray-light-1":     $brand-gray-light-1,
+  "gray-dark-1":      $brand-gray-dark-1,
+  "gray-dark-2":      $brand-gray-dark-2,
+  "gray-dark-3":      $brand-gray-dark-3,
+  "gray-dark-4":      $brand-gray-dark-4
+)

@@ -1,0 +1,8 @@
+<div class="bg-primary-dark-1 text-white">
+  <h1>Our Team</h1>
+  <div
+    class="team container"
+  >
+    <app-team-member *ngFor="let t of teamMembers; let i = index" [teamMember]="t" [index]="i"></app-team-member>
+  </div>
+</div>

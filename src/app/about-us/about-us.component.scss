@@ -1,63 +1,76 @@
-// Import theming functions
-@import '~@angular/material/theming';
-// Import your custom theme
-@import '../../sartography_material';
-// Load the Sartography Theme
-@include sartography-theme($sartography-theme);
+@import "../../config";
 
 .about-us {
-  padding: 5%;
-  background-color: mat-color($sartography-primary, 50);
-  color: mat-contrast($sartography-primary, 50);
+  position: relative;
+  background-color: $dark-gray;
+  background-image: url("/assets/images/about-us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1600px;
+  min-width: 100vw;
 
-  .tab-content {
-    max-width: 800px;
-    margin: auto;
+  @media screen and (max-width: 599px) { background-image: none; }
+  @media screen and (min-width: 600px) and (max-width: 959px) { background-image: none; padding-left: 10%; padding-right: 10%; }
+  @media screen and (min-width: 960px) and (max-width: 1279px) { background-image: none; padding-left: 20%; padding-right: 20%; }
+  @media screen and (min-width: 1280px) and (max-width: 1919px) { background-position: 50% 80%; }
+  @media screen and (min-width: 1920px) and (max-width: 5000px) { background-position: 90% 90%; }
+
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: $brand-gray;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+    @media screen and (max-width: 1279px) { width: 100%; }
+    @media screen and (min-width: 1280px) and (max-width: 1919px) { width: 50%; }
+    @media screen and (min-width: 1920px) and (max-width: 5000px) { width: 33.333%; }
   }
 
-  h1{
-    text-align: center;
-    padding: 2%;
-  }
-
-  button {
-    margin: 2%;
-    padding: 7px;
-    background-color: mat-color($sartography-warn, 500);
-    color: mat-contrast($sartography-warn, 500);
-    cursor: pointer;
-  }
-
-  mat-card {
-    padding: 5%;
-
-    .top {
-      text-align: center;
+  &:after {
+    @media screen and (min-width: 1280px) and (max-width: 1919px) {
+      position: absolute;
+      content: '';
+      background-color: rgba(255, 255, 255, 0.8);
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      width: 50%;
     }
+  }
 
+  .title {
+    z-index: 1;
+    margin-top: 80px;
+    margin-left: 80px;
+    @media screen and (max-width: 1279px) { margin-left: 20px; margin-right: 20px; }
+
+    h1 {
+      color: $brand-primary;
+      margin-bottom: 0;
+      @media screen and (max-width: 1279px) { color: $brand-primary-light-2; }
+    }
 
     h2 {
-      padding: 0;
-      margin: 0;
+      color: $brand-gray;
+      @media screen and (max-width: 1279px) { color: white; }
     }
+  }
 
-    img {
-      border-radius: 200px;
-      height: 200px;
-      width: 200px;
-    }
+  .capabilities {
+    padding-bottom: 4em;
+    z-index: 1;
   }
-  mat-tab-group {
-    background-color: #ffffff;
-    min-height: 400px;
-    padding: 2%;
-  }
-  img {
-    max-width: 90%;
-    padding: 2%;
-  }
-  ul.aboutList {
-    font-size: 14pt;
-    line-height: 20pt;
-  }
+}
+
+.bg-about-us {
+  background-image: url("/assets/images/bg-about-us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% 75%;
+  min-height: 75vh;
+  min-width: 100vw;
 }

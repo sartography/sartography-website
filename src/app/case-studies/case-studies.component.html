@@ -1,72 +1,71 @@
+<h1>Projects</h1>
 <div
   class="case-studies"
-  id="case-studies"
+  *ngIf="caseStudies && caseStudies.length > 0"
 >
-  <h1>CASE STUDIES</h1>
-  <p>Please select a tile below to learn about some of our recent projects, read reviews of our work, and visit some of our creations.</p>
-  <div
-    fxLayout="row"
-    fxLayout.lt-xs="column"
-    fxLayoutGap="2%"
-    fxLayoutAlign="space-between"
-  >
-    <div *ngFor="let study of caseStudies">
-      <mat-card [@activate]="study === caseStudy ? 'active' : 'inactive'"
-        class="intro"
-        (click)="setStudyView(study)"
-      >
-        <img
-             src="{{ study.featureLink }}">
-      </mat-card>
-    </div>
+  <div fxLayout="column" fxLayoutGap="80px">
+    <app-case-study
+      *ngFor="let c of caseStudies, let i = index;"
+      [caseStudy]="c"
+      [index]="i"
+      [isExpanded]="isExpanded"
+      (click)="toggleExpanded(c.id)"
+    ></app-case-study>
   </div>
+
   <div
-    *ngIf="caseStudy"
-    class="study"
-    id="study"
+    *ngIf="isExpanded && selectedStudyId && selectedStudy"
+    class="selected-case-study"
+    fxLayout="column"
+    fxLayoutGap="20px"
+    [@scrollAnimation]="expandedState"
   >
-    <div
-         fxLayout.lt-sm="column"
-         fxLayoutGap="2%"
-         fxLayoutAlign="space-between stretch"
-    >
-      <div
-        fxFlex="30%"
-        fxLayout="column"
-        fxLayoutGap="2%"
-      >
-        <h2>{{ caseStudy.projectName }}</h2>
-        <h3>{{ caseStudy.organizationName }}</h3>
-        <div
-          *ngIf="caseStudy.testimonials"
-        >
+    <button mat-fab color="primary" (click)="toggleExpanded(selectedStudy.id)" id="back">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="40px" fxLayoutAlign="center center">
+      <img src="{{ selectedStudy.imageLink }}" class="full-size">
+      <div>
+        <h3>{{ selectedStudy.organizationName }}</h3>
+        <h2>{{ selectedStudy.projectName }}</h2>
+        <p>{{ selectedStudy.description }}</p>
+
+        <div *ngIf="selectedStudy.testimonials">
           <div
-            *ngFor="let t of caseStudy.testimonials"
+            *ngFor="let t of selectedStudy.testimonials"
             class="testimonial"
           >
-            <p>"{{ t.quote}}"</p>
-            <p>- {{ t.name}}<br/><i>&nbsp; {{t.title}}</i></p>
+            <blockquote>
+              {{ t.quote}}
+              <footer>
+                {{ t.name}}<br/>
+                <cite>{{t.title}}</cite></footer>
+            </blockquote>
+
+            <div fxLayout="row" fxLayoutGap="10px">
+              <a
+                *ngIf="selectedStudy.websiteLink"
+                mat-flat-button
+                [href]="selectedStudy.websiteLink"
+                target="_blank"
+              >
+                Website
+              </a>
+              <a
+                *ngIf="selectedStudy.gitHubLink"
+                mat-flat-button
+                [href]="selectedStudy.gitHubLink"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </div>
+
+
           </div>
         </div>
-        <button
-          *ngIf="caseStudy.websiteLink"
-          (click)="goWebsite(caseStudy.websiteLink)"
-        >
-          Visit Website
-        </button>
-        <button
-          *ngIf="caseStudy.gitHubLink"
-          (click)="goWebsite(caseStudy.gitHubLink)"
-        >
-          View on GitHub
-        </button>
-      </div>
-      <div fxFlex="60%">
-        <h3>{{ caseStudy.tagLine }}</h3>
-        <p>{{ caseStudy.description }}</p>
-        <img src="{{ caseStudy.imageLink }}">
       </div>
     </div>
-
   </div>
+
 </div>

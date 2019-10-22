@@ -1,0 +1,38 @@
+[
+  {
+    "id": "the_ribbon",
+    "title": "Conversation",
+    "description": "We believe in a tight collaboration with our clients, who are frequently experts in their field. The ribbon of constant and open communication binds us to each other, fosters common understanding, wraps every interaction in shared purpose.",
+    "icon_url": "/assets/icons/the_ribbon.svg"
+  },
+  {
+    "id":  "the_compass",
+    "title": "Rigor",
+    "description": "The compass symbol in our logo represents the rigorous search for truth.  So much of our work is in support of scientific study.  Data must be captured correctly, it must make sense and must be easy to access, manipulate, and share. Good data can change the way we all see the world.",
+    "icon_url": "/assets/icons/the_compass.svg"
+  },
+  {
+    "id":  "the_equals_sign",
+    "title": "Respect",
+    "description": "We treat each other as equals.  We take time to respect and care for ourselves and our families first, and this care and compassion will lead to better care of and respect for our clients. ",
+    "icon_url": "/assets/icons/the_equals_sign.svg"
+  },
+  {
+    "id":  "the_heart",
+    "title": "Passion",
+    "description": "We take on work and play that ignites our passion for learning, building, and creating a better world. At the Makerspace, in our code, with our kids, our passion enlivens our minds and brings us joy.",
+    "icon_url": "/assets/icons/the_heart.svg"
+  },
+  {
+    "id":  "the_thread",
+    "title": "Adaptability",
+    "description": "We create bespoke apps, which are adapted to our clients' needs. 'Bespoke' means 'to speak for something'. We wish to speak for something good. It evokes a sense of the tailor-made, something crafted to specification.",
+    "icon_url": "/assets/icons/the_thread.svg"
+  },
+  {
+    "id":  "the_circle",
+    "title": "Transparency",
+    "description": "The open circle represents a porthole into our process.  With compassion and courage, we share our works in progress, our mistakes and our successes. We open ourselves to vulnerability, and so, together, find the right path.",
+    "icon_url": "/assets/icons/the_circle.svg"
+  }
+]

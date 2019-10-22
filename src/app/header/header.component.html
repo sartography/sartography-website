@@ -1,6 +1,22 @@
-<div
-  class="welcome"
-  fxLayoutAlign="center center"
->
-    <img @fadeInOut src="assets/logo/Sartography-Logo-Vertical-Color.png"/>
+<div class="full-screen" fxLayout="column" fxLayoutAlign="center center">
+  <img
+    class="half-height"
+    @fadeInOut
+    src="assets/logo/Sartography-Logo-Vertical-Color.png"
+  />
+  <a
+    mat-button
+    pageScroll
+    [pageScrollAdjustHash]="true"
+    href="#welcome"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    class="explore mat-subheading-2 text-uppercase"
+  >
+    Explore<br />
+    <span
+      [inlineSVG]="'/assets/icons/chevron_down.svg'"
+      class="chevron-down"
+    ></span>
+  </a>
 </div>

@@ -1,0 +1,29 @@
+.bg-welcome {
+  z-index: 0;
+  width: 100%;
+  background-color: white;
+  background-image: url("/assets/images/welcome.jpg");
+  background-size: cover;
+  background-position: center right;
+
+  @media screen and (max-width: 599px) { background-image: none; }
+  @media screen and (min-width: 600px) and (max-width: 959px) { background-image: none; }
+  @media screen and (min-width: 960px) and (max-width: 1279px) { background-image: none; }
+  @media screen and (min-width: 1280px) and (max-width: 1919px) { height: 100vh; }
+  @media screen and (min-width: 1920px) and (max-width: 5000px) { height: 100vh; }
+}
+
+.color-tile {
+  height: 72px;
+  width: 72px;
+  margin: 10px;
+}
+
+.bg-welcome-xs {
+  background-image: url("/assets/images/welcome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% 75%;
+  min-height: 75vh;
+  min-width: 100vw;
+}

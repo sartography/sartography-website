@@ -1,0 +1,15 @@
+.case-study {
+  &.case-study-left { justify-self: start; }
+  &.case-study-right { justify-self: end; }
+
+  .thumbnail {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+  }
+}

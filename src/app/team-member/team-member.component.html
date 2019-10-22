@@ -1,0 +1,41 @@
+<div
+  class="team-member"
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  fxLayout.gt-md="row"
+  fxLayoutAlign.gt-md="start start"
+  fxLayoutGap="40px"
+  [@scrollAnimation]="state"
+>
+  <div class="team-avatar" fxShow fxHide.gt-md fxFlex="16.67%">
+    <img src="{{ teamMember.imageLink }}">
+  </div>
+  <div class="team-avatar" *ngIf="isEven(index)" fxHide fxShow.gt-md fxFlex.gt-md="calc(16.67% - 40px)">
+    <img src="{{ teamMember.imageLink }}">
+  </div>
+  <div class="team-details" fxFlex="calc(83.33% - 40px)">
+    <h2>{{ teamMember.firstName }} {{ teamMember.lastName }}</h2>
+    <h3>{{ teamMember.title }}</h3>
+    <p *ngFor="let d of teamMember.description">{{ d }}</p>
+    <a
+      *ngIf="teamMember.gitHubLink"
+      [href]="teamMember.gitHubLink"
+      mat-button
+      target="_blank"
+      class="btn-github mat-elevation-z0"
+      matTooltip="{{teamMember.firstName}}'s GitHub Profile"
+    ><span inlineSVG="/assets/icons/github.svg"></span></a>
+    <a
+      *ngIf="teamMember.linkedInLink"
+      [href]="teamMember.linkedInLink"
+      mat-button
+      target="_blank"
+      class="btn-linkedin mat-elevation-z0"
+      matTooltip="{{teamMember.firstName}}'s LinkedIn Profile"
+    ><span inlineSVG="/assets/icons/linkedin.svg"></span></a>
+  </div>
+  <div class="team-avatar" *ngIf="!isEven(index)" fxHide fxShow.gt-md fxFlex.gt-md="calc(16.67% - 40px)">
+    <img src="{{ teamMember.imageLink }}">
+  </div>
+</div>
+

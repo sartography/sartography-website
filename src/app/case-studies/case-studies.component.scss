@@ -1,65 +1,84 @@
-// Import theming functions
-@import '~@angular/material/theming';
-// Import your custom theme
-@import '../../sartography_material';
-// Load the Sartography Theme
-@include sartography-theme($sartography-theme);
+@import "../../config";
+
+h1 {
+  padding: 80px;
+  max-width: 1280px;
+  @media screen and (max-width: 599px) { padding-left: 20px; padding-right: 20px; }
+  @media screen and (min-width: 600px) and (max-width: 959px) { padding-left: 10%; padding-right: 10%; }
+  @media screen and (min-width: 960px) and (max-width: 1279px) { padding-left: 20%; padding-right: 20%; }
+}
 
 .case-studies {
-  padding: 5%;
-  background-color: #ffffff;
-  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
 
-  h1{
-    padding: 20px auto;
+.selected-case-study {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $brand-gray;
+  z-index: 1000;
+  overflow: auto;
+
+  @media screen and (max-width: 599px) { padding: 2em; }
+  @media screen and (min-width: 600px) and (max-width: 959px) { padding: 4em; }
+  @media screen and (min-width: 960px) and (max-width: 1279px) { padding: 8em; }
+  @media screen and (min-width: 1280px) and (max-width: 1919px) { padding: 8em; }
+  @media screen and (min-width: 1920px) and (max-width: 5000px) { padding: 8em; }
+
+  #back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
   }
 
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+  h2, h3, h4, p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
   }
 
-  button {
-    background-color: mat-color($sartography-warn, 500);
-    color: mat-contrast($sartography-warn, 500);
-    padding: 3%;
-    cursor: pointer;
+  h2 { margin-bottom: 2em; }
+
+  img.full-size {
+    max-width: 80vw;
+    max-height: 50vh;
+  }
+}
+
+blockquote {
+  position: relative;
+  font-size: 24px;
+  font-style: italic;
+  color: white;
+
+  &:before {
+      content: '\201C';
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      color: $brand-gray-light-1;
+      font-size: 6em;
+      z-index: -1;
   }
 
-  .intro {
-    background-color: mat-color($sartography-accent, A100);
-    padding: 3%;
-    cursor: pointer;
+  footer {
+    margin-left: 1em;
+    margin-top: 1em;
+    font-size: 16px;
+    position: relative;
 
-    &:hover {
-      background-color: mat-color($sartography-primary, 100, 1);
-    }
-
-    &:active {
-      background-color: mat-color($sartography-primary, 200, 1);
-    }
-
-  }
-
-  .study {
-    margin-top: 5%;
-    padding: 2%;
-    text-align: start;
-
-    h2, h3, p, img {
-      padding: 2%;
-      margin: 1%;
-    }
-  }
-
-  .testimonial {
-    margin-top: 5%;
-    background-color: mat-color($sartography-accent, 700);
-
-    p{
-      padding: 8%;
-      color: mat-contrast($sartography-accent, 700);
+    &:before {
+      content: '-';
+      position: absolute;
+      top: 0px;
+      left: -10px;
     }
   }
 }

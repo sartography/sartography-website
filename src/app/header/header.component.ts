@@ -24,4 +24,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollDown() {
+    const h = window.innerHeight;
+    window.scroll({
+      top: h,
+      behavior: 'smooth'
+    });
+  }
+
 }

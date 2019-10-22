@@ -1,0 +1,36 @@
+<div
+  class="main"
+  scrollSpy (sectionChange)="onSectionChange($event)"
+>
+  <button mat-fab (click)="toggleMenu()" class="toggle-menu" color="primary">
+    <mat-icon *ngIf="!isExpanded">menu</mat-icon>
+    <mat-icon *ngIf="isExpanded">close</mat-icon>
+  </button>
+  <div
+    id="menu"
+    fxLayout="column"
+    fxLayoutGap="20px"
+    fxLayoutAlign="center end"
+    [ngClass]="{'expanded': isExpanded}"
+    (mouseover)="keepMenuOpen()"
+    (mouseout)="isExpanded = false"
+ >
+    <a
+      *ngFor="let link of menuLinks"
+      mat-button
+      pageScroll
+      [pageScrollAdjustHash]="true"
+      href="#{{ link.id }}"
+      (click)="onMenuClick(link.id)"
+      [ngClass]="{'active': currentSection === link.id}"
+      id="{{link.id}}_menu_link"
+    >{{ link.label }}</a>
+    <div id="selected_indicator" [ngStyle]="{'top.px': activeLinkTop, 'opacity': showIndicator ? 1 : 0}"></div>
+  </div>
+
+  <div *ngFor="let link of menuLinks" class="scroll-spy-section" id="{{link.id}}">
+    <ng-container *ngComponentOutlet="link.component"></ng-container>
+  </div>
+
+  <app-footer id="footer"></app-footer>
+</div>

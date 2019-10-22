@@ -1,11 +1,19 @@
-.welcome {
-  background-color: #ffffff;
-  padding: 5%;
-  display: grid;
-  height: 100%;
-  min-height: 100vh;
-  img {
-    max-height: 60vh;
-    margin: auto;
+@import "../../config";
+
+a.explore {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  padding-top: 40px;
+}
+
+::ng-deep .chevron-down svg {
+  width: 168px;
+  height: 84px;
+
+  path {
+    stroke-width: 4px;
+    stroke: $brand-gray-light-4;
+    fill: transparent;
   }
 }
