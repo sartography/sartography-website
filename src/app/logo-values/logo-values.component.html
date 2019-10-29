@@ -9,13 +9,13 @@
     fxLayoutGap="0px"
     fxLayoutGap.gt-md="80px"
   >
-    <div fxFlex="33%" gdRows="auto">
+    <div fxFlex="33%" gdRows="auto" gdGridAlign="stretch stretch">
       <app-brand-value *ngFor="let v of brandValuesLeft" [brandValue]="v"></app-brand-value>
     </div>
     <div fxFlex="33%" fxHide fxShow.gt-md>
       <span inlineSVG="/assets/logo/Sartography-Logo-Elements.svg" class="logo-animated"></span>
     </div>
-    <div fxFlex="33%" gdRows="auto" gdGridAlign="end stretch">
+    <div fxFlex="33%" gdRows="auto" gdGridAlign="stretch stretch">
       <app-brand-value *ngFor="let v of brandValuesRight" [brandValue]="v"></app-brand-value>
     </div>
   </div>
