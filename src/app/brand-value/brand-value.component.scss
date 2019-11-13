@@ -1,0 +1,10 @@
+.logo-element {
+  ::ng-deep svg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.value {
+  margin-bottom: 2em;
+}

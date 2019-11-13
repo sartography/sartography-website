@@ -26,8 +26,12 @@ export const fadeIn = animation(
   { params: { time: '1000ms', start: 1, end: 0, zIndex: 0 } }
 );
 
-
-export function easingFn(  t: number, b: number, c: number, d: number): number {
+export function easingFn (
+  t: number,
+  b: number,
+  c: number,
+  d: number
+): number {
   if ((t /= d / 2) < 1) {
     return (c / 2) * t * t * t * t + b;
   } else {

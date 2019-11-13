@@ -28,14 +28,6 @@ export class LogoValuesComponent implements OnInit {
 
   ngOnInit() {}
 
-  highlight(elementId: string, on: boolean) {
-    if (on) {
-      document.getElementById(elementId).classList.add('highlight');
-    } else {
-      document.getElementById(elementId).classList.remove('highlight');
-    }
-  }
-
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.state = getScrollState(this.el);

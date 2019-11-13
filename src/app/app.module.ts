@@ -38,6 +38,8 @@ import {EmailValidator, EmailValidatorMessage,} from './formly.validator';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TeamMemberComponent} from './team-member/team-member.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
+import { CapabilityDetailsComponent } from './capability-details/capability-details.component';
+import { BrandValueComponent } from './brand-value/brand-value.component';
 
 const routes: Routes = [
   {
@@ -80,6 +82,8 @@ export class FormlyConfig {
     HomeComponent,
     TeamMemberComponent,
     CaseStudyComponent,
+    CapabilityDetailsComponent,
+    BrandValueComponent,
   ],
   imports: [
     BrowserAnimationsModule,

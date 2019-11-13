@@ -11,7 +11,8 @@ export const isEven = (i: number, ifTrue?: string, ifFalse?: string): string | b
 
 export const getScrollState = (el: ElementRef): string => {
   const hOffset = window.innerHeight * 0.75;
-  const componentPosition = el.nativeElement.offsetTop;
+  const nativeEl: HTMLElement = el.nativeElement;
+  const componentPosition = nativeEl.offsetTop;
   const scrollPosition = window.pageYOffset + hOffset;
   return scrollPosition >= componentPosition ? 'show' : 'hide';
 }

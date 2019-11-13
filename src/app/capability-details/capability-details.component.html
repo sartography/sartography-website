@@ -1,0 +1,60 @@
+<div
+  fxHide
+  fxShow.gt-md
+  gdColumns.gt-md="3fr 1fr 1fr 3fr"
+  [ngClass]="{
+    'capability': true,
+    'even': isEven(index),
+    'odd': !isEven(index),
+    'first-row': index === 0,
+    'last-row': index + 1 === numTotal,
+    'second-to-last-row': index + 2 === numTotal
+  }"
+  [@scrollAnimation]="state"
+>
+  <div class="details-left" [fxHide]="!isEven(index)" fxShow.gt-md>
+    <ng-container *ngIf="isEven(index)">
+      <h3>{{capability.title}}</h3>
+      <p>{{capability.description}}</p>
+    </ng-container>
+  </div>
+  <div class="icon-left" [fxHide]="!isEven(index)" fxShow.gt-md>
+    <span
+      *ngIf="isEven(index)"
+      [inlineSVG]="capability.icon_url"
+      class="capability-icon"
+    ></span>
+  </div>
+  <div class="icon-right" [fxHide]="isEven(index)" fxShow.gt-md>
+    <span
+      *ngIf="!isEven(index)"
+      [inlineSVG]="capability.icon_url"
+      class="capability-icon"
+    ></span>
+  </div>
+  <div class="details-right" [fxHide]="isEven(index)" fxShow.gt-md>
+    <ng-container *ngIf="!isEven(index)">
+      <h3>{{capability.title}}</h3>
+      <p>{{capability.description}}</p>
+    </ng-container>
+  </div>
+</div>
+<div
+  class="capability-sm"
+  fxShow
+  fxHide.gt-md
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  [@scrollAnimation]="state"
+>
+  <div class="icon">
+    <span
+      [inlineSVG]="capability.icon_url"
+      class="capability-icon"
+    ></span>
+  </div>
+  <div class="details">
+    <h3>{{capability.title}}</h3>
+    <p>{{capability.description}}</p>
+  </div>
+</div>

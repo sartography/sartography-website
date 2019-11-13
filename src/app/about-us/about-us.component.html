@@ -1,43 +1,18 @@
-<div class="about-us" fxLayout="column" fxLayout.gt-md="row" [@scrollAnimation]="state" fxLayoutAlign="start start">
-  <div class="title" fxFlex="30%">
+<div class="about-us" fxLayout="column" fxLayoutAlign="start start">
+  <div class="title">
     <h1 class="mat-display-1">About Us</h1>
     <h2 class="mat-display-3">What We Do</h2>
   </div>
-  <div class="capabilities" fxFlex="67%" fxLayout="column">
-    <div
-      *ngFor="let c of capabilities; let i = index"
-      gdColumns="1fr"
-      gdColumns.gt-md="3fr 1fr 1fr 3fr"
-      [ngClass]="isEven(i, 'even', 'odd')"
-    >
-      <div class="details-left">
-        <ng-container *ngIf="isEven(i)">
-          <h3>{{c.title}}</h3>
-          <p>{{c.description}}</p>
-        </ng-container>
-      </div>
-
-      <div class="icon-left">
-        <span
-          *ngIf="isEven(i)"
-          [inlineSVG]="c.icon_url"
-          class="capability-icon"
-        ></span>
-      </div>
-      <div class="icon-right">
-        <span
-          *ngIf="!isEven(i)"
-          [inlineSVG]="c.icon_url"
-          class="capability-icon"
-        ></span>
-      </div>
-      <div class="details-right">
-        <ng-container *ngIf="!isEven(i)">
-          <h3>{{c.title}}</h3>
-          <p>{{c.description}}</p>
-        </ng-container>
-      </div>
+  <div fxLayout="column" fxLayout.gt-lg="row">
+    <div fxHide fxShow.gt-lg fxFlex.xl="33.333%"></div>
+    <div class="capabilities" fxFlex.xl="66.667%" fxLayout="column">
+      <app-capability-details
+        *ngFor="let c of capabilities; let i = index"
+        [capability]="c"
+        [index]="i"
+        [numTotal]="capabilities.length"
+      ></app-capability-details>
     </div>
   </div>
 </div>
-
+<div class="bg-about-us" fxShow fxHide.gt-md></div>

@@ -20,17 +20,17 @@
     <a
       *ngIf="teamMember.gitHubLink"
       [href]="teamMember.gitHubLink"
-      mat-flat-button
+      mat-button
       target="_blank"
-      class="btn-github"
+      class="btn-github mat-elevation-z0"
       matTooltip="{{teamMember.firstName}}'s GitHub Profile"
     ><span inlineSVG="/assets/icons/github.svg"></span></a>
     <a
       *ngIf="teamMember.linkedInLink"
       [href]="teamMember.linkedInLink"
-      mat-flat-button
+      mat-button
       target="_blank"
-      class="btn-linkedin"
+      class="btn-linkedin mat-elevation-z0"
       matTooltip="{{teamMember.firstName}}'s LinkedIn Profile"
     ><span inlineSVG="/assets/icons/linkedin.svg"></span></a>
   </div>

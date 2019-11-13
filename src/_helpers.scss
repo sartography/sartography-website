@@ -60,3 +60,14 @@ $cases: (none, capitalize, uppercase, lowercase, full-width);
     text-transform: #{$case};
   }
 }
+
+// COLORS
+@each $color_name, $color_value in $color_palette {
+    .text-#{$color_name} {
+      color: #{$color_value};
+    }
+
+    .bg-#{$color_name} {
+      background-color: #{$color_value};
+    }
+}

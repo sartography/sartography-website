@@ -2,15 +2,20 @@
 
 footer {
   background-color: $brand-gray;
+  color: white;
 
   ::ng-deep .footer-logo svg {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 25vh;
   }
 
   address {
-    color: white;
     font-style: normal;
-    a { color: white; }
+  }
+
+  .copyright {
+    margin-top: 2em;
+    text-align: center;
+    color: $brand-gray-light-1;
   }
 }

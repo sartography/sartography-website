@@ -15,6 +15,7 @@ export class CaseStudiesComponent implements OnInit {
   selectedStudy: CaseStudy;
   selectedStudyId: string;
   isExpanded = false;
+  expandedState = 'hide';
   isEven = isEven;
   bgClasses = [
     'bg-primary',
@@ -42,6 +43,8 @@ export class CaseStudiesComponent implements OnInit {
     } else {
       this.isExpanded = !this.isExpanded;
     }
+
+    this.expandedState = this.isExpanded ? 'show' : 'hide';
   }
 
   getColumnSize(c: CaseStudy): string {

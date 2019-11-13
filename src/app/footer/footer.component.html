@@ -1,15 +1,16 @@
 <footer
   class="footer"
-  gdColumns="3fr 1fr"
-  gdAlignColumns="center center"
+  fxLayout="column"
+  fxLayout.gt-md="row wrap"
+  fxLayoutAlign="center center"
 >
-  <div [@scrollAnimation]="state">
+  <div [@scrollAnimation]="state" fxFlex="75%">
     <span class="footer-logo" inlineSVG="/assets/logo/Sartography-Logo-Horizontal-White.svg"></span>
   </div>
 
-  <div fxFlex="50%" [@scrollAnimation]="state">
+  <div [@scrollAnimation]="state" fxFlex="25%">
     <address class="mat-body-1">
-      Sartography<br>
+      <span class="text-primary">Sartography</span><br>
       c/o Staunton Makerspace<br>
       20 S. Jefferson Street<br>
       Staunton VA 24401<br>
@@ -18,6 +19,5 @@
     </address>
   </div>
 
-
-  <p>Copyright &copy; {{today | date:'yyyy'}} Sartography LLC. All Rights Reserved.</p>
+  <p fxFlex="100%" class="mat-caption copyright">Copyright &copy; {{today | date:'yyyy'}} Sartography LLC. All Rights Reserved.</p>
 </footer>
