@@ -12,18 +12,6 @@
     "linkedInLink": "https://www.linkedin.com/in/funkdan/"
   },
   {
-    "firstName": "Eleanor",
-    "lastName": "Graham",
-    "title": "Full-Stack Developer",
-    "description": [
-      "Eleanor is a software engineer who is equally intrigued by the challenge of working with a client to define business requirements as she is with untangling a particularly snarly bug in the code. With a background in the arts and community development, Eleanor approaches software development with creativity and a commitment to harnessing the power of technology to create positive change in the world. In her work with Sartography, she has relished the opportunity to partner with academics in creating tools to facilitate their collaborations and discoveries.",
-      "When Eleanor isn't writing code, she is usually spending time with her family. Eleanor also volunteers as the president of the Staunton Makerspace, and subs as a cellist with Roanoke Symphony."
-    ],
-    "imageLink": "assets/images/team/Eleanor.jpg",
-    "gitHubLink": "https://github.com/eleanorgraham",
-    "linkedInLink": "https://www.linkedin.com/in/eleanor-graham-9358115a/"
-  },
-  {
     "firstName": "Alex",
     "lastName": "Herron",
     "title": "Technical Project Manager",
@@ -35,16 +23,46 @@
     "linkedInLink": "https://www.linkedin.com/in/alex-herron-b715783/"
   },
   {
-    "firstName": "Aaron",
-    "lastName": "Louie",
-    "title": "Senior Developer & User Experience Architect",
+    "firstName": "Mike",
+    "lastName": "Cullerton",
+    "title": "Software Engineer",
     "description": [
-      "Aaron is a serial entrepreneur and freelance Creative Director who draws from over 16 years of experience in web design, UX, information architecture, interaction design, user research, usability, and content strategy consulting. In addition to his work with Sartography, Aaron is involved with multiple entrepreneurial community initiatives aimed at nurturing a vibrant startup ecosystem in the Shenandoah Valley.  Aaron can step effortlessly from design to implementation with diverse skills and an endless desire to learn, delve, test, illicit incite, and define new futures.",
-      "Aaron and his wife Kristen enjoy spending time exploring the abundant nature of the Shenandoah valley and sharing their love of art, music, and nature with their beautiful young daughter.  You can find Aaron leaping effortlessly from oil painting to fashioning beautifully tuned musical instruments.  He is a craftsman of the highest order, with boundless energy for invention."
+      "Mike reminds us each morning to have a good day, and that the most important thing we are going to do that day is to be kind to our dogs.  Mike has worked as a mechanic, teacher, and short-order cook. In college, he learned about networks helping a friend who was building JMU's new Campus Wide Network. From there, he moved to Colorado to work on a District Wide Network for the Poudre School District in Fort Collins, and then oversaw the network for a new regional ISP there. During that time, he taught himself to program, just to scratch an itch. This led to work as a software developer, which satisfies his love of problem-solving. He enjoys writing Python and learning other languages.\n\nThroughout his career Mike has also worked in education, including staff development, customer training, and project documentation.\n\nWhen not working, you can often find him with his dog, throwing a frisbee, or playing guitar with friends."
     ],
-    "imageLink": "assets/images/team/Aaron.jpg",
-    "gitHubLink": "https://github.com/ajlouie",
-    "linkedInLink": "https://www.linkedin.com/in/aaronjlouie/"
+    "imageLink": "assets/images/team/Mike.jpg",
+    "gitHubLink": "https://github.com/cullerton ",
+    "linkedInLink": "https://www.linkedin.com/in/mike-cullerton-28641848/"
+  },
+  {
+    "firstName": "Alicia",
+    "lastName": "Pritchett",
+    "title": "Software Engineer",
+    "description": [
+      "Alicia, a Buena Vista native, drives, literally, the slowest car on the road.  She graduated from James Madison University in the Spring of 2021 with a degree in Computer Science.  Alicia is an exceptional teammate, with tremendous drive and unflagging determination and ambition.  To quote others, 'Alicia doesn't give people crap, and she doesn't take crap from anyone'. When she isn't busy programming she is modding and repairing her 1990's Mazda Miata. Taking Mike's advice to heart, she's out looking for a good dog. (update late 2021, Dog obtained!  She's now the proud mother of an adorable corgi)"
+    ],
+    "imageLink": "assets/images/team/Alicia.jpg",
+    "gitHubLink": "https://github.com/Leashys"
+  },
+  {
+    "firstName": "Nile",
+    "lastName": "Walker",
+    "title": "Software Engineer (Part Time)",
+    "description": [
+      "Nile recently graduated from Morgan State University with a bachelors in Electrical and Electronics Engineering. A fellow member of the Makerspace, Nile routinely creates what other people only dream about. If you find giant signs at the Makerspace that track peoples movements, or coat the wall in a spiral of a million different colors, it was Nile.  If a teddy bear is following you around in a small electric car, it was likely his doing.  The last time I saw Nile he was resurrecting a 1 ton, 30 year old robotic arm, and bringing it back to life to inspire the next generation of makers."
+    ],
+    "imageLink": "assets/images/team/Nile.jpg",
+    "gitHubLink": "https://github.com/NWalker4483",
+    "linkedInLink": "https://www.linkedin.com/in/nile-walker-58a35712a/"
+  },
+  {
+    "firstName": "Kelly",
+    "lastName": "McDonald",
+    "title": "Technology Consultant",
+    "description": [
+      "Kelly leads development efforts on the open source SpiffWorkflow Library. With decades of experience, Kelly gravitates towards complicated problems across multiple disciplines and languages.\nOne of the things that Kelly enjoys most about working in technology is that there is always something new to learn and new vistas to explore.\nKelly enjoys being with his family, and in his spare time likes to do woodworking projects and cycling."
+    ],
+    "imageLink": "assets/images/team/Kelly.jpg",
+    "gitHubLink": "https://github.com/w4kpm",
+    "linkedInLink": "https://www.linkedin.com/in/kellypmcdonald/"
   }
-
 ]

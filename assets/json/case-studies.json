@@ -3,8 +3,8 @@
     "id": "uva_psych_mindtrails",
     "projectName": "MindTrails",
     "tagLine": "Facilitating Research",
-    "description": "Mindtrails is a web-based research application that helps promote healthier patterns of thinking using interpretation bias training.  Since 2014, Sartography has provided software development and technical oversight to the PACT (Program for Anxiety, Cognition, and Treatment) Lab, run by Professor Bethany Teachman.  Written in Java Spring and Angular, the application meets the rigorous requirements of the University of Virginia for collecting and securing storing sensitive information about study participants, while allowing us to remain in direct contact with those participants.",
-    "organizationName": "University of Virginia",
+    "description": "Mindtrails is a web-based research application that helps promote healthier patterns of thinking using interpretation bias training.  Since 2014, Sartography has provided software development and technical oversight to the PACT (Program for Anxiety, Cognition, and Treatment) Lab, run by Professor Bethany Teachman.  Written in Java Spring and Angular, the application meets the rigorous requirements of the University of Virginia for collecting and storing sensitive information about study participants, while also allowing us to remain in direct contact with those participants.",
+    "organizationName": "University of Virginia, PACT Lab",
     "websiteLink": "https://mindtrails.virginia.edu/",
     "gitHubLink": "https://github.com/TeachmanLab",
     "imageLink": "assets/images/case-studies/mindtrails.png",
@@ -17,6 +17,50 @@
       }
     ]
   },
+  {
+    "id": "recap",
+    "projectName": "ReCAP",
+    "tagLine": "Technology Assessment",
+    "description": "ReCAP is a consortium made up of the New York Public Library, Columbia University, Harvard and Princeton.  The consortium shares a collection of 16 million physical items that is growing by a million items per year.  Sartography performed a rigorous review of a critical software application called SCSB.  We created a 75 page report, including detailed recommendations and a roadmap for achieving a new and more robust software architecture. We presented our findings in person at Columbia University in the fall of 2019 to a group with members from every institution, fielding questions from librarians, engineers and executives to fully address and defend our findings.",
+    "organizationName": "New York Public Library",
+    "websiteLink": "https://recap.princeton.edu/",
+    "imageLink": "assets/images/case-studies/scsb.png",
+    "featureLink": "assets/images/case-studies/scsb_feature.png",
+    "testimonials": [
+      {
+        "name": "A representative of ReCAP",
+        "title": "",
+        "quote": "Thank you so much for working with us and performing such a thoughtful and detailed review of SCSB. The report is clear, compelling, and easy to read even for a layman like me."
+      }
+    ]
+  },
+  {
+    "id": "autism_drive",
+    "projectName": "Autism Drive",
+    "tagLine": "Community Engagement",
+    "description": "The Autism DRIVE is a 'bench to bedside' project that connects researchers and the community to accelerate advances in the support of people affected by autism.  We worked with Doctors Micha Mazurek and Rose Nevill to develop an easy to use website where people can find support throughout the state of Virginia, as well as sign up for current and future research studies.",
+    "organizationName": "University of Virginia, Curry School of Education",
+    "websiteLink": "https://autismdrive.virginia.edu/#/home",
+    "gitHubLink": "https://github.com/sartography/star-drive",
+    "imageLink": "assets/images/case-studies/autism_drive.png",
+    "featureLink": "assets/images/case-studies/autism_drive_feature.png",
+    "testimonials": [
+    ]
+  },
+  {
+    "id": "spiff_workflow",
+    "projectName": "SpiffWorkflow",
+    "tagLine": "Visual Programming Library for Python",
+    "description": "For the past two years we have contributed to the open source Library SpiffWorkflow.  SpiffWorkflow allows your python application to process BPMN diagrams (think of them as very powerful flow charts) to accomplish what would otherwise require writing a lot of complex business logic in your code. ",
+    "organizationName": "Sartography",
+    "websiteLink": "https://spiffworkflow.readthedocs.io/en/latest/",
+    "gitHubLink": "https://github.com/sartography/SpiffWorkflow",
+    "imageLink": "assets/images/case-studies/spiff_feature.png",
+    "featureLink": "assets/images/case-studies/spiff.png",
+    "testimonials": [
+    ]
+  },
+
   {
     "id": "uva_som_cadre_academy",
     "projectName": "Cadre Academy",
