@@ -5,34 +5,8 @@
   <div class="container form-container">
     <div class="margin-bottom-2">
       <h1>Contact Us</h1>
+      <h2>Email: Dan@Sartography.com</h2>
+      <h2>Cell: 540-457-0024 </h2>
     </div>
-    <form
-      ngNoForm
-      action="https://formspree.io/xbnvblvx"
-      method="POST"
-    >
-      <formly-form
-        [form]="form"
-        [fields]="fields"
-        [model]="model"
-      >
-        <div
-          fxLayout="column"
-          fxLayoutGap="2%"
-          fxLayoutAlign="center start"
-        >
-          <div
-            id="error_message"
-            class="display mat-error"
-          >{{errorEmitter | async}}</div>
-          <button
-            mat-flat-button
-            type="submit"
-            color="primary"
-            id="submit"
-          >Submit</button>
-        </div>
-      </formly-form>
-    </form>
   </div>
 </div>
