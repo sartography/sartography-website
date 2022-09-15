@@ -1,20 +1,9 @@
 import {HttpClientModule} from '@angular/common/http';
 import {Injectable, NgModule} from '@angular/core';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatFormFieldModule,
-  MatIconModule,
-  MatInputModule,
-  MatMenuModule,
-  MatTabsModule,
-  MatToolbarModule,
-  MatTooltipModule
-} from '@angular/material';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {InlineSVGModule} from 'ng-inline-svg';
+import {InlineSVGModule} from 'ng-inline-svg-2';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
 import {AboutUsComponent} from './about-us/about-us.component';
 import {ApiService} from './api.service';
@@ -34,12 +23,21 @@ import {StyleGuideComponent} from './style-guide/style-guide.component';
 import {HomeComponent} from './home/home.component';
 import {FormlyModule} from '@ngx-formly/core';
 import {FormlyMaterialModule} from '@ngx-formly/material';
-import {EmailValidator, EmailValidatorMessage,} from './formly.validator';
+import {EmailValidator, EmailValidatorMessage } from './formly.validator';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TeamMemberComponent} from './team-member/team-member.component';
 import { CaseStudyComponent } from './case-study/case-study.component';
 import { CapabilityDetailsComponent } from './capability-details/capability-details.component';
 import { BrandValueComponent } from './brand-value/brand-value.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 const routes: Routes = [
   {

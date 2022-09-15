@@ -2,10 +2,10 @@
   {
     "firstName": "Dan",
     "lastName": "Funk",
-    "title": "Founder, Technical Architect, & Lead Developer",
+    "title": "Founder, Software Developer",
     "description": [
-      "Dan leads all development efforts at Sartography, working together with clients and his team to create innovative applications.   He has provided technical consulting since 2011,  during which time he has created custom search systems for the US Patent Office, developed a new e-commerce system for UnderArmour, and led development efforts on research projects out of the University of Virginia. In a previous life Dan was a software development manager for RosettaStone, leading at various points their e-commerce team, API team, and web development team.  He also served as Lead Architect for the University of Virginia Library where he contributed to Project Blacklight, a popular open source library catalog system.",
-      "A native of Staunton, VA, Dan is the proud father of his son Jonah. When they aren't building robots at the local Makerspace, they can be found riding their bikes on some of Virginia's excellent rails-to-trails bike paths."
+      "Dan has provided technical consulting since 2011,  during which time he has created custom search systems for the US Patent Office, developed a new e-commerce system for UnderArmour, and led development efforts on research projects out of the University of Virginia. In a previous life Dan was a software development manager for RosettaStone, leading at various points their e-commerce team, API team, and web development team.  He also served as Lead Architect for the University of Virginia Library where he contributed to Project Blacklight, a popular open source library catalog system.",
+      "A native of Staunton, VA, Dan is one of the founders of the Staunton Makerspace, where he builds countless odd things.  He recently got married to a ridiculously beautiful women well outside his social circle.  Together they are raising his son Jonah, and her two kids Caleb and Corrie - three of the most well balanced, kind, and thoughtful teenagers you will ever encounter."
     ],
     "imageLink": "assets/images/team/Dan.jpg",
     "gitHubLink": "https://github.com/danfunk",
@@ -34,35 +34,36 @@
     "linkedInLink": "https://www.linkedin.com/in/mike-cullerton-28641848/"
   },
   {
-    "firstName": "Alicia",
-    "lastName": "Pritchett",
+    "firstName": "Elizabeth",
+    "lastName": "Esswein",
+    "title": "Software Engineer (Consulting)",
+    "description": [
+      "Elizabeth is a scientist at heart, with a love of patterns and a near fanatical delight in forcing simplicity out of chaos. She seeks to put her programming and system administration skills to use while learning about disciplines outside of computer science.  She is the guardian of two beautiful, if occasionally noisy felines.  The daughter of a retired cook and skilled baker, she is also a gifted chef."
+    ],
+    "imageLink": "assets/images/team/Elizabeth.jpg",
+    "gitHubLink": "https://github.com/essweine",
+    "linkedInLink": "https://www.linkedin.com/in/elizabeth-esswein-95087a79/"
+  },
+  {
+    "firstName": "Kevin (KB)",
+    "lastName": "Burnett",
     "title": "Software Engineer",
     "description": [
-      "Alicia, a Buena Vista native, drives, literally, the slowest car on the road.  She graduated from James Madison University in the Spring of 2021 with a degree in Computer Science.  Alicia is an exceptional teammate, with tremendous drive and unflagging determination and ambition.  To quote others, 'Alicia doesn't give people crap, and she doesn't take crap from anyone'. When she isn't busy programming she is modding and repairing her 1990's Mazda Miata. Taking Mike's advice to heart, she's out looking for a good dog. (update late 2021, Dog obtained!  She's now the proud mother of an adorable corgi)"
+      "KB is a software developer with significant experience in backend technologies, some in frontend, and a bit of management sprinkled in for good measure. He has always loved building internal tools and optimizing developer machine configurations and setup scripts because fellow developers are usually fast to offer feedback when they are using suboptimal tools. He is always happy to discuss vim, tmux, and terminal stuff, and share the dotfiles he helped create. His love of tools and interest in process led to several years leading the DevOps charge at Rosetta Stone with Jason Lantz. He was fortunate to come to know Sartography colleagues Jason, Alex, and Dan when they were working together at Rosetta Stone."
     ],
-    "imageLink": "assets/images/team/Alicia.jpg",
-    "gitHubLink": "https://github.com/Leashys"
+    "imageLink": "assets/images/team/KB.jpg",
+    "gitHubLink": "https://github.com/burnettk",
+    "linkedInLink": "https://www.linkedin.com/in/burnett/"
   },
   {
-    "firstName": "Nile",
-    "lastName": "Walker",
-    "title": "Software Engineer (Part Time)",
+    "firstName": "Jason",
+    "lastName": "Lantz",
+    "title": "Software Engineer",
     "description": [
-      "Nile recently graduated from Morgan State University with a bachelors in Electrical and Electronics Engineering. A fellow member of the Makerspace, Nile routinely creates what other people only dream about. If you find giant signs at the Makerspace that track peoples movements, or coat the wall in a spiral of a million different colors, it was Nile.  If a teddy bear is following you around in a small electric car, it was likely his doing.  The last time I saw Nile he was resurrecting a 1 ton, 30 year old robotic arm, and bringing it back to life to inspire the next generation of makers."
+      "Jason started his career at Rosetta Stone while he was still in high school and spent most of his career there. He started in QA where he taught himself to program by writing perl scripts and eventually went to college to get his BS in Computer Science. After graduating, he moved to the software development side of things where he mostly concentrated on DevOps. This involved writing internal tools and automation scripts mostly in ruby and bash and working some in system administration performing system upgrades for various servers using automation scripts. In his spare time, Jason likes to play boardgames or go to metal concerts and sometimes play and write music if inspiration hits."
     ],
-    "imageLink": "assets/images/team/Nile.jpg",
-    "gitHubLink": "https://github.com/NWalker4483",
-    "linkedInLink": "https://www.linkedin.com/in/nile-walker-58a35712a/"
-  },
-  {
-    "firstName": "Kelly",
-    "lastName": "McDonald",
-    "title": "Technology Consultant",
-    "description": [
-      "Kelly leads development efforts on the open source SpiffWorkflow Library. With decades of experience, Kelly gravitates towards complicated problems across multiple disciplines and languages.\nOne of the things that Kelly enjoys most about working in technology is that there is always something new to learn and new vistas to explore.\nKelly enjoys being with his family, and in his spare time likes to do woodworking projects and cycling."
-    ],
-    "imageLink": "assets/images/team/Kelly.jpg",
-    "gitHubLink": "https://github.com/w4kpm",
-    "linkedInLink": "https://www.linkedin.com/in/kellypmcdonald/"
+    "imageLink": "assets/images/team/Jason.jpg",
+    "gitHubLink": "https://github.com/jasquat",
+    "linkedInLink": "https://www.linkedin.com/in/jason-lantz-bb8a7a22/"
   }
 ]
