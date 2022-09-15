@@ -130,7 +130,6 @@
       }
     }
   },
-  "defaultProject": "sartography-website",
   "schematics": {
     "@schematics/angular:component": {
       "style": "scss"

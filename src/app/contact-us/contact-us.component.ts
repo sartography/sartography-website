@@ -1,5 +1,5 @@
 import {Component, ElementRef, EventEmitter, HostListener, OnInit} from '@angular/core';
-import {FormGroup} from '@angular/forms';
+import {UntypedFormGroup} from '@angular/forms';
 import {FormlyFieldConfig} from '@ngx-formly/core';
 import {ApiService} from '../api.service';
 import {animations} from '../animation';
@@ -13,7 +13,7 @@ import {getScrollState} from '../util';
 })
 export class ContactUsComponent implements OnInit {
   state = 'hide';
-  form = new FormGroup({});
+  form = new UntypedFormGroup({});
   model: any = {};
   errorEmitter = new EventEmitter<string>();
   fields: FormlyFieldConfig[] = [
