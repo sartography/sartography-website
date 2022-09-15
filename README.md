@@ -38,3 +38,4 @@ Fixme:
 "@ngx-formly/core": "^6.0.0",
 "@ngx-formly/material": "^6.0.0",
 "@angular/material": "^11.2.13",
+"@angular/flex-layout": "^12.0.0-beta.35",
