@@ -32,3 +32,9 @@ You can re-deploy our website if you have permission to contribute to this repos
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Dropped dependencies
+Fixme:  
+"@ngx-formly/core": "^6.0.0",
+"@ngx-formly/material": "^6.0.0",
+"@angular/material": "^11.2.13",
