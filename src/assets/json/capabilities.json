@@ -1,23 +1,23 @@
 [
   {
-    "icon_url": "/assets/icons/software_development.svg",
+    "icon_url": "/assets/icons/python.svg",
     "title": "Python Software Development",
     "description": "We create powerful scientific applications using the most popular and intuitive programming language available today."
   },
   {
-    "icon_url": "/assets/icons/information_design.svg",
+    "icon_url": "/assets/icons/workflow.svg",
     "title": "Workflow Automation",
     "description": "We are experts in the application of BPMN (Business Process Model and Notation) a precise open standard for describing complex business processes "
   },
   {
     "icon_url": "/assets/icons/responsive_design.svg",
     "title": "Responsive & Adaptive Design",
-    "description": "Even our most complex applications work well on phones and tablets, as well as desktops using the Angular Framework."
+    "description": "Even our most complex applications work well on phones and tablets, as well as desktops using the React Framework."
   },
   {
     "icon_url": "/assets/icons/security.svg",
-    "title": "Security",
-    "description": "We build applications that allow scientists to safely collect, monitor and study medical information."
+    "title": "DevOps",
+    "description": "We can drastically increase an organization's ability to rapidly deliver applications and services - we have decades of experience supporting large scale infrastructure."
   },
   {
     "icon_url": "/assets/icons/research.svg",

@@ -4,7 +4,7 @@
     "projectName": "SpiffWorkflow",
     "tagLine": "Visual Programming Engine for Python",
     "description": "For the past four years we have contributed to the open source SpiffWorkflow.  SpiffWorkflow allows your buisness applications to process BPMN diagrams (think of them as very powerful flow charts) to accomplish what would otherwise require writing a lot of complex business logic in your code. ",
-    "organizationName": "Sartography",
+    "organizationName": "Open Source",
     "websiteLink": "https://spiffworkflow.org",
     "gitHubLink": "https://github.com/sartography/SpiffArena",
     "imageLink": "assets/images/case-studies/spiff_feature.png",
@@ -18,20 +18,51 @@
     ]
   },
   {
-    "id": "uva_psych_mindtrails",
-    "projectName": "MindTrails",
-    "tagLine": "Facilitating Research",
-    "description": "Mindtrails is a web-based research application that helps promote healthier patterns of thinking using interpretation bias training.  Since 2014, Sartography has provided software development and technical oversight to the PACT (Program for Anxiety, Cognition, and Treatment) Lab, run by Professor Bethany Teachman.  Written in Java Spring and Angular, the application meets the rigorous requirements of the University of Virginia for collecting and storing sensitive information about study participants, while also allowing us to remain in direct contact with those participants.",
-    "organizationName": "University of Virginia, PACT Lab",
-    "websiteLink": "https://mindtrails.virginia.edu/",
-    "gitHubLink": "https://github.com/TeachmanLab",
-    "imageLink": "assets/images/case-studies/mindtrails.png",
-    "featureLink": "assets/images/case-studies/mindtrails_feature.png",
+    "id": "crconnect",
+    "projectName": "CR Connect 2",
+    "tagLine": "Featured in IEEE Software Magazine",
+    "description": "Developed for the University of Virginia’s School of Medicine (UVA SOM), CR Connect streamlines the submission process to UVA’s Institutional Review Board for Health Sciences Re-search. UVA SOM requested a general-purpose workflow system, a tool that could handle frequent tweaks and ad-justments, because this domain is dominated by change. As many researchers are aware, a university’s review board is the perfect storm—a collision of science, bureaucratic processes, legal\nliability, and the progression of professional careers.",
+    "organizationName": "University of Virginia, School of Medicine",
+    "downloadLink": "assets//ieee_spiffworkflow_article.pdf",
+    "imageLink": "assets/images/case-studies/crconnect.png",
+    "featureLink": "assets/images/case-studies/ieee.png",
     "testimonials": [
       {
-        "name": "Bethany Teachman PhD",
-        "title": "Professor, Department of Psychology",
-        "quote": "Sartography is deeply committed to helping clients realize their vision. The team is incredibly responsive to feedback and always willing to meet to answer questions. They routinely go ‘above and beyond’ to make the product the best it can be, and they are creative and excellent problem solvers."
+        "name": "Ron Hutchins",
+        "title": "Vice President of Information Technology, UVA",
+        "quote": "You guys are rock stars. I really appreciate your passion and your expertise on this project. I’m very excited too about what we can do with it in the future."
+      }
+    ]
+  },
+  {
+    "id": "status",
+    "projectName": "Status: DAO",
+    "tagLine": "A Web3 DAO built on BPMN",
+    "description": "For the last 2 years, Status has funded major contributions to the SpiffWorkflow open source project as they build a transparent organization who's core processes are all managed by BPMN: executable flow-chart diagrams.",
+    "organizationName": "Status",
+    "imageLink": "assets/images/case-studies/status.png",
+    "featureLink": "assets/images/case-studies/status.png",
+    "testimonials": [
+      {
+        "name": "Jarrad Hope",
+        "title": "Cofounder of Status",
+        "quote": "I’m proud of our investment in SpiffWorkflow. It’s in line with our mission and core principles of purposeful technology, public good, and openness. I am excited about the future and looking forward to working with you."
+      }
+    ]
+  },
+  {
+    "id": "research_rampup",
+    "projectName": "Research RampUp",
+    "tagLine": "Bringing UVA labs back online during the pandemic",
+    "description": "On May 12th of 2021, Cheryl Wagner (Chief of Staff, VP of Research) contacted us to very rapidly develop emergency applications to help UVA during Covid. Our first project automated the process of bringing labs back on line.  The approval process was complex and required multiple layers of approval, detailed documentation, and complex reports for rapidly changing state government regulations -- all of this multiplied by 100's of labs.  We built the application using the SpiffWorkflow library, and went live with the system on June 1st - and while there were certainly a few bugs, we continued to handle approval processes for over a year. ",
+    "organizationName": "University of Virginia, Research",
+    "imageLink": "assets/images/case-studies/research_rampup.png",
+    "featureLink": "assets/images/case-studies/research_rampup.png",
+    "testimonials": [
+      {
+        "name": "Cheryl Wagner",
+        "title": "Chief of Staff, Office of the Vice President for Research, University of Virginia",
+        "quote": "Our office was tasked with implementing a saliva testing program at UVA during the pandemic, and we were fortunate enough to work with Sartography on the project. The Sartography team was quick, effective and agile as they created systems and processes from the ground up to create labels, track tests and notify them of their results under a tight deadline. Doing what would normally take 6-8 months in 6-8 weeks! The team continued to pivot as our needs changed, all the while providing stellar customer service and virtual tech support as we ramped up our testing program at UVA."
       }
     ]
   },
@@ -53,39 +84,8 @@
     ]
   },
   {
-    "id": "autism_drive",
-    "projectName": "Autism Drive",
-    "tagLine": "Community Engagement",
-    "description": "The Autism DRIVE is a 'bench to bedside' project that connects researchers and the community to accelerate advances in the support of people affected by autism.  We worked with Doctors Micha Mazurek and Rose Nevill to develop an easy to use website where people can find support throughout the state of Virginia, as well as sign up for current and future research studies.",
-    "organizationName": "University of Virginia, Curry School of Education",
-    "websiteLink": "https://autismdrive.virginia.edu/#/home",
-    "gitHubLink": "https://github.com/sartography/star-drive",
-    "imageLink": "assets/images/case-studies/autism_drive.png",
-    "featureLink": "assets/images/case-studies/autism_drive_feature.png",
-    "testimonials": [
-    ]
-  },
-  {
-    "id": "uva_som_cadre_academy",
-    "projectName": "Cadre Academy",
-    "tagLine": "Engaging the Community",
-    "description": "Working with the Research Computing department of the School of Medicine at UVA we created a platform where students, community members, and faculty could sign up for free workshops offered across the campus.  Integrating with UVA’s two factor authentication system, we created a streamlined sign-up process.  To help users find the right classes we provide tools for organizing workshops into tracks - taking users from introductory materials to advanced specializations.",
-    "organizationName": "University of Virginia",
-    "websiteLink": "https://education.cadre.virginia.edu/",
-    "gitHubLink": "https://github.com/uvasomrc/ed-platform",
-    "imageLink": "assets/images/case-studies/cadre.png",
-    "featureLink": "assets/images/case-studies/cadre_feature.png",
-    "testimonials": [
-      {
-        "name": "Byoung-Do (BD) Kim",
-        "title": "Director of Research Computing",
-        "quote": "The Sartography team did excellent work for the development of CADRE Academy. Hundreds of UVA students are now taking advantage of the online platform for their search on workshop contents and upcoming classes. It was a great pleasure working with Dan."
-      }
-    ]
-  },
-  {
     "id": "uva_som_ithriv",
-    "projectName": "iThriv",
+    "projectName": "iThriv Portal",
     "tagLine": "Managing Complexity",
     "description": "The number of biomedical resources available to Researchers, Clinicians and the general public is exploding. An emerging discipline of Translational Medicine hopes to expedite the discovery of new tools and treatments in this multidisciplinary world. As a first step we helped create the iTrhiv Portal, a multi-institutional collaboration of Virginia universities and private organizations that helps everyone learn about and access information critical to their work and health.",
     "organizationName": "University of Virginia",
@@ -102,6 +102,19 @@
     ]
   },
   {
+    "id": "autism_drive",
+    "projectName": "Autism Drive",
+    "tagLine": "Community Engagement",
+    "description": "The Autism DRIVE is a 'bench to bedside' project that connects researchers and the community to accelerate advances in the support of people affected by autism.  We worked with Doctors Micha Mazurek and Rose Nevill to develop an easy to use website where people can find support throughout the state of Virginia, as well as sign up for current and future research studies.",
+    "organizationName": "University of Virginia, Curry School of Education",
+    "websiteLink": "https://autismdrive.virginia.edu/#/home",
+    "gitHubLink": "https://github.com/sartography/star-drive",
+    "imageLink": "assets/images/case-studies/autism_drive.png",
+    "featureLink": "assets/images/case-studies/autism_drive_feature.png",
+    "testimonials": [
+    ]
+  },
+  {
     "id": "full_genomes",
     "projectName": "Cleanup & Refactor",
     "tagLine": "Invigorating Business Software",
@@ -111,5 +124,23 @@
     "imageLink": "assets/images/case-studies/full_genomes.png",
     "featureLink": "assets/images/case-studies/full_genomes_feature.png",
     "testimonials": []
+  },
+  {
+    "id": "uva_psych_mindtrails",
+    "projectName": "MindTrails",
+    "tagLine": "Facilitating Research",
+    "description": "Mindtrails is a web-based research application that helps promote healthier patterns of thinking using interpretation bias training.  Since 2014, Sartography has provided software development and technical oversight to the PACT (Program for Anxiety, Cognition, and Treatment) Lab, run by Professor Bethany Teachman.  Written in Java Spring and Angular, the application meets the rigorous requirements of the University of Virginia for collecting and storing sensitive information about study participants, while also allowing us to remain in direct contact with those participants.",
+    "organizationName": "University of Virginia, PACT Lab",
+    "websiteLink": "https://mindtrails.virginia.edu/",
+    "gitHubLink": "https://github.com/TeachmanLab",
+    "imageLink": "assets/images/case-studies/mindtrails.png",
+    "featureLink": "assets/images/case-studies/mindtrails_feature.png",
+    "testimonials": [
+      {
+        "name": "Bethany Teachman PhD",
+        "title": "Professor, Department of Psychology",
+        "quote": "Sartography is deeply committed to helping clients realize their vision. The team is incredibly responsive to feedback and always willing to meet to answer questions. They routinely go ‘above and beyond’ to make the product the best it can be, and they are creative and excellent problem solvers."
+      }
+    ]
   }
 ]

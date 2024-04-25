@@ -18,6 +18,7 @@ export interface CaseStudy {
   gitHubLink: string;
   imageLink: string;
   featureLink: string;
+  downloadLink: string;
   testimonials?: Testimonial[];
 }
 

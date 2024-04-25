@@ -61,6 +61,14 @@
               >
                 GitHub
               </a>
+              <a
+                *ngIf="selectedStudy.downloadLink"
+                mat-flat-button
+                [href]="selectedStudy.downloadLink"
+                target="_blank"
+              >
+                Download Article
+              </a>
             </div>
 
 
