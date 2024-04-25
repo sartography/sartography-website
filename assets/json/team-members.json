@@ -36,7 +36,7 @@
   {
     "firstName": "Elizabeth",
     "lastName": "Esswein",
-    "title": "Software Engineer",
+    "title": "Founding Software Engineer",
     "description": [
       "Elizabeth is a scientist at heart, with a love of patterns and a near fanatical delight in forcing simplicity out of chaos. She seeks to put her programming and system administration skills to use while learning about disciplines outside of computer science.  She is the guardian of two beautiful, if occasionally noisy felines.  The daughter of a retired cook and skilled baker, she is also a gifted chef."
     ],
@@ -47,7 +47,7 @@
   {
     "firstName": "Jason",
     "lastName": "Lantz",
-    "title": "Software Engineer",
+    "title": "Founding Software Engineer",
     "description": [
       "Jason started his career at Rosetta Stone while he was still in high school and spent most of his career there. He started in QA where he taught himself to program by writing perl scripts and eventually went to college to get his BS in Computer Science. After graduating, he moved to the software development side of things where he mostly concentrated on DevOps. This involved writing internal tools and automation scripts mostly in ruby and bash and working some in system administration performing system upgrades for various servers using automation scripts. In his spare time, Jason likes to play boardgames or go to metal concerts and sometimes play and write music if inspiration hits."
     ],
@@ -58,7 +58,7 @@
   {
     "firstName": "John",
     "lastName": "Herron",
-    "title": "Software Engineer",
+    "title": "Founding Software Engineer",
     "description": [
       "Jon built his early career at Yahoo where he was a Principal Software Apps Engineer. He has an extensive background ranging from start ups to Fortune 500 companies; web development to back end processing in both high and low level languages. Specialties: Development, debugging, architecture, unit testing, technical specifications, cross platform development, low level and high level languages, web development, Windows, Linux, .NET, Common Lisp, Scheme, JavaScript, Ajax, (x)HTML, CSS, PHP, MySQL, NoSQL, web and application security"
     ],
