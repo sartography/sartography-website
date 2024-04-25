@@ -34,6 +34,16 @@
     "linkedInLink": "https://www.linkedin.com/in/burnett/"
   },
   {
+    "firstName": "Robert (Bob)",
+    "lastName": "Lloyd",
+    "title": "Chief Growth Officer",
+    "description": [
+      "As an experienced business builder, Bob brings core skills in turning deep-tech innovation into successful product, business development and go-to-market initiatives. With extensive founder experience across high-value hardware, software and information services markets, Bob creates a competitive edge in existing and new markets."
+    ],
+    "imageLink": "assets/images/team/Bob.jpg",
+    "linkedInLink": "https://www.linkedin.com/in/robertwlloyd/"
+  },
+  {
     "firstName": "Elizabeth",
     "lastName": "Esswein",
     "title": "Founding Software Engineer",
