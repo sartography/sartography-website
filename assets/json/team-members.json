@@ -2,7 +2,7 @@
   {
     "firstName": "Dan",
     "lastName": "Funk",
-    "title": "Founder, Software Developer",
+    "title": "Founder and CEO",
     "description": [
       "Dan has provided technical consulting since 2011,  during which time he has created custom search systems for the US Patent Office, developed a new e-commerce system for UnderArmour, and led development efforts on research projects out of the University of Virginia. In a previous life Dan was a software development manager for RosettaStone, leading at various points their e-commerce team, API team, and web development team.  He also served as Lead Architect for the University of Virginia Library where he contributed to Project Blacklight, a popular open source library catalog system.",
       "A native of Staunton, VA, Dan is one of the founders of the Staunton Makerspace, where he builds countless odd things.  He recently got married to a ridiculously beautiful women well outside his social circle.  Together they are raising his son Jonah, and her two kids Caleb and Corrie - three of the most well balanced, kind, and thoughtful teenagers you will ever encounter."
@@ -14,7 +14,7 @@
   {
     "firstName": "Alex",
     "lastName": "Herron",
-    "title": "Technical Project Manager",
+    "title": "Chief Operations Officer",
     "description": [
       "Alex has worn many hats during his continual endeavor to understand and help optimize the Software Development Life Cycle.  Having graduated with a BS in Mechanical Engineering at the same time the personal computer was making its mark, Alex embraced this new technology and taught himself to program.  This led to a career change as one of the founding partners of Prime Meridian Software, a Charlottesville, VA based company providing process management software to Hospital Residency Programs, where he led the development efforts to help programs optimize recruitment.  During this time Alex realized that his true passion was working with clients to define their requirements and development teams to optimize delivery.  Alex was able to further refine these skills at Rosetta Stone where he held the roles of Business Analyst, Product Manager, Scrum Master and SAFe implementer.  He also had the opportunity to work closely with Dan for several years there and when offered the chance to join the Sartography team, Alex was elated with the challenging and rewarding work available and new opportunity to continue his endeavor."
     ],
@@ -23,37 +23,26 @@
     "linkedInLink": "https://www.linkedin.com/in/alex-herron-b715783/"
   },
   {
-    "firstName": "Mike",
-    "lastName": "Cullerton",
-    "title": "Software Engineer",
-    "description": [
-      "Mike reminds us each morning to have a good day, and that the most important thing we are going to do that day is to be kind to our dogs.  Mike has worked as a mechanic, teacher, and short-order cook. In college, he learned about networks helping a friend who was building JMU's new Campus Wide Network. From there, he moved to Colorado to work on a District Wide Network for the Poudre School District in Fort Collins, and then oversaw the network for a new regional ISP there. During that time, he taught himself to program, just to scratch an itch. This led to work as a software developer, which satisfies his love of problem-solving. He enjoys writing Python and learning other languages.\n\nThroughout his career Mike has also worked in education, including staff development, customer training, and project documentation.\n\nWhen not working, you can often find him with his dog, throwing a frisbee, or playing guitar with friends."
-    ],
-    "imageLink": "assets/images/team/Mike.jpg",
-    "gitHubLink": "https://github.com/cullerton ",
-    "linkedInLink": "https://www.linkedin.com/in/mike-cullerton-28641848/"
-  },
-  {
-    "firstName": "Elizabeth",
-    "lastName": "Esswein",
-    "title": "Software Engineer (Consulting)",
-    "description": [
-      "Elizabeth is a scientist at heart, with a love of patterns and a near fanatical delight in forcing simplicity out of chaos. She seeks to put her programming and system administration skills to use while learning about disciplines outside of computer science.  She is the guardian of two beautiful, if occasionally noisy felines.  The daughter of a retired cook and skilled baker, she is also a gifted chef."
-    ],
-    "imageLink": "assets/images/team/Elizabeth.jpg",
-    "gitHubLink": "https://github.com/essweine",
-    "linkedInLink": "https://www.linkedin.com/in/elizabeth-esswein-95087a79/"
-  },
-  {
     "firstName": "Kevin (KB)",
     "lastName": "Burnett",
-    "title": "Software Engineer",
+    "title": "Chief Technical Officer",
     "description": [
       "KB is a software developer with significant experience in backend technologies, some in frontend, and a bit of management sprinkled in for good measure. He has always loved building internal tools and optimizing developer machine configurations and setup scripts because fellow developers are usually fast to offer feedback when they are using suboptimal tools. He is always happy to discuss vim, tmux, and terminal stuff, and share the dotfiles he helped create. His love of tools and interest in process led to several years leading the DevOps charge at Rosetta Stone with Jason Lantz. He was fortunate to come to know Sartography colleagues Jason, Alex, and Dan when they were working together at Rosetta Stone."
     ],
     "imageLink": "assets/images/team/KB.jpg",
     "gitHubLink": "https://github.com/burnettk",
     "linkedInLink": "https://www.linkedin.com/in/burnett/"
+  },
+  {
+    "firstName": "Elizabeth",
+    "lastName": "Esswein",
+    "title": "Software Engineer",
+    "description": [
+      "Elizabeth is a scientist at heart, with a love of patterns and a near fanatical delight in forcing simplicity out of chaos. She seeks to put her programming and system administration skills to use while learning about disciplines outside of computer science.  She is the guardian of two beautiful, if occasionally noisy felines.  The daughter of a retired cook and skilled baker, she is also a gifted chef."
+    ],
+    "imageLink": "assets/images/team/Elizabeth.jpg",
+    "gitHubLink": "https://github.com/essweine",
+    "linkedInLink": "https://www.linkedin.com/in/elizabeth-esswein-95087a79/"
   },
   {
     "firstName": "Jason",
@@ -65,5 +54,16 @@
     "imageLink": "assets/images/team/Jason.jpg",
     "gitHubLink": "https://github.com/jasquat",
     "linkedInLink": "https://www.linkedin.com/in/jason-lantz-bb8a7a22/"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Herron",
+    "title": "Software Engineer",
+    "description": [
+      "Jon built his early career at Yahoo where he was a Principal Software Apps Engineer. He has an extensive background ranging from start ups to Fortune 500 companies; web development to back end processing in both high and low level languages. Specialties: Development, debugging, architecture, unit testing, technical specifications, cross platform development, low level and high level languages, web development, Windows, Linux, .NET, Common Lisp, Scheme, JavaScript, Ajax, (x)HTML, CSS, PHP, MySQL, NoSQL, web and application security"
+    ],
+    "imageLink": "assets/images/team/jon.jpg",
+    "gitHubLink": "https://github.com/jbirddog",
+    "linkedInLink": "https://www.linkedin.com/in/jonherron/"
   }
 ]
