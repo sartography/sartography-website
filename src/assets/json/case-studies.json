@@ -1,5 +1,23 @@
 [
   {
+    "id": "spiff_workflow",
+    "projectName": "SpiffWorkflow",
+    "tagLine": "Visual Programming Engine for Python",
+    "description": "For the past four years we have contributed to the open source SpiffWorkflow.  SpiffWorkflow allows your buisness applications to process BPMN diagrams (think of them as very powerful flow charts) to accomplish what would otherwise require writing a lot of complex business logic in your code. ",
+    "organizationName": "Sartography",
+    "websiteLink": "https://spiffworkflow.org",
+    "gitHubLink": "https://github.com/sartography/SpiffArena",
+    "imageLink": "assets/images/case-studies/spiff_feature.png",
+    "featureLink": "assets/images/case-studies/spiff.png",
+    "testimonials": [
+      {
+      "name": "Aleksandra Yarokhovich",
+      "title": "Business Analyst, Status",
+      "quote": "Collaborating on the SpiffWorkflow project has been a delight. Passionate team, open to ideas, and a powerful product combining BPMN with Python's agility. Best wishes for its success!"
+      }
+    ]
+  },
+  {
     "id": "uva_psych_mindtrails",
     "projectName": "MindTrails",
     "tagLine": "Facilitating Research",
@@ -48,20 +66,6 @@
     ]
   },
   {
-    "id": "spiff_workflow",
-    "projectName": "SpiffWorkflow",
-    "tagLine": "Visual Programming Library for Python",
-    "description": "For the past two years we have contributed to the open source Library SpiffWorkflow.  SpiffWorkflow allows your python application to process BPMN diagrams (think of them as very powerful flow charts) to accomplish what would otherwise require writing a lot of complex business logic in your code. ",
-    "organizationName": "Sartography",
-    "websiteLink": "https://spiffworkflow.readthedocs.io/en/latest/",
-    "gitHubLink": "https://github.com/sartography/SpiffWorkflow",
-    "imageLink": "assets/images/case-studies/spiff_feature.png",
-    "featureLink": "assets/images/case-studies/spiff.png",
-    "testimonials": [
-    ]
-  },
-
-  {
     "id": "uva_som_cadre_academy",
     "projectName": "Cadre Academy",
     "tagLine": "Engaging the Community",
@@ -94,24 +98,6 @@
         "name": "Johanna Loomba, BS, CCRC",
         "title": "Research Concierge Services Manager",
         "quote": "The Sartography team was creative, flexible, and efficient in their approaches to both requirements definition and system design.  Their commitment to quality and customer satisfaction was unflagging throughout the entire project period."
-      }
-    ]
-  },
-  {
-    "id": "jim_rutt_reddit_analyzer",
-    "projectName": "Reddit Analyzer",
-    "tagLine": "Natural Language Processing",
-    "description": "Reddit is a news aggregation and discussion forum that provides access to millions of comments, discussions, and news postings. Jim Rutt's Staunton Research project was working with a natural language processor to test a number of theories, and was looking for ways to speed up and automate his existing prototype.  To help, we decided to use ElasticSearch, a search engine with a number of powerful processing features.  ElasticSearch is blazing fast, and provides a suite of tools that helped make the desired analysis efficient and maintainable even when running constantly for months, and managing millions of records",
-    "organizationName": "Staunton Research",
-    "websiteLink": "",
-    "gitHubLink": "",
-    "imageLink": "assets/images/case-studies/reddit-analyzer.png",
-    "featureLink": "assets/images/case-studies/elastic.png",
-    "testimonials": [
-      {
-        "name": "Jim Rutt",
-        "title": "Businessman and entrepreneur",
-        "quote": "I used Sartography for R&D programming in the domain of textual analysis.  Great skills.   Excellent turnaround. I was well pleased."
       }
     ]
   },

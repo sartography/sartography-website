@@ -1,13 +1,13 @@
 [
   {
     "icon_url": "/assets/icons/software_development.svg",
-    "title": "Software Development",
-    "description": "We create engaging web applications using modern web development tools."
+    "title": "Python Software Development",
+    "description": "We create powerful scientific applications using the most popular and intuitive programming language available today."
   },
   {
     "icon_url": "/assets/icons/information_design.svg",
-    "title": "Information Design",
-    "description": "We create beautiful interfaces that help people navigate complex information to find critical knowledge. Through thoughtful design, architecture, and animations we find novel approaches that make information come alive."
+    "title": "Workflow Automation",
+    "description": "We are experts in the application of BPMN (Business Process Model and Notation) a precise open standard for describing complex business processes "
   },
   {
     "icon_url": "/assets/icons/responsive_design.svg",
