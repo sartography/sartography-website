@@ -75,5 +75,16 @@
     "imageLink": "assets/images/team/jon.jpg",
     "gitHubLink": "https://github.com/jbirddog",
     "linkedInLink": "https://www.linkedin.com/in/jonherron/"
+  },
+  {
+    "firstName": "Madhurya",
+    "lastName": "Liyanage",
+    "title": "Quality Assurance Lead",
+    "description": [
+      "Madhurya started her career as a Software Engineer and has been involved in developing, testing and managing Web applications, Mobile applications and Desktop applications from different domains from small to large scale products. Later in the career she switched to the Quality Assurance side and went on to lead a Quality Assurance team. Her previous experience in software development has helped her immensely in her Quality Assurance career to automate tests and to identify issues and root cause easily and quickly. Madhurya loves travelling and capturing photos and videos of beautiful places."
+    ],
+    "imageLink": "assets/images/team/madhurya.jpg",
+    "gitHubLink": "https://github.com/madhurrya",
+    "linkedInLink": "https://www.linkedin.com/in/madhurya-liyanage/"
   }
 ]
