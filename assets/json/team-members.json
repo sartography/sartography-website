@@ -9,7 +9,8 @@
     ],
     "imageLink": "assets/images/team/Dan.jpg",
     "gitHubLink": "https://github.com/danfunk",
-    "linkedInLink": "https://www.linkedin.com/in/funkdan/"
+    "linkedInLink": "https://www.linkedin.com/in/funkdan/",
+    "resume": "dan_funk"
   },
   {
     "firstName": "Alex",
@@ -20,7 +21,8 @@
     ],
     "imageLink": "assets/images/team/Alex.jpg",
     "gitHubLink": "https://github.com/calexh-sar",
-    "linkedInLink": "https://www.linkedin.com/in/alex-herron-b715783/"
+    "linkedInLink": "https://www.linkedin.com/in/alex-herron-b715783/",
+    "resume": "alex_herron"
   },
   {
     "firstName": "Kevin (KB)",
@@ -31,7 +33,8 @@
     ],
     "imageLink": "assets/images/team/KB.jpg",
     "gitHubLink": "https://github.com/burnettk",
-    "linkedInLink": "https://www.linkedin.com/in/burnett/"
+    "linkedInLink": "https://www.linkedin.com/in/burnett/",
+    "resume": "kevin_burnett"
   },
   {
     "firstName": "Robert (Bob)",
@@ -52,7 +55,8 @@
     ],
     "imageLink": "assets/images/team/Elizabeth.jpg",
     "gitHubLink": "https://github.com/essweine",
-    "linkedInLink": "https://www.linkedin.com/in/elizabeth-esswein-95087a79/"
+    "linkedInLink": "https://www.linkedin.com/in/elizabeth-esswein-95087a79/",
+    "resume": "elizabeth_esswein"
   },
   {
     "firstName": "Jason",
@@ -63,7 +67,8 @@
     ],
     "imageLink": "assets/images/team/Jason.jpg",
     "gitHubLink": "https://github.com/jasquat",
-    "linkedInLink": "https://www.linkedin.com/in/jason-lantz-bb8a7a22/"
+    "linkedInLink": "https://www.linkedin.com/in/jason-lantz-bb8a7a22/",
+    "resume": "jason_lantz"
   },
   {
     "firstName": "Jon",
@@ -74,7 +79,8 @@
     ],
     "imageLink": "assets/images/team/jon.jpg",
     "gitHubLink": "https://github.com/jbirddog",
-    "linkedInLink": "https://www.linkedin.com/in/jonherron/"
+    "linkedInLink": "https://www.linkedin.com/in/jonherron/",
+    "resume": "jon_herron"
   },
   {
     "firstName": "Madhurya",
@@ -85,6 +91,7 @@
     ],
     "imageLink": "assets/images/team/madhurya.jpg",
     "gitHubLink": "https://github.com/madhurrya",
-    "linkedInLink": "https://www.linkedin.com/in/madhurya-liyanage/"
+    "linkedInLink": "https://www.linkedin.com/in/madhurya-liyanage/",
+    "resume": "madhurya_liyanage"
   }
 ]
