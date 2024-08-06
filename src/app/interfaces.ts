@@ -6,6 +6,7 @@ export interface TeamMember {
   imageLink: string;
   gitHubLink: string;
   linkedInLink: string;
+  resume: string;
 }
 
 export interface CaseStudy {

@@ -33,6 +33,14 @@
       class="btn-linkedin mat-elevation-z0"
       matTooltip="{{teamMember.firstName}}'s LinkedIn Profile"
     ><span inlineSVG="/assets/icons/linkedin.svg"></span></a>
+    <a
+      *ngIf="teamMember.resume"
+      href="assets/resume/{{teamMember.resume}}.pdf"
+      mat-button
+      target="_blank"
+      class="btn-linkedin mat-elevation-z0"
+      matTooltip="{{teamMember.firstName}}'s Resume"
+    ><span inlineSVG="/assets/icons/cv.svg"></span></a>
   </div>
   <div class="team-avatar" *ngIf="!isEven(index)" fxHide fxShow.gt-md fxFlex.gt-md="calc(16.67% - 40px)">
     <img src="{{ teamMember.imageLink }}">
