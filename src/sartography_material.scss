@@ -1,5 +1,7 @@
+@use '@angular/material' as mat;
 @import "./config";
-@import '~@angular/material/theming';
+@import '@angular/material/theming';
+
 $custom-typography: mat-typography-config(
   $font-family: "Montserrat, sans-serif",
   $display-4: mat-typography-level(92px, 1.2, 300),
@@ -21,7 +23,9 @@ $custom-typography: mat-typography-config(
 @include angular-material-typography($custom-typography);
 
 // Override the typography in the core CSS.
-@include mat-core($custom-typography);
+//@include mat-core($custom-typography);
+@include mat.core();
+@include mat-base-typography($custom-typography);
 
 $sartography-teal: (
   50: #bee4e1,
@@ -155,7 +159,7 @@ $sartography-theme: mat-light-theme(
 
   h3,
   .mat-display-3 {
-    font-style: italic;
+//    font-style: italic;
   }
 
   .mat-display-4 {
