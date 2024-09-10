@@ -1,4 +1,26 @@
-.team-member { margin-bottom: 80px; }
+.team-member {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  box-sizing: border-box;
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    place-content: flex-start;
+    align-items: flex-start;
+  };
+
+}
+
+.team-details {
+  flex: 1 1 calc(83.33% - 40px);
+  box-sizing: border-box;
+  min-width: calc(83.33% - 40px);
+}
+
+
 
 .btn-github, .btn-linkedin {
   ::ng-deep svg {
@@ -10,7 +32,27 @@
 ::ng-deep .btn-github svg { fill: white; }
 ::ng-deep .btn-linkedin svg { fill: white; }
 
-.team-avatar img {
+.team-avatar {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex: 1 1 calc(16.67% - 40px);
+    box-sizing: border-box;
+    min-width: calc(16.67% - 40px);
+  };
+}
+
+.team-avatar-small {
+  display: flex;
+  flex: 1 1 calc(16.67%);
+  box-sizing: border-box;
+  min-width: calc(16.67%);
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.team-avatar img, .team-avatar-small img {
   border-radius: 100%;
   max-width: 100%;
 }

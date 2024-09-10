@@ -1,19 +1,11 @@
-<div
-  class="team-member"
-  fxLayout="column"
-  fxLayoutAlign="center center"
-  fxLayout.gt-md="row"
-  fxLayoutAlign.gt-md="start start"
-  fxLayoutGap="40px"
-  [@scrollAnimation]="state"
->
-  <div class="team-avatar" fxShow fxHide.gt-md fxFlex="16.67%">
+<div class="team-member" [@scrollAnimation]="state">
+  <div class="team-avatar-small" fxShow fxHide.gt-md fxFlex="16.67%">
     <img src="{{ teamMember.imageLink }}">
   </div>
-  <div class="team-avatar" *ngIf="isEven(index)" fxHide fxShow.gt-md fxFlex.gt-md="calc(16.67% - 40px)">
+  <div class="team-avatar" *ngIf="isEven(index)">
     <img src="{{ teamMember.imageLink }}">
   </div>
-  <div class="team-details" fxFlex="calc(83.33% - 40px)">
+  <div class="team-details">
     <h2>{{ teamMember.firstName }} {{ teamMember.lastName }}</h2>
     <h3>{{ teamMember.title }}</h3>
     <p *ngFor="let d of teamMember.description">{{ d }}</p>
@@ -42,7 +34,7 @@
       matTooltip="{{teamMember.firstName}}'s Resume"
     ><span inlineSVG="/assets/icons/cv.svg"></span></a>
   </div>
-  <div class="team-avatar" *ngIf="!isEven(index)" fxHide fxShow.gt-md fxFlex.gt-md="calc(16.67% - 40px)">
+  <div class="team-avatar" *ngIf="!isEven(index)" >
     <img src="{{ teamMember.imageLink }}">
   </div>
 </div>

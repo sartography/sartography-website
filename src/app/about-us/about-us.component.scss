@@ -7,7 +7,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 1600px;
-  min-width: 100vw;
 
   @media screen and (max-width: 599px) { background-image: none; }
   @media screen and (min-width: 600px) and (max-width: 959px) { background-image: none; padding-left: 10%; padding-right: 10%; }

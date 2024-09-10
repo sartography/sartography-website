@@ -8,3 +8,11 @@
 .value {
   margin-bottom: 2em;
 }
+
+.value-group {
+  justify-content: center;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: auto auto auto;
+  opacity: 1;
+}
