@@ -59,10 +59,38 @@
     }
   }
 
+  .cap-group {
+    display:flex;
+    flex-direction: column;
+  }
+  .cap-group { @media screen and (min-width: 1920px) {
+    flex-direction: row;
+  }
+  }
+
+
+  .cap-spacer {
+    display: none;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    max-width: 33.333%;
+  }
+  .cap-spacer { @media screen and (min-width: 1920px) {
+    display:block;
+  }
+  }
+
+
   .capabilities {
     padding-bottom: 4em;
     z-index: 1;
   }
+  .capabilities { @media screen and (min-width: 1920px) {
+    max-width: 66.667%;
+  }
+  }
+
+
 }
 
 .bg-about-us {
@@ -72,4 +100,8 @@
   background-position: 75% 75%;
   min-height: 75vh;
   min-width: 100vw;
+}
+.bg-about-us { @media screen and (min-width: 1280px) {
+  display:none;
+}
 }

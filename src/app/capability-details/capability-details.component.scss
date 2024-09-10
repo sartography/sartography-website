@@ -1,9 +1,26 @@
 @import "../../config";
 
+
+.cap-container {
+  opacity: 1;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 3fr;
+}
+.cap-container { @media screen and (max-width: 1279px) {
+  display: none;
+}
+}
+
+
 .capability-sm {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 2em;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   ::ng-deep .capability-icon svg {
     width: 128px;
@@ -17,6 +34,10 @@
   }
 
   .details { color: white; }
+}
+.capability-sm  { @media screen and (max-width: 1279px) {
+  display: flex;
+}
 }
 
 @media screen and (min-width: 1280px) {
