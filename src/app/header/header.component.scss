@@ -5,6 +5,12 @@ a.explore {
   width: 200px;
   border-radius: 100%;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 ::ng-deep .chevron-down svg {

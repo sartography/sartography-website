@@ -1,7 +1,7 @@
 <h1 class="full-width-heading bg-primary">Color Palette</h1>
 <div class="container">
-  <div fxLayout="column" fxLayoutGap="10px">
-    <div *ngFor="let hue of hues" fxLayout="row" fxLayoutGap="0px">
+  <div class="flex-col gap-10">
+    <div *ngFor="let hue of hues" class="flex-row gap-0">
       <div
         *ngFor="let variant of variants"
         class="swatch bg-{{hue}}{{variant.suffix}} text-{{variant.contrast}}"

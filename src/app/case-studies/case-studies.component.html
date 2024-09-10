@@ -5,7 +5,7 @@
   class="case-studies"
   *ngIf="caseStudies && caseStudies.length > 0"
 >
-  <div fxLayout="column" fxLayoutGap="80px">
+  <div class="flex-col gap-80">
     <app-case-study
       *ngFor="let c of caseStudies, let i = index;"
       [caseStudy]="c"
@@ -17,15 +17,13 @@
 
   <div
     *ngIf="isExpanded && selectedStudyId && selectedStudy"
-    class="selected-case-study"
-    fxLayout="column"
-    fxLayoutGap="20px"
+    class="selected-case-study flex-col gap-20"
     [@scrollAnimation]="expandedState"
   >
     <button mat-fab color="primary" (click)="toggleExpanded(selectedStudy.id)" id="back">
       <mat-icon>arrow_back</mat-icon>
     </button>
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="40px" fxLayoutAlign="center center">
+    <div class="flex-row flex-col-xs justify-center items-center">
       <img src="{{ selectedStudy.imageLink }}" class="full-size">
       <div>
         <h3>{{ selectedStudy.organizationName }}</h3>
@@ -44,7 +42,7 @@
                 <cite>{{t.title}}</cite></footer>
             </blockquote>
 
-            <div fxLayout="row" fxLayoutGap="10px">
+            <div class="flex-row gap-10">
               <a
                 *ngIf="selectedStudy.websiteLink"
                 mat-flat-button

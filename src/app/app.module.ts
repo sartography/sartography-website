@@ -1,6 +1,5 @@
 import {HttpClientModule} from '@angular/common/http';
 import {Injectable, NgModule} from '@angular/core';
-import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {InlineSVGModule} from 'ng-inline-svg-2';
@@ -86,7 +85,6 @@ export class FormlyConfig {
     imports: [
         BrowserAnimationsModule,
         BrowserModule,
-        FlexLayoutModule,
         FormsModule,
         FormlyMaterialModule,
         FormlyModule.forRoot(FormlyConfig.config),

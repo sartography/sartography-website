@@ -1,15 +1,6 @@
-<div
-  class="gradient-overlay-section"
-  fxLayout="column"
-  fxLayout.gt-md="row"
-  fxLayoutAlign="space-between center"
->
+<div class="welcome-div gradient-overlay-section">
   <div class="container pad-left-8 z-10" fxFlex.gt-md="50%">
-    <div
-      fxLayout="column"
-      fxLayoutAlign="center start"
-      fxLayoutAlign.gt-md="start start"
-    >
+    <div class="flex-col justify-center items-start">
       <h1 class="text-align-left">
         <span class="mat-display-3">Welcome to</span><br />
         <span class="mat-display-4">Sartography</span>
@@ -18,10 +9,9 @@
       <p class="mat-subheading-2 pad-top-2 pad-bottom-2">
         Building transparency, empathy, and understanding through business process automation.
       </p>
-
       <a mat-flat-button color="primary" pageScroll href="#contact_us">Get Started</a>
     </div>
   </div>
   <div class="bg-welcome" [@scrollAnimation]="state" fxFlex.gt-md="50%"></div>
 </div>
-<div class="bg-welcome-xs" [@scrollAnimation]="state" fxShow fxHide.gt-md></div>
+<div class="bg-welcome-xs hide-gt-md" [@scrollAnimation]="state"></div>

@@ -1,6 +1,4 @@
-<div
-  fxHide
-  fxShow.gt-md
+<div class="hide show-gt-md"
   gdColumns.gt-md="3fr 1fr 1fr 3fr"
   [ngClass]="{
     'capability': true,
@@ -12,27 +10,27 @@
   }"
   [@scrollAnimation]="state"
 >
-  <div class="details-left" [fxHide]="!isEven(index)" fxShow.gt-md>
+  <div class="details-left show-gt-md" [ngClass]="{'hide':!isEven(index)}">
     <ng-container *ngIf="isEven(index)">
       <h3>{{capability.title}}</h3>
       <p>{{capability.description}}</p>
     </ng-container>
   </div>
-  <div class="icon-left" [fxHide]="!isEven(index)" fxShow.gt-md>
+  <div class="icon-left show-gt-md" [ngClass]="{'hide':!isEven(index)}">
     <span
       *ngIf="isEven(index)"
       [inlineSVG]="capability.icon_url"
       class="capability-icon"
     ></span>
   </div>
-  <div class="icon-right" [fxHide]="isEven(index)" fxShow.gt-md>
+  <div class="icon-right show-gt-md" [ngClass]="{'hide':isEven(index)}">
     <span
       *ngIf="!isEven(index)"
       [inlineSVG]="capability.icon_url"
       class="capability-icon"
     ></span>
   </div>
-  <div class="details-right" [fxHide]="isEven(index)" fxShow.gt-md>
+  <div class="details-right  show-gt-md" [ngClass]="{'hide':isEven(index)}">
     <ng-container *ngIf="!isEven(index)">
       <h3>{{capability.title}}</h3>
       <p>{{capability.description}}</p>
@@ -40,11 +38,7 @@
   </div>
 </div>
 <div
-  class="capability-sm"
-  fxShow
-  fxHide.gt-md
-  fxLayout="column"
-  fxLayoutAlign="center center"
+  class="capability-sm flex-col justify-center items-center hide-xs hide-gt-md"
   [@scrollAnimation]="state"
 >
   <div class="icon">

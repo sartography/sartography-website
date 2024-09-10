@@ -1,11 +1,11 @@
-<div class="about-us" fxLayout="column" fxLayoutAlign="start start">
+<div class="about-us flex-col "  fxLayoutAlign="start start">
   <div class="title">
     <h1 class="mat-display-1">About Us</h1>
     <h2 class="mat-display-3">What We Do</h2>
   </div>
-  <div fxLayout="column" fxLayout.gt-lg="row">
+  <div class="flex-col">
     <div fxHide fxShow.gt-lg fxFlex.xl="33.333%"></div>
-    <div class="capabilities" fxFlex.xl="66.667%" fxLayout="column">
+    <div class="capabilities flex-col" fxFlex.xl="66.667%">
       <app-capability-details
         *ngFor="let c of capabilities; let i = index"
         [capability]="c"

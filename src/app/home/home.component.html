@@ -8,9 +8,6 @@
   </button>
   <div
     id="menu"
-    fxLayout="column"
-    fxLayoutGap="20px"
-    fxLayoutAlign="center end"
     [ngClass]="{'expanded': isExpanded}"
     (mouseover)="keepMenuOpen()"
     (mouseout)="isExpanded = false"

@@ -1,6 +1,11 @@
 .case-study {
-  &.case-study-left { justify-self: start; }
+  &.case-study-left { justify-self: flex-start; }
   &.case-study-right { justify-self: end; }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
 
   .thumbnail {
     width: 300px;
@@ -12,4 +17,16 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.even {
+  align-self: flex-start;
+  justify-content: flex-start;
+  gap:20px;
+}
+
+.odd {
+  align-self: flex-end;
+  justify-content: flex-end;
+  gap:20px;
 }

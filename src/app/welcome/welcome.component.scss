@@ -13,6 +13,20 @@
   @media screen and (min-width: 1920px) and (max-width: 5000px) { height: 100vh; }
 }
 
+.welcome-div {
+  display: flex;
+  flex-direction: column;
+  place-content: center space-between;
+  align-items: center;
+}
+
+.welcome-div { @media screen and (min-width: 1280px) {
+  flex-direction: row;
+  box-sizing: border-box;
+ }
+}
+
+
 .color-tile {
   height: 72px;
   width: 72px;
@@ -27,3 +41,4 @@
   min-height: 75vh;
   min-width: 100vw;
 }
+

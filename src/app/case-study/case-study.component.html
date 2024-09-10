@@ -1,11 +1,5 @@
 <div
-  class="case-study"
-  fxFlexAlign="{{isEven(index) ? 'start' : 'end'}}"
-  fxHide
-  fxShow.gt-sm
-  fxLayout="row"
-  fxLayoutAlign="{{isEven(index) ? 'start' : 'end'}} center"
-  fxLayoutGap="20px"
+  class="case-study flex-row {{isEven(index) ? 'even' : 'odd'}} hide show-gt-md "
   [@scrollAnimation]="state"
 >
   <img *ngIf="isEven(index)" class="thumbnail" src="{{ caseStudy.featureLink }}">
@@ -17,13 +11,7 @@
   <img *ngIf="!isEven(index)" class="thumbnail" src="{{ caseStudy.featureLink }}">
 </div>
 <div
-  class="case-study"
-  fxFlexAlign="start"
-  fxShow
-  fxHide.gt-sm
-  fxLayout="column"
-  fxLayoutAlign="start center"
-  fxLayoutGap="20px"
+  class="case-study flex-col hide-gt-md justify-start items-center gap-20"
   [@scrollAnimation]="state"
 >
   <img class="thumbnail" src="{{ caseStudy.featureLink }}">
