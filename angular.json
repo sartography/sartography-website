@@ -17,7 +17,7 @@
             "outputPath": "dist/sartography-website",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": "zone.js",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -56,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sartography-website:build"
+            "buildTarget": "sartography-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sartography-website:build:production"
+              "buildTarget": "sartography-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sartography-website:build"
+            "buildTarget": "sartography-website:build"
           }
         },
         "test": {

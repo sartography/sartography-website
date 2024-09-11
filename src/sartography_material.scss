@@ -1,4 +1,7 @@
 @use '@angular/material' as mat;
+@include mat.core();
+
+
 @import "./config";
 @import '@angular/material/theming';
 
@@ -24,7 +27,6 @@ $custom-typography: mat-typography-config(
 
 // Override the typography in the core CSS.
 //@include mat-core($custom-typography);
-@include mat.core();
 @include mat-base-typography($custom-typography);
 
 $sartography-teal: (
@@ -127,6 +129,7 @@ $sartography-theme: mat-light-theme(
   $sartography-accent,
   $sartography-warn
 );
+
 @include angular-material-theme($sartography-theme);
 
 @mixin sartography-theme($theme) {

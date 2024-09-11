@@ -19,14 +19,14 @@
   display: none;
   @media screen and (min-width: 960px) { display:flex }
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .small {
   display: flex;
   @media screen and (min-width: 960px) { display:none }
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   justify-items: center;
   gap: 20px;
 }
