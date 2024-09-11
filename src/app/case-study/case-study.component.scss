@@ -1,11 +1,7 @@
 .case-study {
   &.case-study-left { justify-self: flex-start; }
   &.case-study-right { justify-self: end; }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-
+  align-items: center;
 
   .thumbnail {
     width: 300px;
@@ -18,6 +14,23 @@
     padding: 0;
   }
 }
+
+.big {
+  display: none;
+  @media screen and (min-width: 960px) { display:flex }
+  flex-direction: row;
+  justify-content: start;
+}
+
+.small {
+  display: flex;
+  @media screen and (min-width: 960px) { display:none }
+  flex-direction: column;
+  justify-content: start;
+  justify-items: center;
+  gap: 20px;
+}
+
 
 .even {
   align-self: flex-start;

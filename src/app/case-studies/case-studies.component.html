@@ -17,13 +17,13 @@
 
   <div
     *ngIf="isExpanded && selectedStudyId && selectedStudy"
-    class="selected-case-study flex-col gap-20"
+    class="selected-case-study"
     [@scrollAnimation]="expandedState"
   >
     <button mat-fab color="primary" (click)="toggleExpanded(selectedStudy.id)" id="back">
       <mat-icon>arrow_back</mat-icon>
     </button>
-    <div class="flex-row flex-col-xs justify-center items-center">
+    <div class="selected-case-study-body">
       <img src="{{ selectedStudy.imageLink }}" class="full-size">
       <div>
         <h3>{{ selectedStudy.organizationName }}</h3>

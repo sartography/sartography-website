@@ -1,5 +1,5 @@
 <div
-  class="case-study flex-row {{isEven(index) ? 'even' : 'odd'}} hide show-gt-md "
+  class="case-study big {{isEven(index) ? 'even' : 'odd'}}"
   [@scrollAnimation]="state"
 >
   <img *ngIf="isEven(index)" class="thumbnail" src="{{ caseStudy.featureLink }}">
@@ -11,7 +11,7 @@
   <img *ngIf="!isEven(index)" class="thumbnail" src="{{ caseStudy.featureLink }}">
 </div>
 <div
-  class="case-study flex-col hide-gt-md justify-start items-center gap-20"
+  class="case-study small"
   [@scrollAnimation]="state"
 >
   <img class="thumbnail" src="{{ caseStudy.featureLink }}">
