@@ -1,4 +1,4 @@
-import {HttpClientModule} from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import {Injectable, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -63,8 +63,7 @@ export class FormlyConfig {
 }
 
 
-@NgModule({
-    declarations: [
+@NgModule({ declarations: [
         AboutUsComponent,
         AppComponent,
         CaseStudiesComponent,
@@ -82,13 +81,11 @@ export class FormlyConfig {
         CapabilityDetailsComponent,
         BrandValueComponent,
     ],
-    imports: [
-        BrowserAnimationsModule,
+    bootstrap: [AppComponent], imports: [BrowserAnimationsModule,
         BrowserModule,
         FormsModule,
         FormlyMaterialModule,
         FormlyModule.forRoot(FormlyConfig.config),
-        HttpClientModule,
         InlineSVGModule,
         MatButtonModule,
         MatCardModule,
@@ -102,10 +99,6 @@ export class FormlyConfig {
         MatTooltipModule,
         MatFormFieldModule,
         MatInputModule,
-        ReactiveFormsModule
-    ],
-    providers: [ApiService],
-    bootstrap: [AppComponent]
-})
+        ReactiveFormsModule], providers: [ApiService, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {
 }
