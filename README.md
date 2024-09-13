@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 You can re-deploy our website if you have permission to contribute to this repository.  
 ```bash
 ng build --configuration production --base-href https://sartography.com/
-ngh --dir=dist/sartography-website/  --cname=sartography.com
+ngh --dir=dist/sartography-website/browser  --cname=sartography.com
 ```
 
 ## Further help
