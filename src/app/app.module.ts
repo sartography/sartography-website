@@ -37,11 +37,16 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {TrainingComponent} from './training/training.component';
 
 const routes: Routes = [
   {
     path: 'styleguide',
     component: StyleGuideComponent
+  },
+  {
+    path: 'training',
+    component: TrainingComponent
   },
   {
     path: '',

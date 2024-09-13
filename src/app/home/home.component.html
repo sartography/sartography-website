@@ -23,6 +23,7 @@
       id="{{link.id}}_menu_link"
     >{{ link.label }}</a>
     <div id="selected_indicator" [ngStyle]="{'top.px': activeLinkTop, 'opacity': showIndicator ? 1 : 0}"></div>
+    <a routerLink="/training">Training</a>
   </div>
 
   <div *ngFor="let link of menuLinks" class="scroll-spy-section" id="{{link.id}}">

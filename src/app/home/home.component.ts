@@ -54,7 +54,7 @@ export class HomeComponent implements AfterViewInit {
     this.showIndicator = true;
     this.onSectionChange(linkId);
   }
-
+router
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
     this.moveSelectedIndicator(this.currentSection);
