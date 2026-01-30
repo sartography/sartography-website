@@ -1,5 +1,47 @@
 @import "../../config";
 
+.company-notice {
+  margin: 40px 0;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+
+  .notice-text {
+    font-size: 28px;
+    line-height: 1.5;
+    color: #247a6b;
+    margin: 0;
+
+    strong {
+      font-weight: 700;
+    }
+
+    a {
+      color: #247a6b;
+      text-decoration: underline;
+      font-weight: 600;
+
+      &:hover {
+        color: #302e5e;
+      }
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    margin: 20px 0;
+
+    .notice-text {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 959px) {
+    .notice-text {
+      font-size: 22px;
+    }
+  }
+}
+
 a.explore {
   height: 200px;
   width: 200px;
